@@ -14,17 +14,6 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
 
-    <script>
-        // When image is clicked, update modal image source
-        const modal = document.getElementById('zoomModal');
-        const zoomedImage = document.getElementById('zoomedImage');
-
-        document.querySelectorAll('.project-info img').forEach(img => {
-          img.addEventListener('click', () => {
-            zoomedImage.src = img.src;
-          });
-        });
-    </script>
 </head>
 <body>
 
@@ -185,9 +174,6 @@
                                     src="images/project/buyer_anytyre.png"
                                     class="img-fluid"
                                     alt="project image"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#zoomModal"
-                                    style="cursor: zoom-in;"
                             />
                         </div>
                     </div>
@@ -442,15 +428,6 @@
         </div>
     </div>
 </footer>
-
-<!-- Modal -->
-<div class="modal fade" id="zoomModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content bg-transparent border-0">
-            <img id="zoomedImage" src="" class="img-fluid rounded shadow" alt="zoomed image">
-        </div>
-    </div>
-</div>
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
