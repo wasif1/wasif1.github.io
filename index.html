@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
 
+    <script>
+        // When image is clicked, update modal image source
+        const modal = document.getElementById('zoomModal');
+        const zoomedImage = document.getElementById('zoomedImage');
+
+        document.querySelectorAll('.project-info img').forEach(img => {
+          img.addEventListener('click', () => {
+            zoomedImage.src = img.src;
+          });
+        });
+    </script>
 </head>
 <body>
 
@@ -79,7 +90,8 @@
                     <p>8+ Years in Mobile App Development.
                         Passionate about crafting high-performance Mobile apps that delight users
                         and drive business success.</p>
-                    <p>Expertise in Kotlin, Java, SwiftUI, ObjectiveC, CMP, KMP and Modular & Clean Architecture to deliver robust and
+                    <p>Expertise in Kotlin, Java, SwiftUI, ObjectiveC, CMP, KMP and Modular & Clean
+                        Architecture to deliver robust and
                         scalable solutions.</p>
                     <p>Proficient in Agile and Scrum methodologies.</p>
                     <p>Proven track record in delivering apps with millions of downloads with 4.8
@@ -95,9 +107,10 @@
                                 class='uil uil-file-alt'></i>
                             Download Resume
                         </a> -->
-                        <a href="doc/wasif_cv.pdf" download="wasif_cv.pdf" target="_blank" class="btn mr-lg-2 custom-btn">
-                          <i class='uil uil-file-alt'></i>
-                          Download Resume
+                        <a href="doc/wasif_cv.pdf" download="wasif_cv.pdf" target="_blank"
+                           class="btn mr-lg-2 custom-btn">
+                            <i class='uil uil-file-alt'></i>
+                            Download Resume
                         </a>
 
                         <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">
@@ -153,15 +166,46 @@
                     </div>
                     <div class="item">
                         <div class="project-info">
-                            <a href="https://play.google.com/store/apps/details?id=com.anonymous.newsreel&hl=pt_PT" target="_blank">
+                            <a href="https://play.google.com/store/apps/details?id=com.anonymous.newsreel&hl=pt_PT"
+                               target="_blank">
                                 <img src="images/project/newsreels.png" class="img-fluid"
                                      alt="project image">
                             </a>
                         </div>
                     </div>
+                    <!--                    <div class="item">-->
+                    <!--                        <div class="project-info">-->
+                    <!--                            <img src="images/project/nxply.png" class="img-fluid"-->
+                    <!--                                 alt="project image">-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                     <div class="item">
                         <div class="project-info">
-                            <img src="images/project/nxply.png" class="img-fluid"
+                            <img
+                                    src="images/project/buyer_anytyre.png"
+                                    class="img-fluid"
+                                    alt="project image"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#zoomModal"
+                                    style="cursor: zoom-in;"
+                            />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project-info">
+                            <img src="images/project/seller_anytyre.png" class="img-fluid"
+                                 alt="project image">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project-info">
+                            <img src="images/project/ey_pk1.png" class="img-fluid"
+                                 alt="project image">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="project-info">
+                            <img src="images/project/ey_pk2.png" class="img-fluid"
                                  alt="project image">
                         </div>
                     </div>
@@ -202,10 +246,10 @@
                             </a>
                         </div>
                     </div>
-                      <div class="item">
+                    <div class="item">
                         <div class="project-info">
-                          <img src="images/project/award.jpeg" class="img-fluid"
-                                     alt="project image">
+                            <img src="images/project/award.jpeg" class="img-fluid"
+                                 alt="project image">
                         </div>
                     </div>
                 </div>
@@ -398,6 +442,16 @@
         </div>
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="zoomModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <img id="zoomedImage" src="" class="img-fluid rounded shadow" alt="zoomed image">
+        </div>
+    </div>
+</div>
+
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
