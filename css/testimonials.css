@@ -3,40 +3,46 @@
   padding: 60px 20px;
   background: #f9f9f9;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
 }
 
-#testimonials h2 {
-  color: #222;
-  margin-bottom: 40px;
-  font-size: 28px;
-}
-
-/* ✅ Outer wrapper to hide overflow */
+/* ✅ Outer scroll wrapper */
 .testimonials-wrapper {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  cursor: grab;
+  padding: 40px 0;
   width: 100%;
+  user-select: none;
 }
 
-/* ✅ Scrolling flex row */
+/* ✅ Scrolling row */
 .testimonial-slider {
   display: flex;
-  align-items: stretch;
   gap: 40px;
-  animation: scrollTestimonials 60s linear infinite;
+  align-items: flex-start;
   width: max-content;
+  animation: scrollTestimonials 80s linear infinite;
+  transition: transform 0.3s ease;
 }
 
-/* ✅ Testimonial cards */
+/* ✅ Pause auto scroll on hover or drag */
+.testimonials-wrapper:hover .testimonial-slider,
+.testimonials-wrapper.dragging .testimonial-slider {
+  animation-play-state: paused;
+}
+
+/* ✅ Individual cards */
 .testimonial {
-  background: white;
+  background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   padding: 25px;
   width: 320px;
   flex-shrink: 0;
   text-align: left;
   transition: transform 0.3s ease;
+  height: auto; /* grows with text */
 }
 
 .testimonial:hover {
@@ -61,17 +67,20 @@
   color: #777;
 }
 
-/* ✅ Smooth infinite scroll */
+/* ✅ Infinite scroll keyframes */
 @keyframes scrollTestimonials {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-/* ✅ Optional: pause animation when hovering */
-.testimonials-wrapper:hover .testimonial-slider {
-  animation-play-state: paused;
+/* ✅ Optional scrollbar styling */
+.testimonials-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.testimonials-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+.testimonials-wrapper::-webkit-scrollbar-track {
+  background: transparent;
 }
