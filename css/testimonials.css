@@ -1,7 +1,4 @@
-
-<!-- CSS -->
-<style>
-.testimonials-section {
+#testimonials {
   text-align: center;
   padding: 60px 20px;
   background: #f9f9f9;
@@ -9,29 +6,36 @@
   overflow: hidden;
 }
 
-.testimonials-section h2 {
+#testimonials h2 {
   color: #222;
   margin-bottom: 40px;
   font-size: 28px;
 }
 
-.testimonial-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  width: max-content;
-  animation: scrollTestimonials 30s linear infinite;
+/* ✅ Outer wrapper to hide overflow */
+.testimonials-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
+/* ✅ Scrolling flex row */
+.testimonial-slider {
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+  animation: scrollTestimonials 60s linear infinite;
+  width: max-content;
+}
+
+/* ✅ Testimonial cards */
 .testimonial {
   background: white;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   padding: 25px;
   width: 320px;
-  text-align: left;
   flex-shrink: 0;
+  text-align: left;
   transition: transform 0.3s ease;
 }
 
@@ -57,12 +61,17 @@
   color: #777;
 }
 
+/* ✅ Smooth infinite scroll */
 @keyframes scrollTestimonials {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
-</style>
+
+/* ✅ Optional: pause animation when hovering */
+.testimonials-wrapper:hover .testimonial-slider {
+  animation-play-state: paused;
+}
