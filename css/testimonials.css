@@ -1,11 +1,11 @@
 #testimonials {
   text-align: center;
   padding: 60px 20px;
-  background: #f9f9f9;
-  font-family: 'Poppins', sans-serif;
+  background: #0f1117;
+  font-family: 'Inter', sans-serif;
 }
 
-/* ✅ Outer scroll wrapper */
+/* Outer scroll wrapper */
 .testimonials-wrapper {
   overflow-x: auto;
   overflow-y: visible;
@@ -16,7 +16,7 @@
   user-select: none;
 }
 
-/* ✅ Scrolling row */
+/* Scrolling row */
 .testimonial-slider {
   display: flex;
   gap: 40px;
@@ -26,59 +26,61 @@
   transition: transform 0.3s ease;
 }
 
-/* ✅ Pause auto scroll on hover or drag */
+/* Pause auto scroll on hover or drag */
 .testimonials-wrapper:hover .testimonial-slider,
 .testimonials-wrapper.dragging .testimonial-slider {
   animation-play-state: paused;
 }
 
-/* ✅ Individual cards */
+/* Individual cards */
 .testimonial {
-  background: #fff;
+  background: #1a1f2e;
+  border: 1px solid #1e293b;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  padding: 25px;
+  padding: 28px;
   width: 320px;
   flex-shrink: 0;
   text-align: left;
-  transition: transform 0.3s ease;
-  height: auto; /* grows with text */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  height: auto;
 }
 
 .testimonial:hover {
   transform: translateY(-5px);
+  border-color: #2dd4bf;
 }
 
 .testimonial p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 16px;
 }
 
 .testimonial h4 {
-  font-size: 18px;
-  margin: 0;
-  color: #111;
+  font-size: 16px;
+  margin: 0 0 4px;
+  color: #2dd4bf;
+  font-weight: 600;
 }
 
 .testimonial span {
-  font-size: 14px;
-  color: #777;
+  font-size: 13px;
+  color: #475569;
 }
 
-/* ✅ Infinite scroll keyframes */
+/* Infinite scroll keyframes */
 @keyframes scrollTestimonials {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-/* ✅ Optional scrollbar styling */
+/* Scrollbar styling */
 .testimonials-wrapper::-webkit-scrollbar {
-  height: 8px;
+  height: 4px;
 }
 .testimonials-wrapper::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.2);
+  background: #1e293b;
   border-radius: 4px;
 }
 .testimonials-wrapper::-webkit-scrollbar-track {
