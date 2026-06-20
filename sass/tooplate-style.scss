@@ -1,8 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 // VARIABLES
-$font-base: 'Maven Pro', sans-serif;
+$font-base: 'Inter', sans-serif;
 $body-font-size: 18px;
 $h1-font-size: 2.8em;
 $h2-font-size: 2.4em;
@@ -11,15 +11,20 @@ $font-weight-bold: bold;
 $font-weight-normal: normal;
 $font-weight-light: 300;
 
-$h1-font-color: #212121;
-$h2-font-color: #353535;
-$h3-font-color: #484848;
-$body-font-color: #5b5b5b;
+$h1-font-color: #f0f4f8;
+$h2-font-color: #e2e8f0;
+$h3-font-color: #cbd5e1;
+$body-font-color: #94a3b8;
 $text-white: #ffffff;
-$dark-mode-color: #0c0c0d;
-$main-color: #ffc200;
-$border-color: #f2f2f1;
-$button-color: #474559;
+$bg-primary: #0f1117;
+$bg-alt: #141824;
+$bg-surface: #1a1f2e;
+$main-color: #2dd4bf;
+$main-color-hover: #14b8a6;
+$border-color: #1e293b;
+$button-color: #1e293b;
+$muted-color: #475569;
+$subtle-color: #64748b;
 
 $small-font-size: 14px;
 $link-font-size: 16px;
@@ -31,6 +36,8 @@ $link-font-size: 16px;
 body {
 	font-family: $font-base;
 	padding-top: 70px;
+	background: $bg-primary;
+	color: $body-font-color;
 }
 
 .full-screen {
@@ -108,23 +115,28 @@ b, strong {
 
 // CUSTOM BUTTON
 .custom-btn {
-	color: $body-font-color;
+	background: $button-color;
+	color: $h2-font-color;
 	font-weight: $font-weight-bold;
     border-radius: 50px;
     padding: 13px 29px;
     font-size: $small-font-size;
     line-height: normal;
     overflow: hidden;
+    border: 1px solid #334155;
     @include transition-effect;
     &:hover {
     	color: $main-color;
+    	border-color: $main-color;
     }
     &.custom-btn-bg {
-    	background: $button-color;
-		color: $text-white;
+    	background: $main-color;
+		color: $bg-primary;
+		border-color: $main-color;
 		&:hover {
-	    	background: $main-color;
-	    	color: $text-white !important;
+	    	background: $main-color-hover;
+	    	border-color: $main-color-hover;
+	    	color: $bg-primary !important;
 	    }
     }
 }
@@ -138,8 +150,8 @@ b, strong {
 .animated-info {
     display: inline-block;
     vertical-align: top;
-    margin-top: 10px;
-    width: 340px;
+    margin-top: 5px;
+    min-width: 340px;
     position: relative;
 }
 
@@ -148,7 +160,7 @@ b, strong {
 }
 
 .animated-item {
-    font-size: 32px;
+    font-size: 38px;
     line-height: inherit;
     display: block;
     opacity: 0;
@@ -186,24 +198,27 @@ b, strong {
     z-index: 999999;
     will-change: transform;
     transition: transform 200ms linear;
+    background: $bg-primary;
+    border-bottom: 1px solid $border-color;
 	&[class*="-unpinned"] {
       transform: translate(0, -150%);
     }
-
     &[class*="-pinned"] {
       transform: translate(0, 0);
     }
     &[class*="headroom--not-top"] {
-    	background: $text-white;
-    	// box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.09);
-    	border-bottom: 1px solid #f0f0f0;
+    	background: rgba(15, 17, 23, 0.95);
+    	border-bottom: 1px solid $border-color;
     	padding-top: 0;
     	padding-bottom: 0;
+    	backdrop-filter: blur(12px);
+    	-webkit-backdrop-filter: blur(12px);
     }
 }
 
 .navbar-brand {
 	font-weight: $font-weight-bold;
+	color: $h2-font-color !important;
 }
 
 .navbar-expand-sm {
@@ -216,8 +231,9 @@ b, strong {
 
 .nav-link {
 	font-weight: $font-weight-bold;
-	font-size: 16px;
+	font-size: $link-font-size;
 	overflow: hidden;
+	color: $h3-font-color !important;
 	span {
     	position: relative;
 		display: inline-block;
@@ -235,14 +251,14 @@ b, strong {
 	.navbar-nav {
 		.nav-link:focus,
 		.nav-link:hover {
-			color: $main-color;
+			color: $main-color !important;
 			font-weight: $font-weight-bold;
 			span {
 	    		transform: translateY(-100%);
 	    	}
 		}
 	}
-} 
+}
 
 
 // HAMBURGER MENU
@@ -280,7 +296,7 @@ b, strong {
 		}
 	}
 	.navbar-toggler-icon {
-		background: $h1-font-color;
+		background: $h2-font-color;
 		display: block;
 		width: 100%;
 		height: 2px;
@@ -293,68 +309,26 @@ b, strong {
 
 // COPYRIGHT TEXT
 .copyright-text {
-	font-size: 16px;
+	font-size: $link-font-size;
 	font-weight: $font-weight-normal;
 	display: block;
 }
 
 
-// COLOR MODE
-.color-mode {
-	font-weight: $font-weight-bold;
-	cursor: pointer;
-}
-
-.color-mode-icon {
+// ABOUT / HERO
+.about {
+	background: linear-gradient(135deg, $bg-primary 0%, #111827 60%, #0f1a2e 100%);
 	position: relative;
-	right: 6px;
-  &:after {
-  	font-family: 'unicons';
-  	content: '\ea9f';
-  	font-size: 30px;
-  	font-weight: 300;
-  	font-style: normal;
-  }
-  &.active {
-  	&:after {
-  		font-family: 'unicons';
-  		content: '\eb65';
-  		font-size: 30px;
-  		color: $text-white;
-  	}
-  }
-}
-
-.dark-mode {
-	background: $dark-mode-color;
-	.navbar-light .navbar-nav .nav-link {
-		color: rgba(255,255,255,0.8);
-		&:hover {
-			color: $main-color;
-		}
-	}
-	.navbar {
-		&[class*="headroom--not-top"] {
-			background: $dark-mode-color;
-			border-bottom: 1px solid #1f1f1f;
-	    }
-	}
-	.small-text {
-		background: #0d0c15;
-		color: $text-white;
-	}
-	.feature-card .uil,
-	.navbar-light .navbar-brand,
-	h1, h2, h3, h4, h5, h6,
-	.color-mode {
-		color: $text-white;
-	}
-	.owl-carousel {
-		.owl-nav button.owl-next,
-		.owl-nav button.owl-prev,
-		button.owl-dot {
-			color: $text-white;
-		}
+	overflow: hidden;
+	&::before {
+		content: '';
+		position: absolute;
+		top: -10%;
+		right: -5%;
+		width: 500px;
+		height: 500px;
+		background: radial-gradient(circle, rgba(45, 212, 191, 0.06) 0%, transparent 70%);
+		pointer-events: none;
 	}
 }
 
@@ -362,7 +336,7 @@ b, strong {
 // TIMELINE
 .timeline-wrapper {
 	position: relative;
-	padding-bottom: 10px;
+	padding: 22px 0;
 	&:last-child {
 		&:before {
 			height: 0;
@@ -370,16 +344,17 @@ b, strong {
 	}
 	&:before {
 		content: "";
-    	background: $button-color;
+    	background: $border-color;
     	width: 3px;
     	height: 100%;
     	position: absolute;
-    	left: 38px; 
+    	left: 38px;
 	}
 }
 
 .timeline-yr {
 	background: $button-color;
+	border: 2px solid $main-color;
 	border-radius: 100%;
 	position: absolute;
 	width: 75px;
@@ -387,11 +362,11 @@ b, strong {
 	line-height: 75px;
 	text-align: center;
 	span {
-		color: $text-white;
-    	font-size: $link-font-size;
+		color: $main-color;
+    	font-size: 13px;
     	font-weight: $font-weight-bold;
     	display: block;
-    	line-height: 75px;
+    	line-height: 71px;
 	}
 }
 
@@ -401,8 +376,8 @@ b, strong {
 	max-width: 432px;
 	margin-left: 6em;
 	small {
-		color: $button-color;
-    	font-size: $link-font-size;
+		color: $main-color;
+    	font-size: 15px;
     	font-weight: $font-weight-bold;
     	display: inline-block;
     	vertical-align: middle;
@@ -425,22 +400,23 @@ b, strong {
 				display: block;
 				position: absolute;
 				top: 50%;
-				transform: translate(0, -50%); 
+				transform: translate(0, -50%);
 				font-family: 'unicons';
 				font-size: 100px;
 				line-height: normal;
+				color: #334155;
 			}
 		}
 		.owl-prev {
 			&:before {
 				content: '\e833';
-  				left: -45px; 
+  				left: -45px;
 			}
 		}
 		.owl-next {
 			&:before {
 				content: '\e836';
-  				right: -45px; 
+  				right: -45px;
 			}
 		}
 	}
@@ -452,7 +428,7 @@ b, strong {
   		border-radius: 0;
   		margin: 0;
   		padding: 0;
-  		font-size: inherit; 
+  		font-size: inherit;
   		&:hover {
   			color: $main-color;
   		}
@@ -463,11 +439,12 @@ b, strong {
   			span {
   				width: 8px;
   				height: 8px;
+  				background: #334155;
   			}
   			&.active,
   			&:hover {
   				span {
-  					background: $body-font-color;
+  					background: $main-color;
   				}
   			}
   		}
@@ -479,6 +456,7 @@ b, strong {
 .google-map {
 	iframe {
 		width: 100%;
+		border-radius: 8px;
 	}
 }
 
@@ -487,41 +465,54 @@ b, strong {
 .contact-form {
 	position: relative;
 	.form-control {
-		background: transparent;
-		border-radius: 2px;
+		background: $bg-surface;
+		border: 1px solid $border-color;
+		border-radius: 8px;
+		color: $h2-font-color;
 		outline: none;
 		box-shadow: none;
-		font-weight: $font-weight-bold;
+		font-weight: $font-weight-normal;
 		margin: 16px 0;
+		&::placeholder {
+			color: $subtle-color;
+		}
 		&:not(textarea) {
 			height: 48px;
 		}
 		&:hover,
 		&:focus {
 			border-color: $main-color;
+			background: $bg-surface;
+			color: $h2-font-color;
+			box-shadow: none;
 		}
 	}
 	.submit-btn {
 		background: $main-color;
 		border-radius: 50px;
-		color: $text-white;
+		color: $bg-primary;
 		font-weight: $font-weight-bold;
 		border: 0;
 		cursor: pointer;
 		@include transition-effect;
 		&:hover {
-			background: $button-color;
+			background: $main-color-hover;
+			color: $bg-primary;
 		}
 	}
 }
 
 .contact-info {
-	background: $button-color;
-	border-radius: 0 0 3px 3px;
+	background: $bg-alt;
+	border: 1px solid $border-color;
+	border-radius: 0 0 8px 8px;
 	position: relative;
 	bottom: 8px;
 	p, a {
-		color: #f7f3f3;
+		color: $body-font-color;
+	}
+	h3 {
+		color: $h2-font-color !important;
 	}
 }
 
@@ -529,13 +520,87 @@ b, strong {
 // SOCIAL LINKS
 .social-links {
 	.uil {
-		color: #f7f3f3;
-		font-size: 20px;
+		color: $muted-color;
+		font-size: 30px;
 		display: block;
 		margin: 5px 0;
+		@include transition-effect;
 		&:hover {
 			color: $main-color;
 		}
+	}
+}
+
+
+// SECTION BACKGROUNDS
+.project { background: $bg-primary; }
+#performance { background: $bg-alt; }
+#testimonials { background: $bg-primary; }
+.resume { background: $bg-alt; }
+.contact { background: $bg-primary; }
+
+
+// EXPERTISE SECTION
+.expertise {
+	background: $bg-alt;
+}
+
+.expertise-subtitle {
+	color: $subtle-color;
+	font-size: $link-font-size;
+	margin-top: -10px;
+	font-weight: $font-weight-light;
+}
+
+.expertise-card {
+	background: $bg-surface;
+	border: 1px solid $border-color;
+	border-radius: 12px;
+	padding: 32px 20px;
+	height: 100%;
+	@include transition-effect;
+	cursor: default;
+	&:hover {
+		border-color: $main-color;
+		box-shadow: 0 8px 32px rgba(45, 212, 191, 0.12);
+		transform: translateY(-4px);
+	}
+}
+
+.expertise-icon {
+	display: block;
+	font-size: 48px;
+	color: $muted-color;
+	margin-bottom: 16px;
+	@include transition-effect;
+}
+
+.expertise-card:hover .expertise-icon {
+	color: $main-color;
+}
+
+.expertise-card h5 {
+	color: $h2-font-color;
+	font-size: $link-font-size;
+	font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: -0.3px;
+}
+
+.expertise-card p {
+	color: $subtle-color;
+	font-size: $small-font-size;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+
+// FOOTER
+footer.footer {
+	background: #0a0e16;
+	border-top: 1px solid $border-color;
+	.copyright-text {
+		color: $muted-color;
 	}
 }
 
@@ -556,10 +621,6 @@ b, strong {
 		padding-bottom: 4rem;
 	}
 
-	.color-mode {
-		display: none;
-	}
-
 	.about-image {
 		margin-top: 4em;
 	}
@@ -571,6 +632,10 @@ b, strong {
 
 	.contact-info {
 		padding: 0 2rem;
+	}
+
+	.expertise-card {
+		padding: 24px 16px;
 	}
 }
 
@@ -590,21 +655,33 @@ b, strong {
 	}
 
 	.navbar-collapse {
-		background: $text-white;
+		background: $bg-alt;
 		text-align: center;
 		padding-bottom: 20px;
+		border-top: 1px solid $border-color;
 	}
 
 	.navbar-expand-sm .navbar-nav .nav-link {
-		padding: 3px 20px;
+		padding: 10px 20px;
+	}
+
+	.about::before {
+		width: 300px;
+		height: 300px;
+		top: 0;
+		right: -10%;
 	}
 }
 
 
 @media (max-width: 580px) {
 
+	.animated-info {
+		min-width: 280px;
+	}
+
 	.animated-item {
-		font-size: 24px;
+		font-size: 30px;
 	}
 
 	.custom-btn-group {
@@ -623,6 +700,10 @@ b, strong {
 	.timeline-info small {
 		display: block;
 		margin: 10px 0 0 0;
+	}
+
+	.expertise-icon {
+		font-size: 40px;
 	}
 }
 
