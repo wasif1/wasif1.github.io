@@ -1,614 +1,784 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Wasif Mujahid — Principal Engineer. 9+ years building mobile apps, SaaS platforms, and scalable software across Android, full-stack web, cloud, and AI.">
-    <meta name="author" content="Wasif Mujahid">
-
-    <title>Wasif Mujahid — Principal Engineer</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/testimonials.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/tooplate-style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wasif Mujahid — Principal Engineer. 9+ years building Android apps, SaaS platforms, and scalable software. Based in Dubai, UAE.">
+  <meta name="author" content="Wasif Mujahid">
+  <title>Wasif Mujahid — Principal Engineer</title>
+  <!-- Force HTTPS -->
+  <script>if(location.protocol==='http:'&&location.hostname!=='localhost'&&location.hostname!=='127.0.0.1')location.replace('https:'+location.href.slice(5));</script>
+  <link rel="stylesheet" href="css/tooplate-style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-sm navbar-light">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <i class='uil uil-code-branch'></i> Wasif Mujahid
-        </a>
+<!-- Cursor spotlight -->
+<div id="glow"></div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Hover preview for work items -->
+<img id="work-preview" src="" alt="Project preview">
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#expertise" class="nav-link"><span data-hover="Expertise">Expertise</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<!-- Scroll progress bar -->
+<div id="prog"></div>
+
+
+<!-- ══════════════════════════════════
+     NAVBAR
+     ══════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Wasif<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#resume">Timeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-hire">Hire Me</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<!-- HERO / ABOUT -->
-<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-    <div class="container">
-        <div class="row align-items-center">
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#about">About</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#work">Work</a>
+  <a href="#resume">Timeline</a>
+  <a href="#contact">Contact</a>
+</div>
 
-            <div class="col-lg-8 col-md-12 col-12">
-                <div class="about-text">
-                    <span class="section-label">// Principal Engineer</span>
-                    <h1 class="animated animated-text">
-                        <span class="mr-1">Hey, I'm</span>
-                        <div class="animated-info">
-                            <span class="animated-item">Wasif Mujahid</span>
-                            <span class="animated-item">Principal Engineer</span>
-                            <span class="animated-item">Software Architect</span>
-                        </div>
-                    </h1>
 
-                    <p>Principal Engineer with 9+ years of experience building mobile applications,
-                        SaaS platforms, and scalable software solutions used by businesses and
-                        consumers across multiple industries.</p>
-                    <p>Beyond deep Android expertise, I independently design and build full-stack
-                        products — from frontend interfaces and backend APIs to cloud infrastructure,
-                        AI integrations, and automation pipelines. I help startups and growing
-                        businesses transform ideas into reliable, production-ready products.</p>
+<!-- ══════════════════════════════════
+     HERO
+     ══════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
 
-                    <div class="custom-btn-group mt-4">
-                        <a href="doc/wasif_cv.pdf" download="wasif_cv.pdf" target="_blank"
-                           class="btn custom-btn">
-                            <i class='uil uil-file-alt'></i>
-                            Download Resume
-                        </a>
-                        <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">
-                            Hire Me
-                        </a>
-                    </div>
+  <div class="wrap hero-content">
 
-                    <!-- Hero Stats -->
-                    <div class="hero-stats">
-                        <div>
-                            <span class="hero-stat-num">9+</span>
-                            <span class="hero-stat-label">Years Experience</span>
-                        </div>
-                        <div>
-                            <span class="hero-stat-num">20+</span>
-                            <span class="hero-stat-label">Apps Shipped</span>
-                        </div>
-                        <div>
-                            <span class="hero-stat-num">3</span>
-                            <span class="hero-stat-label">Countries</span>
-                        </div>
-                        <div>
-                            <span class="hero-stat-num">5★</span>
-                            <span class="hero-stat-label">Client Rating</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 col-12">
-                <div class="about-image">
-                    <div class="profile-card">
-                        <img src="images/undraw/pic.png"
-                             class="profile-photo"
-                             alt="Wasif Mujahid"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="profile-avatar" style="display:none;">WM</div>
-                        <span class="profile-card-name">Wasif Mujahid</span>
-                        <span class="profile-card-role">Principal Engineer · UAE</span>
-                        <div class="availability-badge">
-                            <span class="availability-dot"></span>
-                            Available for Projects
-                        </div>
-                        <hr class="profile-divider">
-                        <div class="profile-links">
-                            <a href="https://www.linkedin.com/in/wasif-mujahid-android-developer"
-                               target="_blank" rel="noopener" title="LinkedIn">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/wasif1"
-                               target="_blank" rel="noopener" title="GitHub">
-                                <i class="uil uil-github"></i>
-                            </a>
-                            <a href="https://wa.me/971582063406?text=Hello Wasif, I came across your portfolio and wanted to reach out."
-                               target="_blank" rel="noopener" title="WhatsApp">
-                                <i class="uil uil-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="hero-avail anim" data-d="1">
+      <span class="avail-dot"></span>
+      Available for new projects
     </div>
+
+    <h1 class="hero-name anim" data-d="2">
+      WASIF<br><em>MUJAHID.</em>
+    </h1>
+
+    <div class="hero-meta anim" data-d="3">
+      <span class="hero-role">Principal Engineer</span>
+      <span class="hero-sep"></span>
+      <span class="hero-role">Dubai, UAE</span>
+      <span class="hero-sep"></span>
+      <span class="hero-role">9+ Years</span>
+    </div>
+
+    <div class="hero-ctas anim" data-d="4">
+      <a href="doc/wasif_cv.pdf" download="wasif_cv.pdf" target="_blank" class="btn-main">
+        <i class="uil uil-file-alt"></i> Download CV
+      </a>
+      <a href="#contact" class="btn-ghost">
+        Let's Talk <i class="uil uil-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="hero-stats anim" data-d="5">
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="9">0</span>+
+        <span class="hero-stat-lbl">Years Exp.</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="20">0</span>+
+        <span class="hero-stat-lbl">Apps Shipped</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="3">0</span>
+        <span class="hero-stat-lbl">Countries</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">5★</span>
+        <span class="hero-stat-lbl">Client Rating</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- EXPERTISE -->
-<section class="expertise py-5" id="expertise">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <span class="section-label">// What I Do</span>
-                <h2>Core Expertise</h2>
-                <p class="expertise-subtitle">The capabilities I bring to every engagement</p>
-            </div>
+
+<!-- ══════════════════════════════════
+     MARQUEE STRIP
+     ══════════════════════════════════ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <!-- Set 1 -->
+    <span>Android</span><span class="dot">·</span>
+    <span>Kotlin</span><span class="dot">·</span>
+    <span>Java</span><span class="dot">·</span>
+    <span>Node.js</span><span class="dot">·</span>
+    <span>React</span><span class="dot">·</span>
+    <span>Next.js</span><span class="dot">·</span>
+    <span>AWS</span><span class="dot">·</span>
+    <span>Docker</span><span class="dot">·</span>
+    <span>PostgreSQL</span><span class="dot">·</span>
+    <span>Redis</span><span class="dot">·</span>
+    <span>AI / LLMs</span><span class="dot">·</span>
+    <span>Firebase</span><span class="dot">·</span>
+    <span>REST API</span><span class="dot">·</span>
+    <span>GraphQL</span><span class="dot">·</span>
+    <span>System Design</span><span class="dot">·</span>
+    <span>CI/CD</span><span class="dot">·</span>
+    <!-- Set 2 (duplicate for seamless loop) -->
+    <span>Android</span><span class="dot">·</span>
+    <span>Kotlin</span><span class="dot">·</span>
+    <span>Java</span><span class="dot">·</span>
+    <span>Node.js</span><span class="dot">·</span>
+    <span>React</span><span class="dot">·</span>
+    <span>Next.js</span><span class="dot">·</span>
+    <span>AWS</span><span class="dot">·</span>
+    <span>Docker</span><span class="dot">·</span>
+    <span>PostgreSQL</span><span class="dot">·</span>
+    <span>Redis</span><span class="dot">·</span>
+    <span>AI / LLMs</span><span class="dot">·</span>
+    <span>Firebase</span><span class="dot">·</span>
+    <span>REST API</span><span class="dot">·</span>
+    <span>GraphQL</span><span class="dot">·</span>
+    <span>System Design</span><span class="dot">·</span>
+    <span>CI/CD</span><span class="dot">·</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     ABOUT
+     ══════════════════════════════════ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+
+      <div class="about-left anim left">
+        <span class="label">// 01 About</span>
+        <h2>Engineer.<br>Builder.<br>Problem Solver.</h2>
+        <p>
+          Principal Engineer with 9+ years across Android, full-stack web, SaaS,
+          cloud infrastructure, and AI. I help startups and enterprises ship
+          reliable, production-ready products — fast.
+        </p>
+        <a href="doc/wasif_cv.pdf" download="wasif_cv.pdf" target="_blank" class="btn-main">
+          <i class="uil uil-file-alt"></i> Download CV
+        </a>
+
+        <div class="skill-tags">
+          <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">Jetpack Compose</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">OpenAI</span>
+          <span class="skill-tag">LLMs</span>
+          <span class="skill-tag">MVVM</span>
+          <span class="skill-tag">Microservices</span>
         </div>
-        <div class="row">
+      </div>
 
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-mobile-android expertise-icon"></i>
-                    <h5>Android Development</h5>
-                    <p>Kotlin, Java, Modern Android Architecture &amp; Compose</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-web-grid expertise-icon"></i>
-                    <h5>Full-Stack Web Development</h5>
-                    <p>End-to-end web products from UI to server-side logic</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-store expertise-icon"></i>
-                    <h5>SaaS Product Development</h5>
-                    <p>Full product lifecycle from concept to paying customers</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-servers expertise-icon"></i>
-                    <h5>Backend APIs &amp; Microservices</h5>
-                    <p>Scalable APIs, service decomposition, and integrations</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-cloud-computing expertise-icon"></i>
-                    <h5>Cloud Infrastructure</h5>
-                    <p>Deployment pipelines, cloud architecture, and DevOps</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-circuit expertise-icon"></i>
-                    <h5>AI Integrations &amp; Automation</h5>
-                    <p>LLM workflows, AI-powered features, and process automation</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-sitemap expertise-icon"></i>
-                    <h5>System Design &amp; Architecture</h5>
-                    <p>Distributed systems, clean architecture, and technical strategy</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="expertise-card text-center">
-                    <i class="uil uil-chart-growth expertise-icon"></i>
-                    <h5>Performance &amp; Scalability</h5>
-                    <p>Profiling, optimization, and designing for growth</p>
-                </div>
-            </div>
-
+      <div class="about-right anim right" data-d="2">
+        <div class="stat-cards">
+          <div class="stat-card">
+            <span class="stat-card-num" data-count="9">9</span>+
+            <span class="stat-card-lbl">Years of Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-num" data-count="20">20</span>+
+            <span class="stat-card-lbl">Apps Shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-num">3</span>
+            <span class="stat-card-lbl">Countries Worked In</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-num">5★</span>
+            <span class="stat-card-lbl">Average Client Rating</span>
+          </div>
         </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="project py-5" id="project">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-11 text-center mx-auto col-12">
+<hr class="rule">
 
-                <div class="col-lg-8 mx-auto mb-2">
-                    <span class="section-label">// Portfolio</span>
-                    <h2>Products I have designed and shipped</h2>
-                </div>
-
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="project-info">
-                            <a href="https://play.google.com/store/search?q=lifepharmacy&c=apps&hl=pt_PT" target="_blank">
-                                <img src="images/project/lifepharmacy.png" class="img-fluid" alt="Life Pharmacy App"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <img src="images/project/passenger.png" class="img-fluid" alt="Passenger App"/>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <img src="images/project/captain.png" class="img-fluid" alt="Captain App"/>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <a href="https://www.newsreels.app/" target="_blank">
-                                <img src="images/project/newsreels.png" class="img-fluid" alt="Newsreels App"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <img src="images/project/buyer_anytyre.png" class="img-fluid" alt="AnyTyre Buyer App"/>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <img src="images/project/seller_anytyre.png" class="img-fluid" alt="AnyTyre Seller App"/>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <img src="images/project/ey_pk1.png" class="img-fluid" alt="EY Project"/>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <img src="images/project/ey_pk2.png" class="img-fluid" alt="EY Project"/>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<!-- ══════════════════════════════════
+     EXPERTISE
+     ══════════════════════════════════ -->
+<section id="expertise">
+  <div class="wrap">
+    <div class="anim">
+      <span class="label">// 02 Expertise</span>
+      <h2>Core Capabilities</h2>
     </div>
+    <div class="exp-grid">
+      <div class="exp-item anim" data-d="1">
+        <i class="uil uil-mobile-android"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">Android Dev</span>
+          <span class="exp-item-sub">Kotlin · Compose · MVVM</span>
+        </div>
+      </div>
+      <div class="exp-item anim" data-d="2">
+        <i class="uil uil-web-grid"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">Full-Stack Web</span>
+          <span class="exp-item-sub">React · Node.js · REST</span>
+        </div>
+      </div>
+      <div class="exp-item anim" data-d="3">
+        <i class="uil uil-store"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">SaaS Products</span>
+          <span class="exp-item-sub">Concept → Customers</span>
+        </div>
+      </div>
+      <div class="exp-item anim" data-d="4">
+        <i class="uil uil-servers"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">Backend &amp; APIs</span>
+          <span class="exp-item-sub">Microservices · GraphQL</span>
+        </div>
+      </div>
+      <div class="exp-item anim" data-d="5">
+        <i class="uil uil-cloud-computing"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">Cloud &amp; DevOps</span>
+          <span class="exp-item-sub">AWS · Docker · CI/CD</span>
+        </div>
+      </div>
+      <div class="exp-item anim" data-d="6">
+        <i class="uil uil-circuit"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">AI Integrations</span>
+          <span class="exp-item-sub">LLMs · RAG · Agents</span>
+        </div>
+      </div>
+      <div class="exp-item anim" data-d="7">
+        <i class="uil uil-sitemap"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">System Design</span>
+          <span class="exp-item-sub">Distributed · Clean Arch</span>
+        </div>
+      </div>
+      <div class="exp-item anim" data-d="8">
+        <i class="uil uil-chart-growth"></i>
+        <div class="exp-item-text">
+          <span class="exp-item-title">Performance</span>
+          <span class="exp-item-sub">Profiling · Optimization</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- PERFORMANCE -->
-<section class="project py-5" id="performance">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-11 text-center mx-auto col-12">
+<hr class="rule">
 
-                <div class="col-lg-8 mx-auto mb-2">
-                    <span class="section-label">// Metrics</span>
-                    <h2>Performance and Ratings</h2>
-                </div>
-
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="project-info">
-                            <a href="https://play.google.com/store/search?q=lifepharmacy&c=apps&hl=pt_PT" target="_blank">
-                                <img src="images/project/performance.png" class="img-fluid" alt="App Performance Metrics">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="project-info">
-                            <img src="images/project/reward.png" class="img-fluid" alt="Awards and Recognition">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<!-- ══════════════════════════════════
+     WORK — NUMBERED LIST
+     ══════════════════════════════════ -->
+<section id="work">
+  <div class="wrap">
+    <div class="anim">
+      <span class="label">// 03 Work</span>
+      <h2>Selected Projects</h2>
     </div>
+
+    <div class="work-list">
+
+      <a class="work-item anim" data-d="1"
+         data-img="images/project/lifepharmacy.png"
+         href="https://play.google.com/store/search?q=lifepharmacy&c=apps" target="_blank" rel="noopener">
+        <span class="work-num">01</span>
+        <img src="images/project/lifepharmacy.png" class="work-thumb" alt="Life Pharmacy">
+        <span class="work-name">Life Pharmacy</span>
+        <span class="work-cat">Android · E-Commerce · UAE</span>
+        <span class="work-arrow">↗</span>
+      </a>
+
+      <a class="work-item anim" data-d="2"
+         data-img="images/project/newsreels.png"
+         href="https://www.newsreels.app/" target="_blank" rel="noopener">
+        <span class="work-num">02</span>
+        <img src="images/project/newsreels.png" class="work-thumb" alt="Newsreels">
+        <span class="work-name">Newsreels</span>
+        <span class="work-cat">Android · Short-form Video</span>
+        <span class="work-arrow">↗</span>
+      </a>
+
+      <div class="work-item anim" data-d="3"
+           data-img="images/project/passenger.png">
+        <span class="work-num">03</span>
+        <img src="images/project/passenger.png" class="work-thumb" alt="Ziro Ride Passenger">
+        <span class="work-name">Ziro Ride — Passenger</span>
+        <span class="work-cat">Android · Ride Sharing</span>
+        <span class="work-arrow">↗</span>
+      </div>
+
+      <div class="work-item anim" data-d="4"
+           data-img="images/project/captain.png">
+        <span class="work-num">04</span>
+        <img src="images/project/captain.png" class="work-thumb" alt="Ziro Ride Captain">
+        <span class="work-name">Ziro Ride — Captain</span>
+        <span class="work-cat">Android · Driver App</span>
+        <span class="work-arrow">↗</span>
+      </div>
+
+      <div class="work-item anim" data-d="5"
+           data-img="images/project/buyer_anytyre.png">
+        <span class="work-num">05</span>
+        <img src="images/project/buyer_anytyre.png" class="work-thumb" alt="AnyTyre Buyer">
+        <span class="work-name">AnyTyre — Buyer</span>
+        <span class="work-cat">Android · Marketplace</span>
+        <span class="work-arrow">↗</span>
+      </div>
+
+      <div class="work-item anim" data-d="6"
+           data-img="images/project/seller_anytyre.png">
+        <span class="work-num">06</span>
+        <img src="images/project/seller_anytyre.png" class="work-thumb" alt="AnyTyre Seller">
+        <span class="work-name">AnyTyre — Seller</span>
+        <span class="work-cat">Android · Marketplace</span>
+        <span class="work-arrow">↗</span>
+      </div>
+
+      <div class="work-item anim" data-d="7"
+           data-img="images/project/ey_pk1.png">
+        <span class="work-num">07</span>
+        <img src="images/project/ey_pk1.png" class="work-thumb" alt="EY Pakistan">
+        <span class="work-name">EY Pakistan</span>
+        <span class="work-cat">Android · Enterprise</span>
+        <span class="work-arrow">↗</span>
+      </div>
+
+      <div class="work-item anim" data-d="8"
+           data-img="images/project/performance.png">
+        <span class="work-num">08</span>
+        <img src="images/project/performance.png" class="work-thumb" alt="Life Pharmacy Performance">
+        <span class="work-name">Life Pharmacy — Performance</span>
+        <span class="work-cat">4.7★ · 500K+ Downloads</span>
+        <span class="work-arrow">↗</span>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="project py-5" id="testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-11 text-center mx-auto col-12">
-                <div class="col-lg-8 mx-auto mb-2">
-                    <span class="section-label">// Kind Words</span>
-                    <h2>Testimonials</h2>
-                </div>
+<hr class="rule">
 
-                <div class="testimonials-wrapper">
-                    <div class="testimonial-slider">
-                        <!-- First set -->
-                        <div class="testimonial">
-                            <p>Wasif is among the best developers I have worked with. He is very diligent and dedicated
-                                to his craft. While good developers get things done at best, Wasif always exceeds
-                                expectations. He is not just a good developer, he is forward-thinking, resolute, and
-                                most of all, passionate. Plus, he is a delight to work with.</p>
-                            <h4>— RJ David</h4>
-                            <span>Creative Strategist</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>Wasif's multitasking ability was unlike I've seen before and made an applause-worthy
-                                increase in our company's growth level. His coding skills are literally very efficient
-                                and leads the whole team with his unique solutions to every kind of issues and bugs.</p>
-                            <h4>— Furqan Butt</h4>
-                            <span>Lead Generation | Art Director</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>I had the pleasure of working with Wasif Mujahid for two years at SoloInsight and Ziro
-                                Ride. Wasif is proactive, result oriented, and technically sound. He has exceptional
-                                troubleshooting and analytical skill in Android development. Wasif is a great asset to
-                                any company.</p>
-                            <h4>— Khadim Hussain</h4>
-                            <span>Software Engineer</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>I found him very diligent, hard-working and a thorough professional. He met all the
-                                deadlines, which were quite tight to be fair, without compromising on work quality.
-                                The end product was exactly what we expected it to be. I had a great experience
-                                working with him.</p>
-                            <h4>— Taha Tajammal</h4>
-                            <span>Technical Project Manager</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>During the time I worked with Wasif he did a great job in android development. Met tough
-                                deadlines for our customers and integrations. These great technical skills would make
-                                Wasif a great asset to any organization.</p>
-                            <h4>— Naveed Butt</h4>
-                            <span>Seasoned Technical Project Manager</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>Wasif did an outstanding job on our Android app development project. He not only
-                                delivered ahead of schedule but also provided daily updates, ensuring complete
-                                transparency throughout the process. His communication skills and technical expertise
-                                were exceptional. We highly recommend Wasif for any development needs.</p>
-                            <h4>— Najib E.</h4>
-                            <span>Founder</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>As always, reliable, professional, committed, polite. He delivers on time or even ahead
-                                of time. Recommending him 200%. His communication skills and technical expertise were
-                                exceptional, making the entire collaboration seamless and efficient.</p>
-                            <h4>— Najib E.</h4>
-                            <span>Founder</span>
-                        </div>
-
-                        <!-- Duplicate set for seamless loop -->
-                        <div class="testimonial">
-                            <p>Wasif is among the best developers I have worked with. He is very diligent and dedicated
-                                to his craft. While good developers get things done at best, Wasif always exceeds
-                                expectations. He is not just a good developer, he is forward-thinking, resolute, and
-                                most of all, passionate. Plus, he is a delight to work with.</p>
-                            <h4>— RJ David</h4>
-                            <span>Creative Strategist</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>Wasif's multitasking ability was unlike I've seen before and made an applause-worthy
-                                increase in our company's growth level. His coding skills are literally very efficient
-                                and leads the whole team with his unique solutions to every kind of issues and bugs.</p>
-                            <h4>— Furqan Butt</h4>
-                            <span>Lead Generation | Art Director</span>
-                        </div>
-                        <div class="testimonial">
-                            <p>I had the pleasure of working with Wasif Mujahid for two years at SoloInsight and Ziro
-                                Ride. Wasif is proactive, result oriented, and technically sound. He has exceptional
-                                troubleshooting and analytical skill in Android development. Wasif is a great asset to
-                                any company.</p>
-                            <h4>— Khadim Hussain</h4>
-                            <span>Software Engineer</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<!-- ══════════════════════════════════
+     TIMELINE
+     ══════════════════════════════════ -->
+<section id="resume">
+  <div class="wrap">
+    <div class="anim">
+      <span class="label">// 04 Timeline</span>
+      <h2>Experience &amp; Education</h2>
     </div>
+
+    <div class="tl-grid">
+
+      <div>
+        <span class="tl-col-label anim">Experience</span>
+        <div class="tl-items">
+          <div class="tl-item anim" data-d="1">
+            <div class="tl-yr">Now</div>
+            <div>
+              <div class="tl-role">Principal Android Engineer <span class="tl-badge">3.5 yrs</span></div>
+              <div class="tl-org">Life Pharmacy · Dubai, UAE</div>
+              <p class="tl-desc">Lead Android engineer on UAE's #1 pharmacy e-commerce platform — architecture, performance &amp; technical ownership.</p>
+            </div>
+          </div>
+          <div class="tl-item anim" data-d="2">
+            <div class="tl-yr">2022</div>
+            <div>
+              <div class="tl-role">Lead Engineer <span class="tl-badge">3.5 yrs</span></div>
+              <div class="tl-org">ZIRO GROUP · Dubai, UAE</div>
+              <p class="tl-desc">Lead engineer for Ride Sharing &amp; Newsreels — full product ownership from architecture to delivery.</p>
+            </div>
+          </div>
+          <div class="tl-item anim" data-d="3">
+            <div class="tl-yr">2019</div>
+            <div>
+              <div class="tl-role">Android Developer <span class="tl-badge">2.5 yrs</span></div>
+              <div class="tl-org">Soloinsight · Lahore, Pakistan</div>
+              <p class="tl-desc">Delivered enterprise mobile products for access control and workforce management.</p>
+            </div>
+          </div>
+          <div class="tl-item anim" data-d="4">
+            <div class="tl-yr">2017</div>
+            <div>
+              <div class="tl-role">Freelance Developer <span class="tl-badge">2 yrs</span></div>
+              <div class="tl-org">Fiverr · Upwork · Remote</div>
+              <p class="tl-desc">20+ Android apps delivered for global clients with 5★ ratings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <span class="tl-col-label anim">Education</span>
+        <div class="tl-items">
+          <div class="tl-item anim" data-d="1">
+            <div class="tl-yr">2016</div>
+            <div>
+              <div class="tl-role">BSc Computer Science</div>
+              <div class="tl-org">University of Central Punjab · Lahore</div>
+              <p class="tl-desc">Four-year undergraduate degree in Computer Science (BSCS).</p>
+            </div>
+          </div>
+          <div class="tl-item anim" data-d="2">
+            <div class="tl-yr">2012</div>
+            <div>
+              <div class="tl-role">Intermediate — Computer Science</div>
+              <div class="tl-org">Punjab College · Lahore</div>
+            </div>
+          </div>
+          <div class="tl-item anim" data-d="3">
+            <div class="tl-yr">2010</div>
+            <div>
+              <div class="tl-role">High School</div>
+              <div class="tl-org">Cathedral High School · Lahore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- RESUME -->
-<section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-    <div class="container">
-        <div class="row">
+<hr class="rule">
 
-            <div class="col-lg-6 col-12">
-                <span class="section-label">// Career</span>
-                <h2 class="mb-4">Experience</h2>
-
-                <div class="timeline">
-                    <div class="timeline-wrapper">
-                        <div class="timeline-yr"><span>Now</span></div>
-                        <div class="timeline-info">
-                            <h3><span>Principal Android Engineer</span><small>3.5 Yrs</small></h3>
-                            <p>Life Pharmacy · Dubai, UAE<br>Lead Android engineer on the flagship
-                                e-commerce platform — architecture, performance optimization, and
-                                cross-functional technical ownership</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-wrapper">
-                        <div class="timeline-yr"><span>2022</span></div>
-                        <div class="timeline-info">
-                            <h3><span>Lead Engineer</span><small>3.5 Yrs</small></h3>
-                            <p>ZIRO GROUP · Dubai, UAE<br>Lead engineer for Ride Sharing and
-                                Newsreels — full product ownership from architecture to delivery</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-wrapper">
-                        <div class="timeline-yr"><span>2019</span></div>
-                        <div class="timeline-info">
-                            <h3><span>Android Developer</span><small>2.5 Yrs</small></h3>
-                            <p>Soloinsight · Lahore, Pakistan<br>Worked on enterprise mobile products</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-wrapper">
-                        <div class="timeline-yr"><span>2017</span></div>
-                        <div class="timeline-info">
-                            <h3><span>Android Developer</span><small>2 Yrs</small></h3>
-                            <p>Fiverr / Upwork / Freelancer · Remote<br>Delivered mobile products for global clients</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-12">
-                <span class="section-label d-block mt-4 mt-lg-0">// Academic</span>
-                <h2 class="mb-4 mobile-mt-2">Education</h2>
-
-                <div class="timeline">
-                    <div class="timeline-wrapper">
-                        <div class="timeline-yr"><span>2016</span></div>
-                        <div class="timeline-info">
-                            <h3><span>BSc Computer Science</span></h3>
-                            <p>University of Central Punjab (UCP)<br>Lahore, Pakistan</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-wrapper">
-                        <div class="timeline-yr"><span>2012</span></div>
-                        <div class="timeline-info">
-                            <h3><span>Intermediate in Computer Science</span></h3>
-                            <p>Punjab College · Lahore, Pakistan</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-wrapper">
-                        <div class="timeline-yr"><span>2010</span></div>
-                        <div class="timeline-info">
-                            <h3><span>High School</span><small>CS</small></h3>
-                            <p>Cathedral High School · Lahore, Pakistan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<!-- ══════════════════════════════════
+     TESTIMONIALS
+     ══════════════════════════════════ -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="anim">
+      <span class="label">// 05 Testimonials</span>
+      <h2>What People Say</h2>
     </div>
+  </div>
+
+  <div class="testi-track" id="testi-track">
+    <div class="testi-slider" id="testi-slider">
+
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif is among the best developers I have worked with. He always exceeds expectations — forward-thinking, resolute, and most of all passionate. A delight to work with.</p>
+        <div class="testi-name">RJ David</div>
+        <div class="testi-role">Creative Strategist</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif's multitasking ability was unlike I've seen before and made an applause-worthy increase in our company's growth. His coding skills are literally very efficient.</p>
+        <div class="testi-name">Furqan Butt</div>
+        <div class="testi-role">Lead Generation · Art Director</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif is proactive, result-oriented, and technically sound. He has exceptional troubleshooting and analytical skills in Android development. A great asset to any company.</p>
+        <div class="testi-name">Khadim Hussain</div>
+        <div class="testi-role">Software Engineer</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Very diligent, hard-working and a thorough professional. He met all deadlines without compromising on work quality. The end product was exactly what we expected.</p>
+        <div class="testi-name">Taha Tajammal</div>
+        <div class="testi-role">Technical Project Manager</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif delivered ahead of schedule and provided daily updates ensuring complete transparency. His communication skills and technical expertise were exceptional.</p>
+        <div class="testi-name">Najib E.</div>
+        <div class="testi-role">Founder</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Reliable, professional, committed, polite. He delivers on time or even ahead of time. Recommending him 200%. The collaboration was seamless and efficient.</p>
+        <div class="testi-name">Najib E.</div>
+        <div class="testi-role">Founder</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif met tough deadlines for our customers and integrations. His technical skills would make him a great asset to any organization.</p>
+        <div class="testi-name">Naveed Butt</div>
+        <div class="testi-role">Technical Project Manager</div>
+      </div>
+
+      <!-- Duplicate for seamless loop -->
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif is among the best developers I have worked with. He always exceeds expectations — forward-thinking, resolute, and most of all passionate.</p>
+        <div class="testi-name">RJ David</div>
+        <div class="testi-role">Creative Strategist</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif's multitasking ability was unlike I've seen before. An applause-worthy increase in our company's growth. His coding skills are literally very efficient.</p>
+        <div class="testi-name">Furqan Butt</div>
+        <div class="testi-role">Lead Generation · Art Director</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Very diligent, hard-working and a thorough professional. He met all deadlines without compromising on work quality.</p>
+        <div class="testi-name">Taha Tajammal</div>
+        <div class="testi-role">Technical Project Manager</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Wasif delivered ahead of schedule and provided daily updates. His communication skills and technical expertise were exceptional.</p>
+        <div class="testi-name">Najib E.</div>
+        <div class="testi-role">Founder</div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact py-5" id="contact">
-    <div class="container">
-        <div class="row">
+<hr class="rule">
 
-            <div class="col-lg-5 mr-lg-5 col-12">
-                <div class="google-map w-100">
-                    <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115822.67245704441!2d55.24347429699331!3d25.18418207292058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682eda3e0b25%3A0x93a42729c9e68cf1!2sBusiness%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sae!4v1733959200000"
-                            width="400"
-                            height="300"
-                            frameborder="0"
-                            style="border:0"
-                            allowfullscreen
-                            loading="lazy"
-                            title="Wasif Mujahid Location - Business Bay, Dubai">
-                    </iframe>
-                </div>
+<!-- ══════════════════════════════════
+     CONTACT
+     ══════════════════════════════════ -->
+<section id="contact">
+  <div class="wrap">
 
-                <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                    <div class="contact-info-item">
-                        <h3 class="mb-3 text-white">Contact</h3>
-                        <p class="footer-text mb-0">+971-582063406</p>
-                        <p><a href="mailto:waxif.1@gmail.com">waxif.1@gmail.com</a></p>
-                    </div>
-
-                    <ul class="social-links">
-                        <li>
-                            <a href="https://www.linkedin.com/in/wasif-mujahid-android-developer"
-                               class="uil uil-linkedin" data-toggle="tooltip"
-                               data-placement="left" title="LinkedIn" target="_blank" rel="noopener"></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/wasif1" class="uil uil-github"
-                               data-toggle="tooltip" data-placement="left" title="Github"
-                               target="_blank" rel="noopener"></a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/971582063406?text=Hello Wasif, I came across your portfolio and wanted to reach out."
-                               class="uil uil-whatsapp" data-toggle="tooltip"
-                               data-placement="left" title="WhatsApp"
-                               target="_blank" rel="noopener"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-12">
-                <div class="contact-form">
-                    <span class="section-label">// Get In Touch</span>
-                    <h2 class="mb-4">Interested to work together? Let's talk</h2>
-
-                    <form action="https://forms.un-static.com/forms/e9be4f201ae5d2d73f30585cf8d7ce9ec69d95cb"
-                          method="post">
-                        <div class="row">
-                            <div class="col-lg-6 col-12">
-                                <label for="name" class="sr-only">Your Name</label>
-                                <input type="text" class="form-control" name="name"
-                                       placeholder="Your Name" id="name">
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <label for="email" class="sr-only">Email</label>
-                                <input type="email" class="form-control" name="email"
-                                       placeholder="Email" id="email">
-                            </div>
-                            <div class="col-12">
-                                <label for="message" class="sr-only">Message</label>
-                                <textarea name="message" rows="6" class="form-control"
-                                          id="message" placeholder="Your message..."></textarea>
-                            </div>
-                            <div class="ml-lg-auto col-lg-5 col-12">
-                                <input type="submit" class="form-control submit-btn"
-                                       value="Send Message">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
+    <div class="contact-headline anim">
+      <span class="label">// 06 Contact</span>
+      <h2>Let's build something<br><em>great</em> together.</h2>
     </div>
+
+    <div class="contact-grid">
+
+      <!-- Left -->
+      <div class="anim left">
+        <div class="c-items">
+          <div class="c-item">
+            <div class="c-icon"><i class="uil uil-phone"></i></div>
+            <div class="c-text"><a href="tel:+971582063406">+971-582063406</a></div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><i class="uil uil-envelope"></i></div>
+            <div class="c-text"><a href="mailto:waxif.1@gmail.com">waxif.1@gmail.com</a></div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><i class="uil uil-map-marker"></i></div>
+            <div class="c-text">Business Bay, Dubai, UAE</div>
+          </div>
+        </div>
+
+        <div class="c-socials">
+          <a href="https://www.linkedin.com/in/wasif-mujahid-android-developer"
+             target="_blank" rel="noopener" class="c-social" title="LinkedIn">
+            <i class="uil uil-linkedin"></i>
+          </a>
+          <a href="https://github.com/wasif1"
+             target="_blank" rel="noopener" class="c-social" title="GitHub">
+            <i class="uil uil-github"></i>
+          </a>
+          <a href="https://wa.me/971582063406?text=Hello Wasif, I came across your portfolio and wanted to reach out."
+             target="_blank" rel="noopener" class="c-social" title="WhatsApp">
+            <i class="uil uil-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="anim right" data-d="2">
+        <form action="https://forms.un-static.com/forms/e9be4f201ae5d2d73f30585cf8d7ce9ec69d95cb"
+              method="post" class="c-form">
+          <div class="c-form-row">
+            <input type="text" name="name" placeholder="Your Name"
+                   class="c-input" required>
+            <input type="email" name="email" placeholder="Email Address"
+                   class="c-input" required>
+          </div>
+          <textarea name="message" rows="5" placeholder="Tell me about your project..."
+                    class="c-input" required></textarea>
+          <button type="submit" class="btn-send">
+            Send Message <i class="uil uil-message"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-12">
-                <p class="copyright-text text-center">
-                    Copyright &copy; 2025 Wasif Mujahid. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </div>
+
+<!-- ══════════════════════════════════
+     FOOTER
+     ══════════════════════════════════ -->
+<footer class="site-footer">
+  <span class="footer-copy">&copy; <span id="copy-year"></span> Wasif Mujahid. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#hero">Back to top ↑</a>
+    <a href="mailto:waxif.1@gmail.com">Email</a>
+    <a href="https://github.com/wasif1" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/wasif-mujahid-android-developer" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
 </footer>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/Headroom.js"></script>
-<script src="js/jQuery.headroom.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/testimonials.js"></script>
+
+<!-- ══════════════════════════════════
+     SCRIPTS
+     ══════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  // Dynamic copyright year
+  document.getElementById('copy-year').textContent = new Date().getFullYear();
+
+  // ── CURSOR GLOW ──────────────────────────
+  const glow = document.getElementById('glow');
+  document.addEventListener('mousemove', function (e) {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top  = e.clientY + 'px';
+  }, { passive: true });
+
+  // ── SCROLL PROGRESS ──────────────────────
+  const prog = document.getElementById('prog');
+  function onScroll() {
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    prog.style.width = Math.min(pct, 100) + '%';
+    updateNav();
+  }
+
+  // ── NAVBAR ───────────────────────────────
+  const nav = document.getElementById('nav');
+  let lastY = 0;
+  function updateNav() {
+    const y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 40);
+    if (y > 200) {
+      nav.classList.toggle('hide', y > lastY + 6);
+      if (y < lastY) nav.classList.remove('hide');
+    } else {
+      nav.classList.remove('hide');
+    }
+    lastY = y;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ── MOBILE MENU ──────────────────────────
+  const toggle   = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  toggle.addEventListener('click', function () {
+    mobileNav.classList.toggle('open');
+  });
+  mobileNav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { mobileNav.classList.remove('open'); });
+  });
+
+  // ── SMOOTH SCROLL ────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      const t = document.querySelector(this.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  // ── SCROLL ANIMATIONS ────────────────────
+  const obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+  document.querySelectorAll('.anim').forEach(function (el) { obs.observe(el); });
+
+  // ── COUNTER ANIMATION ────────────────────
+  const countObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      const el  = e.target;
+      const end = parseInt(el.dataset.count, 10);
+      if (!end) return;
+      const dur = 1400;
+      const t0  = performance.now();
+      (function tick(now) {
+        const pct  = Math.min((now - t0) / dur, 1);
+        const ease = 1 - Math.pow(1 - pct, 3);
+        el.textContent = Math.round(ease * end);
+        if (pct < 1) requestAnimationFrame(tick);
+      })(t0);
+      countObs.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('[data-count]').forEach(function (el) { countObs.observe(el); });
+
+  // ── WORK HOVER PREVIEW ───────────────────
+  const preview = document.getElementById('work-preview');
+  document.querySelectorAll('.work-item[data-img]').forEach(function (item) {
+    item.addEventListener('mouseenter', function () {
+      preview.src = this.dataset.img;
+      preview.classList.add('show');
+    });
+    item.addEventListener('mousemove', function (e) {
+      const x = e.clientX + 28;
+      const y = e.clientY - 90;
+      preview.style.left = Math.min(x, window.innerWidth - 280) + 'px';
+      preview.style.top  = Math.max(y, 10) + 'px';
+    });
+    item.addEventListener('mouseleave', function () {
+      preview.classList.remove('show');
+    });
+  });
+
+  // ── TESTIMONIALS DRAG ────────────────────
+  const track  = document.getElementById('testi-track');
+  const slider = document.getElementById('testi-slider');
+  if (track && slider) {
+    let down = false, startX = 0, scrollL = 0;
+    track.addEventListener('mousedown',  function (e) {
+      down = true; startX = e.pageX - track.offsetLeft;
+      scrollL = track.scrollLeft;
+      slider.style.animationPlayState = 'paused';
+    });
+    track.addEventListener('mouseleave', function () {
+      down = false;
+      slider.style.animationPlayState = 'running';
+    });
+    track.addEventListener('mouseup', function () {
+      down = false;
+      slider.style.animationPlayState = 'running';
+    });
+    track.addEventListener('mousemove', function (e) {
+      if (!down) return;
+      e.preventDefault();
+      track.scrollLeft = scrollL - (e.pageX - track.offsetLeft - startX) * 1.5;
+    });
+    track.addEventListener('mouseenter', function () {
+      slider.style.animationPlayState = 'paused';
+    });
+  }
+
+})();
+</script>
 
 </body>
 </html>
