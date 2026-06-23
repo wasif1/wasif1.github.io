@@ -12,7 +12,7 @@
     .filter-tabs { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:48px; }
     .filter-tab { padding:9px 20px; border-radius:999px; font-size:13.5px; font-weight:600; font-family:'DM Sans',sans-serif; border:1.5px solid var(--gray-200); color:var(--gray-600); cursor:pointer; transition:all var(--transition); }
     .filter-tab.active, .filter-tab:hover { background:var(--primary); color:var(--white); border-color:var(--primary); }
-    .work-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:28px; }
+    .work-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr)); gap:28px; }
     .work-card { border-radius:var(--radius-xl); overflow:hidden; background:var(--white); box-shadow:0 1px 3px rgba(0,0,0,.06),0 8px 32px rgba(0,0,0,.07); transition:all var(--transition); }
     .work-card:hover { transform:translateY(-4px); box-shadow:0 12px 48px rgba(79,110,247,.13); }
     .work-thumb-wrap { width:100%; aspect-ratio:16/9; overflow:hidden; background:var(--gray-100); }
