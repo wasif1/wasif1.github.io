@@ -3,15 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio & Case Studies — CodeFoundri</title>
-  <meta name="description" content="Real products, real results. Explore CodeFoundri's case studies across SaaS, AI, logistics, healthcare, e-commerce, and business automation.">
+  <title>Portfolio & Work — CodeFoundri</title>
+  <meta name="description" content="Real products shipped for real clients. Browse mobile apps, marketplaces, and enterprise software built by CodeFoundri — 35+ products across 9+ years.">
   <meta property="og:title" content="Portfolio — CodeFoundri">
-  <meta property="og:description" content="35+ products shipped. Browse our case studies and see the measurable results we've delivered for clients worldwide.">
+  <meta property="og:description" content="35+ products shipped. Browse the work we've delivered for clients across e-commerce, ride-sharing, enterprise, and more.">
   <link rel="stylesheet" href="css/main.css">
   <style>
     .filter-tabs { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:48px; }
     .filter-tab { padding:9px 20px; border-radius:999px; font-size:13.5px; font-weight:600; font-family:'DM Sans',sans-serif; border:1.5px solid var(--gray-200); color:var(--gray-600); cursor:pointer; transition:all var(--transition); }
     .filter-tab.active, .filter-tab:hover { background:var(--primary); color:var(--white); border-color:var(--primary); }
+    .work-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:28px; }
+    .work-card { border-radius:var(--radius-xl); overflow:hidden; background:var(--white); box-shadow:0 1px 3px rgba(0,0,0,.06),0 8px 32px rgba(0,0,0,.07); transition:all var(--transition); }
+    .work-card:hover { transform:translateY(-4px); box-shadow:0 12px 48px rgba(79,110,247,.13); }
+    .work-thumb-wrap { width:100%; aspect-ratio:16/9; overflow:hidden; background:var(--gray-100); }
+    .work-thumb-wrap img { width:100%; height:100%; object-fit:cover; object-position:top center; transition:transform .4s ease; }
+    .work-card:hover .work-thumb-wrap img { transform:scale(1.04); }
+    .work-body { padding:24px 28px 28px; }
+    .work-tags { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+    .work-tag { padding:3px 11px; border-radius:999px; font-size:11.5px; font-weight:600; background:var(--gray-100); color:var(--gray-600); font-family:'DM Sans',sans-serif; }
+    .work-body h3 { font-size:1.1rem; margin-bottom:8px; }
+    .work-body p { font-size:0.9rem; color:var(--gray-600); line-height:1.65; margin-bottom:16px; }
+    .work-link { display:inline-flex; align-items:center; gap:6px; font-size:13.5px; font-weight:700; color:var(--primary); font-family:'DM Sans',sans-serif; text-decoration:none; transition:gap var(--transition); }
+    .work-link:hover { gap:10px; }
+    .work-metric-row { display:flex; gap:20px; margin-bottom:16px; }
+    .work-metric { font-size:13px; color:var(--gray-600); }
+    .work-metric strong { display:block; font-size:1.15rem; font-weight:800; color:var(--dark); font-family:'DM Sans',sans-serif; }
   </style>
 </head>
 <body>
@@ -43,113 +59,151 @@
 <section class="page-hero">
   <div class="wrap">
     <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>Portfolio</div>
-    <span class="label label-white">Case Studies</span>
-    <h1>Products That Move <br>Business Forward</h1>
-    <p>We measure success in business outcomes, not just code delivered. Every case study below represents a product that generates real, measurable results.</p>
+    <span class="label label-white">Our Work</span>
+    <h1>Products Shipped.<br>Results Delivered.</h1>
+    <p>From consumer apps with 500K+ downloads to enterprise tools used daily inside Fortune-recognized firms — here's a selection of what we've built.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <div class="filter-tabs anim">
-      <button class="filter-tab active">All Projects</button>
-      <button class="filter-tab">AI & Automation</button>
-      <button class="filter-tab">SaaS</button>
-      <button class="filter-tab">Mobile</button>
-      <button class="filter-tab">Web Apps</button>
-      <button class="filter-tab">Enterprise</button>
+      <button class="filter-tab active" data-filter="all">All Projects</button>
+      <button class="filter-tab" data-filter="mobile">Mobile Apps</button>
+      <button class="filter-tab" data-filter="ecommerce">E-Commerce</button>
+      <button class="filter-tab" data-filter="marketplace">Marketplace</button>
+      <button class="filter-tab" data-filter="enterprise">Enterprise</button>
     </div>
 
-    <div class="portfolio-grid">
+    <div class="work-grid" id="work-grid">
 
-      <div class="portfolio-card anim anim-delay-1">
-        <div class="portfolio-thumb" style="font-size:56px;">🤖</div>
-        <div class="portfolio-body">
-          <div class="portfolio-tags"><span class="tag">AI / LLM</span><span class="tag">SaaS</span><span class="tag">Node.js</span><span class="tag">React</span></div>
-          <h3>AI Customer Support Platform</h3>
-          <p>Built an omnichannel AI support platform that handles 10,000+ customer conversations per day using GPT-4 with company-specific RAG knowledge retrieval. Replaced a 24-person support team without reducing CSAT.</p>
-          <div class="portfolio-metrics">
-            <div class="p-metric"><strong>73%</strong><span>Cost reduction</span></div>
-            <div class="p-metric"><strong>4.8★</strong><span>CSAT score</span></div>
-            <div class="p-metric"><strong>10k+</strong><span>Daily chats</span></div>
+      <div class="work-card anim anim-delay-1" data-cat="mobile ecommerce">
+        <div class="work-thumb-wrap">
+          <img src="images/project/lifepharmacy.png" alt="Life Pharmacy Android App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">E-Commerce</span><span class="work-tag">UAE</span></div>
+          <h3>Life Pharmacy</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>500K+</strong>Downloads</div>
+            <div class="work-metric"><strong>4.7★</strong>Play Store</div>
+            <div class="work-metric"><strong>UAE</strong>Market</div>
           </div>
+          <p>Full-featured pharmacy e-commerce app for one of the UAE's largest pharmacy chains. Prescription uploads, real-time stock, loyalty rewards, and same-day delivery tracking.</p>
+          <a href="https://play.google.com/store/search?q=lifepharmacy&c=apps" target="_blank" rel="noopener" class="work-link">View on Play Store <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></a>
         </div>
       </div>
 
-      <div class="portfolio-card anim anim-delay-2">
-        <div class="portfolio-thumb" style="font-size:56px;">📊</div>
-        <div class="portfolio-body">
-          <div class="portfolio-tags"><span class="tag">SaaS</span><span class="tag">CRM</span><span class="tag">React</span><span class="tag">PostgreSQL</span></div>
-          <h3>SaaS CRM & Sales Pipeline Manager</h3>
-          <p>Multi-tenant CRM built for B2B sales teams — deal pipelines, automated email sequences, revenue forecasting, and native Slack/Zoom integrations. Now serving 500+ tenant organizations.</p>
-          <div class="portfolio-metrics">
-            <div class="p-metric"><strong>500+</strong><span>Active tenants</span></div>
-            <div class="p-metric"><strong>2.1M+</strong><span>Deals tracked</span></div>
-            <div class="p-metric"><strong>99.9%</strong><span>Uptime</span></div>
+      <div class="work-card anim anim-delay-2" data-cat="mobile">
+        <div class="work-thumb-wrap">
+          <img src="images/project/newsreels.png" alt="Newsreels Short-form Video App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Short-form Video</span><span class="work-tag">Media</span></div>
+          <h3>Newsreels</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Video</strong>Platform</div>
+            <div class="work-metric"><strong>Real-time</strong>Feed</div>
           </div>
+          <p>Short-form news video platform — curated video feed, topic subscriptions, offline viewing, push notifications, and a creator-facing content management dashboard.</p>
+          <a href="https://www.newsreels.app/" target="_blank" rel="noopener" class="work-link">Visit Website <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></a>
         </div>
       </div>
 
-      <div class="portfolio-card anim anim-delay-3">
-        <div class="portfolio-thumb" style="font-size:56px;">🚚</div>
-        <div class="portfolio-body">
-          <div class="portfolio-tags"><span class="tag">Logistics</span><span class="tag">Flutter</span><span class="tag">Maps API</span><span class="tag">Node.js</span></div>
-          <h3>Fleet & Logistics Management System</h3>
-          <p>Real-time GPS tracking, automated dispatch, driver mobile apps, and client-facing delivery portals. Deployed for a regional freight company managing 340 vehicles across 6 states.</p>
-          <div class="portfolio-metrics">
-            <div class="p-metric"><strong>340</strong><span>Vehicles tracked</span></div>
-            <div class="p-metric"><strong>28%</strong><span>Fuel savings</span></div>
-            <div class="p-metric"><strong>2 min</strong><span>Avg. dispatch</span></div>
+      <div class="work-card anim anim-delay-3" data-cat="mobile">
+        <div class="work-thumb-wrap">
+          <img src="images/project/passenger.png" alt="Ziro Ride Passenger App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Ride Sharing</span><span class="work-tag">Maps</span></div>
+          <h3>Ziro Ride — Passenger</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Real-time</strong>GPS Tracking</div>
+            <div class="work-metric"><strong>In-app</strong>Payments</div>
           </div>
+          <p>Passenger-side Android app for a ride-hailing platform — live driver tracking, fare estimation, ride scheduling, in-app wallet, and multi-stop booking.</p>
         </div>
       </div>
 
-      <div class="portfolio-card anim anim-delay-1">
-        <div class="portfolio-thumb" style="font-size:56px;">🏥</div>
-        <div class="portfolio-body">
-          <div class="portfolio-tags"><span class="tag">Healthcare</span><span class="tag">React Native</span><span class="tag">HIPAA</span><span class="tag">AWS</span></div>
-          <h3>Telemedicine & Patient Engagement Platform</h3>
-          <p>Full telemedicine suite with video consultations, prescription management, appointment scheduling, and EHR integrations. HIPAA-compliant architecture on AWS with end-to-end encryption.</p>
-          <div class="portfolio-metrics">
-            <div class="p-metric"><strong>18k</strong><span>Monthly consults</span></div>
-            <div class="p-metric"><strong>4.9★</strong><span>App store rating</span></div>
-            <div class="p-metric"><strong>62%</strong><span>No-show reduction</span></div>
+      <div class="work-card anim anim-delay-1" data-cat="mobile">
+        <div class="work-thumb-wrap">
+          <img src="images/project/captain.png" alt="Ziro Ride Captain Driver App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Ride Sharing</span><span class="work-tag">Driver App</span></div>
+          <h3>Ziro Ride — Captain</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Offline</strong>First</div>
+            <div class="work-metric"><strong>Earnings</strong>Dashboard</div>
           </div>
+          <p>Driver-side app for the same ride-hailing platform — ride acceptance queue, turn-by-turn navigation, daily earnings tracking, and document verification onboarding flow.</p>
         </div>
       </div>
 
-      <div class="portfolio-card anim anim-delay-2">
-        <div class="portfolio-thumb" style="font-size:56px;">🛒</div>
-        <div class="portfolio-body">
-          <div class="portfolio-tags"><span class="tag">E-Commerce</span><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">Elasticsearch</span></div>
-          <h3>Multi-Vendor E-Commerce Marketplace</h3>
-          <p>Custom marketplace platform with vendor onboarding, commission management, AI product recommendations, and real-time inventory sync. Supports 1,200+ active sellers and 3M+ SKUs.</p>
-          <div class="portfolio-metrics">
-            <div class="p-metric"><strong>1,200+</strong><span>Active vendors</span></div>
-            <div class="p-metric"><strong>3M+</strong><span>Products listed</span></div>
-            <div class="p-metric"><strong>41%</strong><span>Revenue uplift</span></div>
+      <div class="work-card anim anim-delay-2" data-cat="mobile marketplace ecommerce">
+        <div class="work-thumb-wrap">
+          <img src="images/project/buyer_anytyre.png" alt="AnyTyre Buyer App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Marketplace</span><span class="work-tag">Automotive</span></div>
+          <h3>AnyTyre — Buyer</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>B2C</strong>Marketplace</div>
+            <div class="work-metric"><strong>Multi-vendor</strong>Checkout</div>
           </div>
+          <p>Buyer-side app for an automotive tyre marketplace — vehicle profile matching, size compatibility search, price comparison across vendors, and slot-based installation booking.</p>
         </div>
       </div>
 
-      <div class="portfolio-card anim anim-delay-3">
-        <div class="portfolio-thumb" style="font-size:56px;">⚙️</div>
-        <div class="portfolio-body">
-          <div class="portfolio-tags"><span class="tag">Automation</span><span class="tag">AI</span><span class="tag">ERP Integration</span><span class="tag">Python</span></div>
-          <h3>Enterprise Business Automation Platform</h3>
-          <p>Automated invoice processing, approval workflows, vendor management, and financial reconciliation — integrating with SAP, QuickBooks, and 12 internal tools. Saved 2,400 person-hours per month.</p>
-          <div class="portfolio-metrics">
-            <div class="p-metric"><strong>2,400h</strong><span>Saved per month</span></div>
-            <div class="p-metric"><strong>99.2%</strong><span>Processing accuracy</span></div>
-            <div class="p-metric"><strong>6 week</strong><span>ROI achieved</span></div>
+      <div class="work-card anim anim-delay-3" data-cat="mobile marketplace">
+        <div class="work-thumb-wrap">
+          <img src="images/project/seller_anytyre.png" alt="AnyTyre Seller App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Marketplace</span><span class="work-tag">Seller Tool</span></div>
+          <h3>AnyTyre — Seller</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Inventory</strong>Management</div>
+            <div class="work-metric"><strong>Order</strong>Fulfillment</div>
           </div>
+          <p>Seller-side companion app for tyre vendors — inventory management, order queue, installation slot scheduling, and revenue reporting for workshop owners.</p>
+        </div>
+      </div>
+
+      <div class="work-card anim anim-delay-1" data-cat="mobile enterprise">
+        <div class="work-thumb-wrap">
+          <img src="images/project/ey_pk1.png" alt="EY Pakistan Enterprise App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Enterprise</span><span class="work-tag">Big 4</span></div>
+          <h3>EY Pakistan</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Enterprise</strong>Grade</div>
+            <div class="work-metric"><strong>Secure</strong>Internal Tool</div>
+          </div>
+          <p>Internal enterprise Android application for Ernst & Young Pakistan — secure document access, approval workflows, and team collaboration tools for professional services staff.</p>
+        </div>
+      </div>
+
+      <div class="work-card anim anim-delay-2" data-cat="mobile ecommerce">
+        <div class="work-thumb-wrap">
+          <img src="images/project/performance.png" alt="Life Pharmacy Performance Stats" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Performance</span><span class="work-tag">Scale</span></div>
+          <h3>Life Pharmacy — At Scale</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>4.7★</strong>Rating</div>
+            <div class="work-metric"><strong>500K+</strong>Downloads</div>
+          </div>
+          <p>After launch, we continued optimizing Life Pharmacy for sustained Play Store performance — app size reduction, cold-start improvements, crash rate monitoring, and a maintained 4.7★ rating at scale.</p>
         </div>
       </div>
 
     </div>
 
     <div style="text-align:center;margin-top:64px;" class="anim">
-      <p style="color:var(--gray-600);margin-bottom:24px;">These are 6 of 35+ products we've built. Want to see work relevant to your industry?</p>
+      <p style="color:var(--gray-600);margin-bottom:24px;">This is a public selection. We've shipped 35+ products — many under NDA. Want to see work specific to your industry?</p>
       <a href="contact.html" class="btn btn-primary">Request a Portfolio Review</a>
     </div>
   </div>
@@ -159,7 +213,7 @@
   <div class="wrap">
     <div class="cta-banner anim">
       <h2>Your Product Could Be Next</h2>
-      <p>Tell us what you're building and we'll show you relevant work from our portfolio — including projects we can't list publicly.</p>
+      <p>Tell us what you're building and we'll show you the most relevant work from our portfolio — including projects we can't list publicly.</p>
       <div class="cta-btns">
         <a href="contact.html" class="btn btn-primary">Start Your Project</a>
         <a href="contact.html" class="btn btn-ghost-white">Request NDA Portfolio</a>
@@ -182,10 +236,17 @@
 <script src="js/main.js"></script>
 <script>
 document.getElementById('copy-year').textContent = new Date().getFullYear();
-document.querySelectorAll('.filter-tab').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+const tabs = document.querySelectorAll('.filter-tab');
+const cards = document.querySelectorAll('.work-card[data-cat]');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const f = tab.dataset.filter;
+    cards.forEach(card => {
+      const cats = card.dataset.cat || '';
+      card.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
+    });
   });
 });
 </script>
