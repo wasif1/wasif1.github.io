@@ -17,7 +17,7 @@
 <div id="glow"></div>
 
 <!-- Hover preview for work items -->
-<img id="work-preview" src="" alt="Project preview">
+<img id="work-preview" alt="" style="display:none">
 
 <!-- Scroll progress bar -->
 <div id="prog"></div>
@@ -93,7 +93,7 @@
         <span class="hero-stat-lbl">Years Exp.</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-num" data-count="20">0</span>+
+        <span class="hero-stat-num" data-count="35">0</span>+
         <span class="hero-stat-lbl">Apps Shipped</span>
       </div>
       <div class="hero-stat">
@@ -195,7 +195,7 @@
             <span class="stat-card-lbl">Years of Experience</span>
           </div>
           <div class="stat-card">
-            <span class="stat-card-num" data-count="20">20</span>+
+            <span class="stat-card-num" data-count="35">35</span>+
             <span class="stat-card-lbl">Apps Shipped</span>
           </div>
           <div class="stat-card">
@@ -423,7 +423,7 @@
             <div>
               <div class="tl-role">Freelance Developer <span class="tl-badge">2 yrs</span></div>
               <div class="tl-org">Fiverr · Upwork · Remote</div>
-              <p class="tl-desc">20+ Android apps delivered for global clients with 5★ ratings.</p>
+              <p class="tl-desc">35+ Android apps delivered for global clients with 5★ ratings.</p>
             </div>
           </div>
         </div>
@@ -731,23 +731,29 @@
   }, { threshold: 0.6 });
   document.querySelectorAll('[data-count]').forEach(function (el) { countObs.observe(el); });
 
-  // ── WORK HOVER PREVIEW ───────────────────
+  // ── WORK HOVER PREVIEW (desktop only) ────
   const preview = document.getElementById('work-preview');
-  document.querySelectorAll('.work-item[data-img]').forEach(function (item) {
-    item.addEventListener('mouseenter', function () {
-      preview.src = this.dataset.img;
-      preview.classList.add('show');
+  if (window.matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll('.work-item[data-img]').forEach(function (item) {
+      item.addEventListener('mouseenter', function () {
+        preview.src = this.dataset.img;
+        preview.style.display = 'block';
+        requestAnimationFrame(function () { preview.classList.add('show'); });
+      });
+      item.addEventListener('mousemove', function (e) {
+        const x = e.clientX + 28;
+        const y = e.clientY - 90;
+        preview.style.left = Math.min(x, window.innerWidth - 280) + 'px';
+        preview.style.top  = Math.max(y, 10) + 'px';
+      });
+      item.addEventListener('mouseleave', function () {
+        preview.classList.remove('show');
+        setTimeout(function () {
+          if (!preview.classList.contains('show')) preview.style.display = 'none';
+        }, 300);
+      });
     });
-    item.addEventListener('mousemove', function (e) {
-      const x = e.clientX + 28;
-      const y = e.clientY - 90;
-      preview.style.left = Math.min(x, window.innerWidth - 280) + 'px';
-      preview.style.top  = Math.max(y, 10) + 'px';
-    });
-    item.addEventListener('mouseleave', function () {
-      preview.classList.remove('show');
-    });
-  });
+  }
 
   // ── TESTIMONIALS DRAG ────────────────────
   const track  = document.getElementById('testi-track');
