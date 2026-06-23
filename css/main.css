@@ -990,6 +990,9 @@ select.form-input { appearance: none; cursor: pointer; }
   .footer-grid         { grid-template-columns: 1fr 1fr; gap: 36px; }
 }
 @media (max-width: 768px) {
+  .nav-links  { display: none; }
+  .nav-ctas   { display: none; }
+  .nav-toggle { display: flex; }
   h1 { font-size: 2.2rem; }
   h2 { font-size: 1.8rem; }
   .section { padding: 64px 0; }
