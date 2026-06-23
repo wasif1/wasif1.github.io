@@ -1,790 +1,793 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Wasif Mujahid — Principal Engineer. 9+ years building Android apps, SaaS platforms, and scalable software. Based in Dubai, UAE.">
-  <meta name="author" content="Wasif Mujahid">
-  <title>Wasif Mujahid — Principal Engineer</title>
-  <!-- Force HTTPS -->
-  <script>if(location.protocol==='http:'&&location.hostname!=='localhost'&&location.hostname!=='127.0.0.1')location.replace('https:'+location.href.slice(5));</script>
-  <link rel="stylesheet" href="css/tooplate-style.css">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeFoundri — Custom Software, SaaS & AI Development Company</title>
+  <meta name="description" content="CodeFoundri is a premium software engineering company building scalable web apps, mobile apps, SaaS platforms, and AI-powered solutions for startups, SMEs, and enterprises.">
+  <meta name="keywords" content="custom software development, SaaS development, web application development, mobile app development, AI automation, software agency">
+  <!-- OG -->
+  <meta property="og:title" content="CodeFoundri — Building Scalable Software, AI Solutions & Digital Products">
+  <meta property="og:description" content="Partner with CodeFoundri to design, build, and scale world-class digital products. Custom software, SaaS, mobile apps, and AI solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://codefoundri.com">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CodeFoundri",
+    "url": "https://codefoundri.com",
+    "description": "Premium software engineering company specializing in custom software, SaaS platforms, web & mobile apps, and AI solutions.",
+    "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "email": "hello@codefoundri.com" },
+    "sameAs": ["https://linkedin.com/company/codefoundri", "https://twitter.com/codefoundri"]
+  }
+  </script>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<!-- Cursor spotlight -->
-<div id="glow"></div>
-
-<!-- Hover preview for work items -->
-<img id="work-preview" alt="" style="display:none">
-
-<!-- Scroll progress bar -->
-<div id="prog"></div>
-
-
-<!-- ══════════════════════════════════
-     NAVBAR
-     ══════════════════════════════════ -->
+<!-- ════════════════ NAV ════════════════ -->
 <nav id="nav">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo">Wasif<span>.</span></a>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Code<span>Foundri</span></a>
+
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#expertise">Expertise</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#resume">Timeline</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item">
+        <a href="services.html" class="nav-link">
+          Services
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+        </a>
+        <div class="nav-dropdown">
+          <a href="services/custom-software.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>Custom Software Development</a>
+          <a href="services/saas-development.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>SaaS Development</a>
+          <a href="services/web-development.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3"/></svg>Web Application Development</a>
+          <a href="services/mobile-development.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3"/></svg>Mobile App Development</a>
+          <a href="services/ai-automation.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>AI & Automation Solutions</a>
+          <a href="services/api-integrations.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>API Development & Integrations</a>
+          <a href="services/dedicated-teams.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07"/></svg>Dedicated Engineering Teams</a>
+          <a href="services/consulting.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>Technical Consulting</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+      <li class="nav-item"><a href="technologies.html" class="nav-link">Technologies</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
     </ul>
-    <a href="#contact" class="nav-hire">Hire Me</a>
+
+    <div class="nav-ctas">
+      <a href="contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+    </div>
+
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-      <span></span><span></span>
+      <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<div class="mobile-nav" id="mobile-nav">
-  <a href="#about">About</a>
-  <a href="#expertise">Expertise</a>
-  <a href="#work">Work</a>
-  <a href="#resume">Timeline</a>
-  <a href="#contact">Contact</a>
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+  <a href="about.html" class="mob-link">About</a>
+  <a href="services.html" class="mob-link">Services</a>
+  <div class="mob-sub">
+    <a href="services/custom-software.html">Custom Software Development</a>
+    <a href="services/saas-development.html">SaaS Development</a>
+    <a href="services/web-development.html">Web Application Development</a>
+    <a href="services/mobile-development.html">Mobile App Development</a>
+    <a href="services/ai-automation.html">AI & Automation Solutions</a>
+    <a href="services/dedicated-teams.html">Dedicated Engineering Teams</a>
+  </div>
+  <a href="portfolio.html" class="mob-link">Portfolio</a>
+  <a href="industries.html" class="mob-link">Industries</a>
+  <a href="technologies.html" class="mob-link">Technologies</a>
+  <a href="careers.html" class="mob-link">Careers</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+  <div style="margin-top:20px;">
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+  </div>
 </div>
 
-
-<!-- ══════════════════════════════════
-     HERO
-     ══════════════════════════════════ -->
-<section id="hero">
-  <div class="hero-blob hero-blob-1"></div>
-  <div class="hero-blob hero-blob-2"></div>
-
-  <div class="wrap hero-content">
-
-    <div class="hero-avail anim" data-d="1">
-      <span class="avail-dot"></span>
-      Available for new projects
-    </div>
-
-    <h1 class="hero-name anim" data-d="2">
-      WASIF<br><em>MUJAHID.</em>
-    </h1>
-
-    <div class="hero-meta anim" data-d="3">
-      <span class="hero-role">Principal Engineer</span>
-      <span class="hero-sep"></span>
-      <span class="hero-role">Dubai, UAE</span>
-      <span class="hero-sep"></span>
-      <span class="hero-role">9+ Years</span>
-    </div>
-
-    <div class="hero-ctas anim" data-d="4">
-      <a href="doc/wasif_cv.pdf" download="wasif_cv.pdf" target="_blank" class="btn-main">
-        <i class="uil uil-file-alt"></i> Download CV
-      </a>
-      <a href="#contact" class="btn-ghost">
-        Let's Talk <i class="uil uil-arrow-right"></i>
-      </a>
-    </div>
-
-    <div class="hero-stats anim" data-d="5">
-      <div class="hero-stat">
-        <span class="hero-stat-num" data-count="9">0</span>+
-        <span class="hero-stat-lbl">Years Exp.</span>
+<!-- ════════════════ HERO ════════════════ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span></span> Trusted by 80+ companies worldwide
+        </div>
+        <h1>Building <em>Scalable Software,</em> AI Solutions & Digital Products</h1>
+        <p class="hero-desc">We engineer high-performance web applications, mobile apps, SaaS platforms, and AI-powered systems that help ambitious companies grow faster and operate smarter.</p>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            Start Your Project
+          </a>
+          <a href="portfolio.html" class="btn btn-ghost-white">View Our Work</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num"><span data-count="9" data-suffix="+">0</span></div>
+            <div class="hero-stat-lbl">Years of Engineering</div>
+          </div>
+          <div>
+            <div class="hero-stat-num"><span data-count="35" data-suffix="+">0</span></div>
+            <div class="hero-stat-lbl">Products Shipped</div>
+          </div>
+          <div>
+            <div class="hero-stat-num"><span data-count="98" data-suffix="%">0</span></div>
+            <div class="hero-stat-lbl">Client Retention</div>
+          </div>
+          <div>
+            <div class="hero-stat-num"><span data-count="80" data-suffix="+">0</span></div>
+            <div class="hero-stat-lbl">Global Clients</div>
+          </div>
+        </div>
       </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num" data-count="35">0</span>+
-        <span class="hero-stat-lbl">Apps Shipped</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num" data-count="3">0</span>
-        <span class="hero-stat-lbl">Countries</span>
-      </div>
-      <div class="hero-stat">
-        <span class="hero-stat-num">5★</span>
-        <span class="hero-stat-lbl">Client Rating</span>
+
+      <div class="hero-visual" style="position:relative;">
+        <div class="hero-float hero-float-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+          AI-Powered Systems
+        </div>
+        <div class="hero-cards-grid">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+              </div>
+              <h4>Custom Software</h4>
+            </div>
+            <p>Tailor-made solutions built for your exact business logic and scale.</p>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>
+              </div>
+              <h4>SaaS Platforms</h4>
+            </div>
+            <p>Subscription-ready, multi-tenant SaaS products built to scale.</p>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5"/></svg>
+              </div>
+              <h4>Mobile Apps</h4>
+            </div>
+            <p>Native & cross-platform mobile experiences users love.</p>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+              </div>
+              <h4>AI & Automation</h4>
+            </div>
+            <p>Intelligent automation and AI integrations that cut costs and accelerate growth.</p>
+          </div>
+        </div>
+        <div class="hero-float hero-float-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+          35+ Products Shipped
+        </div>
       </div>
     </div>
-
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════
-     MARQUEE STRIP
-     ══════════════════════════════════ -->
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <!-- Set 1 -->
-    <span>Android</span><span class="dot">·</span>
-    <span>Kotlin</span><span class="dot">·</span>
-    <span>Java</span><span class="dot">·</span>
-    <span>Node.js</span><span class="dot">·</span>
-    <span>React</span><span class="dot">·</span>
-    <span>Next.js</span><span class="dot">·</span>
-    <span>AWS</span><span class="dot">·</span>
-    <span>Docker</span><span class="dot">·</span>
-    <span>PostgreSQL</span><span class="dot">·</span>
-    <span>Redis</span><span class="dot">·</span>
-    <span>AI / LLMs</span><span class="dot">·</span>
-    <span>Firebase</span><span class="dot">·</span>
-    <span>REST API</span><span class="dot">·</span>
-    <span>GraphQL</span><span class="dot">·</span>
-    <span>System Design</span><span class="dot">·</span>
-    <span>CI/CD</span><span class="dot">·</span>
-    <!-- Set 2 (duplicate for seamless loop) -->
-    <span>Android</span><span class="dot">·</span>
-    <span>Kotlin</span><span class="dot">·</span>
-    <span>Java</span><span class="dot">·</span>
-    <span>Node.js</span><span class="dot">·</span>
-    <span>React</span><span class="dot">·</span>
-    <span>Next.js</span><span class="dot">·</span>
-    <span>AWS</span><span class="dot">·</span>
-    <span>Docker</span><span class="dot">·</span>
-    <span>PostgreSQL</span><span class="dot">·</span>
-    <span>Redis</span><span class="dot">·</span>
-    <span>AI / LLMs</span><span class="dot">·</span>
-    <span>Firebase</span><span class="dot">·</span>
-    <span>REST API</span><span class="dot">·</span>
-    <span>GraphQL</span><span class="dot">·</span>
-    <span>System Design</span><span class="dot">·</span>
-    <span>CI/CD</span><span class="dot">·</span>
-  </div>
-</div>
-
-
-<!-- ══════════════════════════════════
-     ABOUT
-     ══════════════════════════════════ -->
-<section id="about">
+<!-- ════════════════ CLIENTS ════════════════ -->
+<section class="clients">
   <div class="wrap">
-    <div class="about-grid">
+    <p class="clients-label">Trusted by teams at</p>
+    <div class="clients-track">
+      <div class="clients-logos">
+        <span class="client-logo">Nexora Health</span>
+        <span class="client-logo">FleetSync</span>
+        <span class="client-logo">Veridian Capital</span>
+        <span class="client-logo">ShopNova</span>
+        <span class="client-logo">EduBridge</span>
+        <span class="client-logo">PulseHR</span>
+        <span class="client-logo">Clarix Finance</span>
+        <span class="client-logo">Orbitra Labs</span>
+        <span class="client-logo">TruckPath</span>
+        <span class="client-logo">SkillForge</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="client-logo">Nexora Health</span>
+        <span class="client-logo">FleetSync</span>
+        <span class="client-logo">Veridian Capital</span>
+        <span class="client-logo">ShopNova</span>
+        <span class="client-logo">EduBridge</span>
+        <span class="client-logo">PulseHR</span>
+        <span class="client-logo">Clarix Finance</span>
+        <span class="client-logo">Orbitra Labs</span>
+        <span class="client-logo">TruckPath</span>
+        <span class="client-logo">SkillForge</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="about-left anim left">
-        <span class="label">// 01 About</span>
-        <h2>Engineer.<br>Builder.<br>Problem Solver.</h2>
-        <p>
-          Principal Engineer with 9+ years across Android, full-stack web, SaaS,
-          cloud infrastructure, and AI. I help startups and enterprises ship
-          reliable, production-ready products — fast.
-        </p>
-        <a href="doc/wasif_cv.pdf" download="wasif_cv.pdf" target="_blank" class="btn-main">
-          <i class="uil uil-file-alt"></i> Download CV
+<!-- ════════════════ SERVICES ════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">What We Build</span>
+      <h2>End-to-End Software Engineering Services</h2>
+      <p>From initial discovery to production deployment and beyond — we cover every dimension of modern software delivery.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card anim anim-delay-1">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+        </div>
+        <h3>Custom Software Development</h3>
+        <p>Bespoke software engineered around your unique processes, workflows, and growth targets. No templates — pure precision engineering.</p>
+        <a href="services/custom-software.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+      <div class="service-card anim anim-delay-2">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>
+        </div>
+        <h3>SaaS Development</h3>
+        <p>Multi-tenant SaaS platforms with subscription billing, role-based access, analytics dashboards, and the architecture to support thousands of concurrent users.</p>
+        <a href="services/saas-development.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+      <div class="service-card anim anim-delay-3">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3"/></svg>
+        </div>
+        <h3>Web Application Development</h3>
+        <p>Performant, scalable web apps built with modern stacks — React, Next.js, Node.js — optimized for speed, SEO, and enterprise-grade reliability.</p>
+        <a href="services/web-development.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+      <div class="service-card anim anim-delay-4">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3"/></svg>
+        </div>
+        <h3>Mobile App Development</h3>
+        <p>iOS and Android apps — native Kotlin/Swift or cross-platform Flutter/React Native — designed for exceptional user experience and long-term maintainability.</p>
+        <a href="services/mobile-development.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+      <div class="service-card anim anim-delay-1">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+        </div>
+        <h3>AI & Automation Solutions</h3>
+        <p>LLM integrations, RAG pipelines, computer vision, and intelligent automation that reduce manual workload and unlock new revenue streams.</p>
+        <a href="services/ai-automation.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+      <div class="service-card anim anim-delay-2">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+        </div>
+        <h3>API Development & Integrations</h3>
+        <p>RESTful and GraphQL APIs, third-party integrations, microservices architecture, and event-driven systems that keep your tech ecosystem connected.</p>
+        <a href="services/api-integrations.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+      <div class="service-card anim anim-delay-3">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Z"/></svg>
+        </div>
+        <h3>Dedicated Engineering Teams</h3>
+        <p>Senior engineers embedded directly into your workflow — React, Node, Flutter, AI specialists — scaling your capacity without the hiring overhead.</p>
+        <a href="services/dedicated-teams.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+      <div class="service-card anim anim-delay-4">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
+        </div>
+        <h3>Technical Consulting</h3>
+        <p>Architecture reviews, technology selection, scaling strategy, and CTO advisory for companies making critical engineering decisions.</p>
+        <a href="services/consulting.html" class="service-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ WHY CODEFOUNDRI ════════════════ -->
+<section class="section section-gray">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-left anim">
+        <span class="label">Why CodeFoundri</span>
+        <h2>Engineering Partners Who Think in Business Outcomes</h2>
+        <p>We don't just write code — we architect products that scale, iterate intelligently, and deliver measurable return on every engineering dollar spent.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-check">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            </div>
+            <div>
+              <h4>Senior-Only Engineering Team</h4>
+              <p>Every project is staffed with mid-to-senior engineers. No juniors learning on your budget.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            </div>
+            <div>
+              <h4>Scalable Architecture from Day One</h4>
+              <p>We build systems designed to handle 10x growth without emergency rewrites six months in.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            </div>
+            <div>
+              <h4>Agile Delivery with Full Transparency</h4>
+              <p>Bi-weekly sprints, Loom demos, live staging environments — you always know exactly what's happening.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-check">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            </div>
+            <div>
+              <h4>Long-Term Partnership Model</h4>
+              <p>We stay invested post-launch — roadmap planning, feature iterations, and proactive maintenance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-right anim anim-delay-2">
+        <div class="stat-card">
+          <div class="stat-num" data-count="9" data-suffix="+">0+</div>
+          <div class="stat-lbl">Years Delivering Software</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-count="35" data-suffix="+">0+</div>
+          <div class="stat-lbl">Products Shipped</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-count="98" data-suffix="%">0%</div>
+          <div class="stat-lbl">Client Retention Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-count="80" data-suffix="+">0+</div>
+          <div class="stat-lbl">Companies Served</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TECHNOLOGIES ════════════════ -->
+<section class="section section-dark">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label label-white">Technology Stack</span>
+      <h2>Modern Tools. Proven Architecture.</h2>
+      <p>We invest deeply in a curated set of technologies — mastered, not just dabbled in.</p>
+    </div>
+    <div class="tech-grid anim anim-delay-1">
+      <div class="tech-group">
+        <div class="tech-group-label">Frontend</div>
+        <span class="tech-badge"><span>⚛</span> React</span>
+        <span class="tech-badge"><span>▲</span> Next.js</span>
+        <span class="tech-badge"><span>🔷</span> TypeScript</span>
+        <span class="tech-badge"><span>💨</span> Tailwind CSS</span>
+        <span class="tech-badge"><span>🅰</span> Angular</span>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">Backend</div>
+        <span class="tech-badge"><span>🟢</span> Node.js</span>
+        <span class="tech-badge"><span>🐱</span> NestJS</span>
+        <span class="tech-badge"><span>🌿</span> Spring Boot</span>
+        <span class="tech-badge"><span>🐘</span> Laravel</span>
+        <span class="tech-badge"><span>🚂</span> Express.js</span>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">Mobile</div>
+        <span class="tech-badge"><span>🤖</span> Android</span>
+        <span class="tech-badge"><span>🎯</span> Kotlin</span>
+        <span class="tech-badge"><span>💙</span> Flutter</span>
+        <span class="tech-badge"><span>⚛</span> React Native</span>
+        <span class="tech-badge"><span>🍎</span> Swift</span>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">AI & Data</div>
+        <span class="tech-badge"><span>🤖</span> OpenAI</span>
+        <span class="tech-badge"><span>🧠</span> Claude</span>
+        <span class="tech-badge"><span>⛓</span> LangChain</span>
+        <span class="tech-badge"><span>📚</span> RAG</span>
+        <span class="tech-badge"><span>🗃</span> Pinecone</span>
+      </div>
+      <div class="tech-group">
+        <div class="tech-group-label">Databases & Infra</div>
+        <span class="tech-badge"><span>🐘</span> PostgreSQL</span>
+        <span class="tech-badge"><span>🐬</span> MySQL</span>
+        <span class="tech-badge"><span>🍃</span> MongoDB</span>
+        <span class="tech-badge"><span>🔴</span> Redis</span>
+        <span class="tech-badge"><span>☁</span> AWS</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;" class="anim anim-delay-2">
+      <a href="technologies.html" class="btn btn-ghost-white">Explore Full Tech Stack</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ INDUSTRIES ════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">Industries We Serve</span>
+      <h2>Deep Domain Knowledge Across Key Sectors</h2>
+      <p>We combine software engineering excellence with real-world industry context to build products that actually solve the problems that matter.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card anim anim-delay-1">
+        <div class="industry-icon">🏥</div>
+        <div>
+          <h3>Healthcare & MedTech</h3>
+          <p>HIPAA-aware patient portals, telemedicine platforms, clinical workflow tools, and health data integrations.</p>
+        </div>
+      </div>
+      <div class="industry-card anim anim-delay-2">
+        <div class="industry-icon">💰</div>
+        <div>
+          <h3>FinTech & Finance</h3>
+          <p>Payment platforms, lending systems, investment dashboards, and compliance-ready financial applications.</p>
+        </div>
+      </div>
+      <div class="industry-card anim anim-delay-3">
+        <div class="industry-icon">🚚</div>
+        <div>
+          <h3>Logistics & Supply Chain</h3>
+          <p>Fleet management, real-time tracking, warehouse automation, and route optimization systems.</p>
+        </div>
+      </div>
+      <div class="industry-card anim anim-delay-1">
+        <div class="industry-icon">🛒</div>
+        <div>
+          <h3>E-Commerce & Retail</h3>
+          <p>Custom storefronts, marketplace platforms, inventory management, and omnichannel commerce solutions.</p>
+        </div>
+      </div>
+      <div class="industry-card anim anim-delay-2">
+        <div class="industry-icon">🎓</div>
+        <div>
+          <h3>EdTech & Learning</h3>
+          <p>LMS platforms, live learning environments, adaptive assessments, and student engagement tools.</p>
+        </div>
+      </div>
+      <div class="industry-card anim anim-delay-3">
+        <div class="industry-icon">☁</div>
+        <div>
+          <h3>SaaS & B2B Software</h3>
+          <p>Multi-tenant platforms, subscription infrastructure, self-serve onboarding, and product analytics.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;" class="anim">
+      <a href="industries.html" class="btn btn-outline">View All Industries</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROCESS ════════════════ -->
+<section class="section section-gray">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">How We Work</span>
+      <h2>A Process Built for Predictable Outcomes</h2>
+      <p>Clarity at every stage — from the first conversation to production launch and beyond.</p>
+    </div>
+    <div class="process-steps anim anim-delay-1">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h4>Discovery & Scoping</h4>
+        <p>We audit your requirements, define technical scope, identify risks early, and produce a detailed project roadmap.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h4>Architecture & Design</h4>
+        <p>System architecture design, database schema, API contracts, and UX wireframes reviewed and approved before a line of code is written.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h4>Agile Development</h4>
+        <p>Two-week sprints with live staging deployments. You see real progress — not promises — every two weeks.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h4>QA & Security Review</h4>
+        <p>Comprehensive testing — unit, integration, load, and security audits — before anything reaches production.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">05</div>
+        <h4>Launch & Scale</h4>
+        <p>Production deployment with CI/CD pipelines, monitoring, rollback capabilities, and a clear post-launch support plan.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:56px;" class="anim anim-delay-2">
+      <a href="process.html" class="btn btn-primary">See Full Process</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PORTFOLIO ════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">Featured Work</span>
+      <h2>Products That Generate Real Business Results</h2>
+      <p>We measure success in outcomes, not deliverables. Here's a selection of what we've built and the impact it created.</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card anim anim-delay-1">
+        <div class="portfolio-thumb">🤖</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags">
+            <span class="tag">AI</span><span class="tag">SaaS</span><span class="tag">Node.js</span>
+          </div>
+          <h3>AI Customer Support Platform</h3>
+          <p>Omnichannel AI support system handling 10,000+ conversations daily with GPT-4 and RAG-powered knowledge retrieval.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>73%</strong><span>Cost reduction</span></div>
+            <div class="p-metric"><strong>4.8★</strong><span>CSAT score</span></div>
+            <div class="p-metric"><strong>10k+</strong><span>Daily chats</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card anim anim-delay-2">
+        <div class="portfolio-thumb">📊</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags">
+            <span class="tag">SaaS</span><span class="tag">React</span><span class="tag">PostgreSQL</span>
+          </div>
+          <h3>SaaS CRM & Pipeline Manager</h3>
+          <p>Multi-tenant CRM with deal pipelines, email sequences, and revenue forecasting built for 500+ B2B sales teams.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>500+</strong><span>Active tenants</span></div>
+            <div class="p-metric"><strong>2.1M+</strong><span>Deals tracked</span></div>
+            <div class="p-metric"><strong>99.9%</strong><span>Uptime</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card anim anim-delay-3">
+        <div class="portfolio-thumb">🚚</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags">
+            <span class="tag">Logistics</span><span class="tag">Flutter</span><span class="tag">Maps API</span>
+          </div>
+          <h3>Logistics & Fleet Management System</h3>
+          <p>Real-time GPS fleet tracking, automated dispatch, driver apps, and client portals for a regional logistics company.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>340</strong><span>Vehicles tracked</span></div>
+            <div class="p-metric"><strong>28%</strong><span>Fuel savings</span></div>
+            <div class="p-metric"><strong>2min</strong><span>Avg. dispatch time</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;" class="anim">
+      <a href="portfolio.html" class="btn btn-outline">View All Case Studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TESTIMONIALS ════════════════ -->
+<section class="section section-gray">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">Client Testimonials</span>
+      <h2>What Our Partners Say</h2>
+    </div>
+  </div>
+  <div class="testi-wrapper anim anim-delay-1">
+    <div class="testi-track">
+      <!-- Set 1 -->
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"CodeFoundri didn't just build our platform — they challenged our assumptions, improved our architecture, and delivered a product that's scaled to 12,000 users without a single critical incident."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">AS</div>
+          <div><strong>Adam Sullivan</strong><span>CTO, PulseHR</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"We had tried two other agencies before CodeFoundri. The difference was night and day — clear communication, senior engineers who actually understood our business, and a product that launched on time."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">MK</div>
+          <div><strong>Maria Kim</strong><span>Founder, EduBridge</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"Our AI integration project was genuinely complex. CodeFoundri's team understood LLMs, vector search, and real-world production constraints — not just the hype. The result exceeded our expectations."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">RJ</div>
+          <div><strong>Rahul Joshi</strong><span>VP Product, Clarix Finance</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"The dedicated team model worked perfectly for us. It felt like hiring in-house engineers at a fraction of the cost — they joined standups, knew our codebase deeply, and shipped consistently every sprint."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">SO</div>
+          <div><strong>Sara O'Brien</strong><span>CEO, ShopNova</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"I've worked with offshore teams for 8 years and CodeFoundri is the first that genuinely operates at a senior level across the entire stack. Our Flutter app is the highest-rated in our category."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">TC</div>
+          <div><strong>Tom Chen</strong><span>Product Manager, FleetSync</span></div>
+        </div>
+      </div>
+      <!-- Duplicate for loop -->
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"CodeFoundri didn't just build our platform — they challenged our assumptions, improved our architecture, and delivered a product that's scaled to 12,000 users without a single critical incident."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">AS</div>
+          <div><strong>Adam Sullivan</strong><span>CTO, PulseHR</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"We had tried two other agencies before CodeFoundri. The difference was night and day — clear communication, senior engineers who actually understood our business, and a product that launched on time."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">MK</div>
+          <div><strong>Maria Kim</strong><span>Founder, EduBridge</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"Our AI integration project was genuinely complex. CodeFoundri's team understood LLMs, vector search, and real-world production constraints — not just the hype. The result exceeded our expectations."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">RJ</div>
+          <div><strong>Rahul Joshi</strong><span>VP Product, Clarix Finance</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"The dedicated team model worked perfectly for us. It felt like hiring in-house engineers at a fraction of the cost — they joined standups, knew our codebase deeply, and shipped consistently every sprint."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">SO</div>
+          <div><strong>Sara O'Brien</strong><span>CEO, ShopNova</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>"I've worked with offshore teams for 8 years and CodeFoundri is the first that genuinely operates at a senior level across the entire stack. Our Flutter app is the highest-rated in our category."</blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar">TC</div>
+          <div><strong>Tom Chen</strong><span>Product Manager, FleetSync</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FAQ ════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">FAQ</span>
+      <h2>Common Questions, Honest Answers</h2>
+    </div>
+    <div class="faq-list anim anim-delay-1">
+      <div class="faq-item">
+        <button class="faq-q">How much does custom software development cost?<div class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></div></button>
+        <div class="faq-a">Project costs vary based on complexity, team size, and timeline. Simple web applications typically start around $15,000–$30,000. Complex SaaS platforms or AI-integrated products range from $50,000–$200,000+. We provide detailed estimates during discovery — no guesswork.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How long does it take to build a software product?<div class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></div></button>
+        <div class="faq-a">An MVP typically takes 8–16 weeks depending on scope. A full-featured SaaS platform may take 4–9 months. We break delivery into two-week sprints so you see working software quickly, not at the very end.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you work with early-stage startups or only established companies?<div class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></div></button>
+        <div class="faq-a">Both. We work with pre-seed startups building their first MVP, growth-stage companies scaling their platforms, and enterprises modernizing legacy systems. Each engagement is scoped appropriately for where you are.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What happens after the project launches?<div class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></div></button>
+        <div class="faq-a">All projects include a 30-day post-launch support window. We offer ongoing maintenance retainers, feature development packages, and dedicated team arrangements — most clients continue working with us long after launch.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can you build AI features into an existing product?<div class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></div></button>
+        <div class="faq-a">Yes. We integrate GPT-4, Claude, open-source LLMs, RAG pipelines, and vector search into existing systems. We start with an audit of your current stack to identify the highest-ROI AI integration points.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you sign NDAs and provide source code ownership?<div class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></div></button>
+        <div class="faq-a">Absolutely. All clients receive a mutual NDA, full IP ownership of all developed code, and access to all repositories from day one. Your code is always yours.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;" class="anim">
+      <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CTA ════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-banner anim">
+      <h2>Ready to Build Something Remarkable?</h2>
+      <p>Tell us what you're building. We'll tell you exactly how to make it work — and then build it.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary" style="font-size:16px;padding:16px 32px;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          Start Your Project
         </a>
-
-        <div class="skill-tags">
-          <span class="skill-tag">Kotlin</span>
-          <span class="skill-tag">Jetpack Compose</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">AWS</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Redis</span>
-          <span class="skill-tag">OpenAI</span>
-          <span class="skill-tag">LLMs</span>
-          <span class="skill-tag">MVVM</span>
-          <span class="skill-tag">Microservices</span>
-        </div>
-      </div>
-
-      <div class="about-right anim right" data-d="2">
-        <div class="stat-cards">
-          <div class="stat-card">
-            <span class="stat-card-num" data-count="9">9</span>+
-            <span class="stat-card-lbl">Years of Experience</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card-num" data-count="35">35</span>+
-            <span class="stat-card-lbl">Apps Shipped</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card-num">3</span>
-            <span class="stat-card-lbl">Countries Worked In</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card-num">5★</span>
-            <span class="stat-card-lbl">Average Client Rating</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ══════════════════════════════════
-     EXPERTISE
-     ══════════════════════════════════ -->
-<section id="expertise">
-  <div class="wrap">
-    <div class="anim">
-      <span class="label">// 02 Expertise</span>
-      <h2>Core Capabilities</h2>
-    </div>
-    <div class="exp-grid">
-      <div class="exp-item anim" data-d="1">
-        <i class="uil uil-mobile-android"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">Android Dev</span>
-          <span class="exp-item-sub">Kotlin · Compose · MVVM</span>
-        </div>
-      </div>
-      <div class="exp-item anim" data-d="2">
-        <i class="uil uil-web-grid"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">Full-Stack Web</span>
-          <span class="exp-item-sub">React · Node.js · REST</span>
-        </div>
-      </div>
-      <div class="exp-item anim" data-d="3">
-        <i class="uil uil-store"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">SaaS Products</span>
-          <span class="exp-item-sub">Concept → Customers</span>
-        </div>
-      </div>
-      <div class="exp-item anim" data-d="4">
-        <i class="uil uil-servers"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">Backend &amp; APIs</span>
-          <span class="exp-item-sub">Microservices · GraphQL</span>
-        </div>
-      </div>
-      <div class="exp-item anim" data-d="5">
-        <i class="uil uil-cloud-computing"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">Cloud &amp; DevOps</span>
-          <span class="exp-item-sub">AWS · Docker · CI/CD</span>
-        </div>
-      </div>
-      <div class="exp-item anim" data-d="6">
-        <i class="uil uil-circuit"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">AI Integrations</span>
-          <span class="exp-item-sub">LLMs · RAG · Agents</span>
-        </div>
-      </div>
-      <div class="exp-item anim" data-d="7">
-        <i class="uil uil-sitemap"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">System Design</span>
-          <span class="exp-item-sub">Distributed · Clean Arch</span>
-        </div>
-      </div>
-      <div class="exp-item anim" data-d="8">
-        <i class="uil uil-chart-growth"></i>
-        <div class="exp-item-text">
-          <span class="exp-item-title">Performance</span>
-          <span class="exp-item-sub">Profiling · Optimization</span>
-        </div>
+        <a href="contact.html" class="btn btn-ghost-white" style="font-size:16px;padding:16px 32px;">Schedule a Free Consultation</a>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="rule">
-
-<!-- ══════════════════════════════════
-     WORK — NUMBERED LIST
-     ══════════════════════════════════ -->
-<section id="work">
-  <div class="wrap">
-    <div class="anim">
-      <span class="label">// 03 Work</span>
-      <h2>Selected Projects</h2>
-    </div>
-
-    <div class="work-list">
-
-      <a class="work-item anim" data-d="1"
-         data-img="images/project/lifepharmacy.png"
-         href="https://play.google.com/store/search?q=lifepharmacy&c=apps" target="_blank" rel="noopener">
-        <span class="work-num">01</span>
-        <img src="images/project/lifepharmacy.png" class="work-thumb" alt="Life Pharmacy">
-        <span class="work-name">Life Pharmacy</span>
-        <span class="work-cat">Android · E-Commerce · UAE</span>
-        <span class="work-arrow">↗</span>
-      </a>
-
-      <a class="work-item anim" data-d="2"
-         data-img="images/project/newsreels.png"
-         href="https://www.newsreels.app/" target="_blank" rel="noopener">
-        <span class="work-num">02</span>
-        <img src="images/project/newsreels.png" class="work-thumb" alt="Newsreels">
-        <span class="work-name">Newsreels</span>
-        <span class="work-cat">Android · Short-form Video</span>
-        <span class="work-arrow">↗</span>
-      </a>
-
-      <div class="work-item anim" data-d="3"
-           data-img="images/project/passenger.png">
-        <span class="work-num">03</span>
-        <img src="images/project/passenger.png" class="work-thumb" alt="Ziro Ride Passenger">
-        <span class="work-name">Ziro Ride — Passenger</span>
-        <span class="work-cat">Android · Ride Sharing</span>
-        <span class="work-arrow">↗</span>
-      </div>
-
-      <div class="work-item anim" data-d="4"
-           data-img="images/project/captain.png">
-        <span class="work-num">04</span>
-        <img src="images/project/captain.png" class="work-thumb" alt="Ziro Ride Captain">
-        <span class="work-name">Ziro Ride — Captain</span>
-        <span class="work-cat">Android · Driver App</span>
-        <span class="work-arrow">↗</span>
-      </div>
-
-      <div class="work-item anim" data-d="5"
-           data-img="images/project/buyer_anytyre.png">
-        <span class="work-num">05</span>
-        <img src="images/project/buyer_anytyre.png" class="work-thumb" alt="AnyTyre Buyer">
-        <span class="work-name">AnyTyre — Buyer</span>
-        <span class="work-cat">Android · Marketplace</span>
-        <span class="work-arrow">↗</span>
-      </div>
-
-      <div class="work-item anim" data-d="6"
-           data-img="images/project/seller_anytyre.png">
-        <span class="work-num">06</span>
-        <img src="images/project/seller_anytyre.png" class="work-thumb" alt="AnyTyre Seller">
-        <span class="work-name">AnyTyre — Seller</span>
-        <span class="work-cat">Android · Marketplace</span>
-        <span class="work-arrow">↗</span>
-      </div>
-
-      <div class="work-item anim" data-d="7"
-           data-img="images/project/ey_pk1.png">
-        <span class="work-num">07</span>
-        <img src="images/project/ey_pk1.png" class="work-thumb" alt="EY Pakistan">
-        <span class="work-name">EY Pakistan</span>
-        <span class="work-cat">Android · Enterprise</span>
-        <span class="work-arrow">↗</span>
-      </div>
-
-      <div class="work-item anim" data-d="8"
-           data-img="images/project/performance.png">
-        <span class="work-num">08</span>
-        <img src="images/project/performance.png" class="work-thumb" alt="Life Pharmacy Performance">
-        <span class="work-name">Life Pharmacy — Performance</span>
-        <span class="work-cat">4.7★ · 500K+ Downloads</span>
-        <span class="work-arrow">↗</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ══════════════════════════════════
-     TIMELINE
-     ══════════════════════════════════ -->
-<section id="resume">
-  <div class="wrap">
-    <div class="anim">
-      <span class="label">// 04 Timeline</span>
-      <h2>Experience &amp; Education</h2>
-    </div>
-
-    <div class="tl-grid">
-
-      <div>
-        <span class="tl-col-label anim">Experience</span>
-        <div class="tl-items">
-          <div class="tl-item anim" data-d="1">
-            <div class="tl-yr">Now</div>
-            <div>
-              <div class="tl-role">Principal Android Engineer <span class="tl-badge">3.5 yrs</span></div>
-              <div class="tl-org">Life Pharmacy · Dubai, UAE</div>
-              <p class="tl-desc">Lead Android engineer on UAE's #1 pharmacy e-commerce platform — architecture, performance &amp; technical ownership.</p>
-            </div>
-          </div>
-          <div class="tl-item anim" data-d="2">
-            <div class="tl-yr">2022</div>
-            <div>
-              <div class="tl-role">Lead Engineer <span class="tl-badge">3.5 yrs</span></div>
-              <div class="tl-org">ZIRO GROUP · Dubai, UAE</div>
-              <p class="tl-desc">Lead engineer for Ride Sharing &amp; Newsreels — full product ownership from architecture to delivery.</p>
-            </div>
-          </div>
-          <div class="tl-item anim" data-d="3">
-            <div class="tl-yr">2019</div>
-            <div>
-              <div class="tl-role">Android Developer <span class="tl-badge">2.5 yrs</span></div>
-              <div class="tl-org">Soloinsight · Lahore, Pakistan</div>
-              <p class="tl-desc">Delivered enterprise mobile products for access control and workforce management.</p>
-            </div>
-          </div>
-          <div class="tl-item anim" data-d="4">
-            <div class="tl-yr">2017</div>
-            <div>
-              <div class="tl-role">Freelance Developer <span class="tl-badge">2 yrs</span></div>
-              <div class="tl-org">Fiverr · Upwork · Remote</div>
-              <p class="tl-desc">35+ Android apps delivered for global clients with 5★ ratings.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <span class="tl-col-label anim">Education</span>
-        <div class="tl-items">
-          <div class="tl-item anim" data-d="1">
-            <div class="tl-yr">2016</div>
-            <div>
-              <div class="tl-role">BSc Computer Science</div>
-              <div class="tl-org">University of Central Punjab · Lahore</div>
-              <p class="tl-desc">Four-year undergraduate degree in Computer Science (BSCS).</p>
-            </div>
-          </div>
-          <div class="tl-item anim" data-d="2">
-            <div class="tl-yr">2012</div>
-            <div>
-              <div class="tl-role">Intermediate — Computer Science</div>
-              <div class="tl-org">Punjab College · Lahore</div>
-            </div>
-          </div>
-          <div class="tl-item anim" data-d="3">
-            <div class="tl-yr">2010</div>
-            <div>
-              <div class="tl-role">High School</div>
-              <div class="tl-org">Cathedral High School · Lahore</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ══════════════════════════════════
-     TESTIMONIALS
-     ══════════════════════════════════ -->
-<section id="testimonials">
-  <div class="wrap">
-    <div class="anim">
-      <span class="label">// 05 Testimonials</span>
-      <h2>What People Say</h2>
-    </div>
-  </div>
-
-  <div class="testi-track" id="testi-track">
-    <div class="testi-slider" id="testi-slider">
-
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif is among the best developers I have worked with. He always exceeds expectations — forward-thinking, resolute, and most of all passionate. A delight to work with.</p>
-        <div class="testi-name">RJ David</div>
-        <div class="testi-role">Creative Strategist</div>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif's multitasking ability was unlike I've seen before and made an applause-worthy increase in our company's growth. His coding skills are literally very efficient.</p>
-        <div class="testi-name">Furqan Butt</div>
-        <div class="testi-role">Lead Generation · Art Director</div>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif is proactive, result-oriented, and technically sound. He has exceptional troubleshooting and analytical skills in Android development. A great asset to any company.</p>
-        <div class="testi-name">Khadim Hussain</div>
-        <div class="testi-role">Software Engineer</div>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Very diligent, hard-working and a thorough professional. He met all deadlines without compromising on work quality. The end product was exactly what we expected.</p>
-        <div class="testi-name">Taha Tajammal</div>
-        <div class="testi-role">Technical Project Manager</div>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif delivered ahead of schedule and provided daily updates ensuring complete transparency. His communication skills and technical expertise were exceptional.</p>
-        <div class="testi-name">Najib E.</div>
-        <div class="testi-role">Founder</div>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Reliable, professional, committed, polite. He delivers on time or even ahead of time. Recommending him 200%. The collaboration was seamless and efficient.</p>
-        <div class="testi-name">Najib E.</div>
-        <div class="testi-role">Founder</div>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif met tough deadlines for our customers and integrations. His technical skills would make him a great asset to any organization.</p>
-        <div class="testi-name">Naveed Butt</div>
-        <div class="testi-role">Technical Project Manager</div>
-      </div>
-
-      <!-- Duplicate for seamless loop -->
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif is among the best developers I have worked with. He always exceeds expectations — forward-thinking, resolute, and most of all passionate.</p>
-        <div class="testi-name">RJ David</div>
-        <div class="testi-role">Creative Strategist</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif's multitasking ability was unlike I've seen before. An applause-worthy increase in our company's growth. His coding skills are literally very efficient.</p>
-        <div class="testi-name">Furqan Butt</div>
-        <div class="testi-role">Lead Generation · Art Director</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Very diligent, hard-working and a thorough professional. He met all deadlines without compromising on work quality.</p>
-        <div class="testi-name">Taha Tajammal</div>
-        <div class="testi-role">Technical Project Manager</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-quote">"</div>
-        <p class="testi-text">Wasif delivered ahead of schedule and provided daily updates. His communication skills and technical expertise were exceptional.</p>
-        <div class="testi-name">Najib E.</div>
-        <div class="testi-role">Founder</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="rule">
-
-<!-- ══════════════════════════════════
-     CONTACT
-     ══════════════════════════════════ -->
-<section id="contact">
-  <div class="wrap">
-
-    <div class="contact-headline anim">
-      <span class="label">// 06 Contact</span>
-      <h2>Let's build something<br><em>great</em> together.</h2>
-    </div>
-
-    <div class="contact-grid">
-
-      <!-- Left -->
-      <div class="anim left">
-        <div class="c-items">
-          <div class="c-item">
-            <div class="c-icon"><i class="uil uil-phone"></i></div>
-            <div class="c-text"><a href="tel:+971582063406">+971-582063406</a></div>
-          </div>
-          <div class="c-item">
-            <div class="c-icon"><i class="uil uil-envelope"></i></div>
-            <div class="c-text"><a href="mailto:waxif.1@gmail.com">waxif.1@gmail.com</a></div>
-          </div>
-          <div class="c-item">
-            <div class="c-icon"><i class="uil uil-map-marker"></i></div>
-            <div class="c-text">Business Bay, Dubai, UAE</div>
-          </div>
-        </div>
-
-        <div class="c-socials">
-          <a href="https://www.linkedin.com/in/wasif-mujahid-android-developer"
-             target="_blank" rel="noopener" class="c-social" title="LinkedIn">
-            <i class="uil uil-linkedin"></i>
-          </a>
-          <a href="https://github.com/wasif1"
-             target="_blank" rel="noopener" class="c-social" title="GitHub">
-            <i class="uil uil-github"></i>
-          </a>
-          <a href="https://wa.me/971582063406?text=Hello Wasif, I came across your portfolio and wanted to reach out."
-             target="_blank" rel="noopener" class="c-social" title="WhatsApp">
-            <i class="uil uil-whatsapp"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Right: Form -->
-      <div class="anim right" data-d="2">
-        <form action="https://forms.un-static.com/forms/e9be4f201ae5d2d73f30585cf8d7ce9ec69d95cb"
-              method="post" class="c-form">
-          <div class="c-form-row">
-            <input type="text" name="name" placeholder="Your Name"
-                   class="c-input" required>
-            <input type="email" name="email" placeholder="Email Address"
-                   class="c-input" required>
-          </div>
-          <textarea name="message" rows="5" placeholder="Tell me about your project..."
-                    class="c-input" required></textarea>
-          <button type="submit" class="btn-send">
-            Send Message <i class="uil uil-message"></i>
-          </button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ══════════════════════════════════
-     FOOTER
-     ══════════════════════════════════ -->
+<!-- ════════════════ FOOTER ════════════════ -->
 <footer class="site-footer">
-  <span class="footer-copy">&copy; <span id="copy-year"></span> Wasif Mujahid. All rights reserved.</span>
-  <div class="footer-links">
-    <a href="#hero">Back to top ↑</a>
-    <a href="mailto:waxif.1@gmail.com">Email</a>
-    <a href="https://github.com/wasif1" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://www.linkedin.com/in/wasif-mujahid-android-developer" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Code<span>Foundri</span></div>
+        <p class="footer-desc">A trusted software engineering partner helping ambitious companies design, build, and scale world-class digital products. We turn your vision into software that drives real growth.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="process.html">How We Work</a>
+        <a href="careers.html">Careers</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services/custom-software.html">Custom Software</a>
+        <a href="services/saas-development.html">SaaS Development</a>
+        <a href="services/web-development.html">Web Applications</a>
+        <a href="services/mobile-development.html">Mobile Apps</a>
+        <a href="services/ai-automation.html">AI & Automation</a>
+        <a href="services/dedicated-teams.html">Dedicated Teams</a>
+        <a href="services/consulting.html">Consulting</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Work & Resources</h5>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="industries.html">Industries</a>
+        <a href="technologies.html">Technologies</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
   </div>
 </footer>
 
-
-<!-- ══════════════════════════════════
-     SCRIPTS
-     ══════════════════════════════════ -->
-<script>
-(function () {
-  'use strict';
-
-  // Dynamic copyright year
-  document.getElementById('copy-year').textContent = new Date().getFullYear();
-
-  // ── CURSOR GLOW ──────────────────────────
-  const glow = document.getElementById('glow');
-  document.addEventListener('mousemove', function (e) {
-    glow.style.left = e.clientX + 'px';
-    glow.style.top  = e.clientY + 'px';
-  }, { passive: true });
-
-  // ── SCROLL PROGRESS ──────────────────────
-  const prog = document.getElementById('prog');
-  function onScroll() {
-    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
-    prog.style.width = Math.min(pct, 100) + '%';
-    updateNav();
-  }
-
-  // ── NAVBAR ───────────────────────────────
-  const nav = document.getElementById('nav');
-  let lastY = 0;
-  function updateNav() {
-    const y = window.scrollY;
-    nav.classList.toggle('scrolled', y > 40);
-    if (y > 200) {
-      nav.classList.toggle('hide', y > lastY + 6);
-      if (y < lastY) nav.classList.remove('hide');
-    } else {
-      nav.classList.remove('hide');
-    }
-    lastY = y;
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-
-  // ── MOBILE MENU ──────────────────────────
-  const toggle   = document.getElementById('nav-toggle');
-  const mobileNav = document.getElementById('mobile-nav');
-  toggle.addEventListener('click', function () {
-    mobileNav.classList.toggle('open');
-  });
-  mobileNav.querySelectorAll('a').forEach(function (a) {
-    a.addEventListener('click', function () { mobileNav.classList.remove('open'); });
-  });
-
-  // ── SMOOTH SCROLL ────────────────────────
-  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      const t = document.querySelector(this.getAttribute('href'));
-      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
-    });
-  });
-
-  // ── SCROLL ANIMATIONS ────────────────────
-  const obs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) {
-        e.target.classList.add('in');
-        obs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
-  document.querySelectorAll('.anim').forEach(function (el) { obs.observe(el); });
-
-  // ── COUNTER ANIMATION ────────────────────
-  const countObs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      const el  = e.target;
-      const end = parseInt(el.dataset.count, 10);
-      if (!end) return;
-      const dur = 1400;
-      const t0  = performance.now();
-      (function tick(now) {
-        const pct  = Math.min((now - t0) / dur, 1);
-        const ease = 1 - Math.pow(1 - pct, 3);
-        el.textContent = Math.round(ease * end);
-        if (pct < 1) requestAnimationFrame(tick);
-      })(t0);
-      countObs.unobserve(el);
-    });
-  }, { threshold: 0.6 });
-  document.querySelectorAll('[data-count]').forEach(function (el) { countObs.observe(el); });
-
-  // ── WORK HOVER PREVIEW (desktop only) ────
-  const preview = document.getElementById('work-preview');
-  if (window.matchMedia('(hover: hover)').matches) {
-    document.querySelectorAll('.work-item[data-img]').forEach(function (item) {
-      item.addEventListener('mouseenter', function () {
-        preview.src = this.dataset.img;
-        preview.style.display = 'block';
-        requestAnimationFrame(function () { preview.classList.add('show'); });
-      });
-      item.addEventListener('mousemove', function (e) {
-        const x = e.clientX + 28;
-        const y = e.clientY - 90;
-        preview.style.left = Math.min(x, window.innerWidth - 280) + 'px';
-        preview.style.top  = Math.max(y, 10) + 'px';
-      });
-      item.addEventListener('mouseleave', function () {
-        preview.classList.remove('show');
-        setTimeout(function () {
-          if (!preview.classList.contains('show')) preview.style.display = 'none';
-        }, 300);
-      });
-    });
-  }
-
-  // ── TESTIMONIALS DRAG ────────────────────
-  const track  = document.getElementById('testi-track');
-  const slider = document.getElementById('testi-slider');
-  if (track && slider) {
-    let down = false, startX = 0, scrollL = 0;
-    track.addEventListener('mousedown',  function (e) {
-      down = true; startX = e.pageX - track.offsetLeft;
-      scrollL = track.scrollLeft;
-      slider.style.animationPlayState = 'paused';
-    });
-    track.addEventListener('mouseleave', function () {
-      down = false;
-      slider.style.animationPlayState = 'running';
-    });
-    track.addEventListener('mouseup', function () {
-      down = false;
-      slider.style.animationPlayState = 'running';
-    });
-    track.addEventListener('mousemove', function (e) {
-      if (!down) return;
-      e.preventDefault();
-      track.scrollLeft = scrollL - (e.pageX - track.offsetLeft - startX) * 1.5;
-    });
-    track.addEventListener('mouseenter', function () {
-      slider.style.animationPlayState = 'paused';
-    });
-  }
-
-})();
-</script>
-
+<script src="js/main.js"></script>
+<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
