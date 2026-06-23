@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Work — CodeFoundri Development Process</title>
+  <meta name="description" content="CodeFoundri's proven development process: Discovery, Architecture, Agile Sprints, QA, and Launch. See exactly how we take a product from idea to production.">
+  <meta property="og:title" content="Our Development Process — CodeFoundri">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .phase {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 40px;
+      padding: 56px 0;
+      border-bottom: 1px solid var(--gray-200);
+      align-items: start;
+    }
+    .phase:last-child { border-bottom: none; }
+    .phase-num-big {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 5rem;
+      font-weight: 800;
+      line-height: 1;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .phase-content h2 { font-size: 1.7rem; margin-bottom: 12px; }
+    .phase-content p  { margin-bottom: 20px; }
+    .phase-deliverables {
+      background: var(--gray-100);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .phase-deliverables h4 { font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: var(--primary); margin-bottom: 12px; }
+    .phase-deliverables ul { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .phase-deliverables li {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13.5px; color: var(--gray-600);
+    }
+    .phase-deliverables li::before { content: '→'; color: var(--primary); font-weight: 700; }
+    @media (max-width: 768px) {
+      .phase { grid-template-columns: 1fr; gap: 20px; }
+      .phase-num-big { font-size: 3.5rem; }
+      .phase-deliverables ul { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Code<span>Foundri</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+      <li class="nav-item"><a href="technologies.html" class="nav-link">Technologies</a></li>
+      <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="about.html" class="mob-link">About</a>
+  <a href="services.html" class="mob-link">Services</a>
+  <a href="portfolio.html" class="mob-link">Portfolio</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>How We Work</div>
+    <span class="label label-white">Our Process</span>
+    <h1>A Process Designed for <br>Predictable Outcomes</h1>
+    <p>No black boxes. No "trust us, it's almost done." Here's exactly how we take a product from idea to production — and what you get at each step.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="phase anim">
+      <div class="phase-num-big">01</div>
+      <div class="phase-content">
+        <h2>Discovery & Scoping</h2>
+        <p style="font-size:1.05rem;font-weight:500;color:var(--dark);margin-bottom:12px;">Duration: 1–2 weeks</p>
+        <p>This is where most projects succeed or fail — and where most agencies cut corners. We invest heavily in discovery because a poorly scoped project is a guaranteed overrun.</p>
+        <p>We map your business model to your technical requirements, identify the riskiest assumptions in your product, surface the integration complexity early, and define success metrics before starting. The output is a document you could hand to any engineering team and get the same result.</p>
+        <div class="phase-deliverables">
+          <h4>What you receive</h4>
+          <ul>
+            <li>Product requirements document</li>
+            <li>Technical scope specification</li>
+            <li>Risk & dependency register</li>
+            <li>Project timeline with milestones</li>
+            <li>Fixed-price proposal</li>
+            <li>Team introduction & onboarding plan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase anim">
+      <div class="phase-num-big">02</div>
+      <div class="phase-content">
+        <h2>Architecture & Design</h2>
+        <p style="font-size:1.05rem;font-weight:500;color:var(--dark);margin-bottom:12px;">Duration: 1–3 weeks</p>
+        <p>Before writing production code, we design the system. This means choosing the right database schema, defining the API contract, planning the service boundaries, and designing the UX flows that your team approves.</p>
+        <p>Architecture decisions made here are 10x cheaper to change than after implementation. We treat this phase with the seriousness it deserves — including documenting the decisions we considered and why we chose what we chose.</p>
+        <div class="phase-deliverables">
+          <h4>What you receive</h4>
+          <ul>
+            <li>System architecture diagram</li>
+            <li>Database schema (ERD)</li>
+            <li>API contract (OpenAPI spec)</li>
+            <li>UX wireframes / flows</li>
+            <li>Infrastructure plan</li>
+            <li>Security model</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase anim">
+      <div class="phase-num-big">03</div>
+      <div class="phase-content">
+        <h2>Agile Development</h2>
+        <p style="font-size:1.05rem;font-weight:500;color:var(--dark);margin-bottom:12px;">Duration: Ongoing (2-week sprints)</p>
+        <p>Development runs in two-week sprints. At the end of each sprint, you get a deployed staging environment with working features — not just a status report. You test it, give feedback, and we iterate in the next sprint.</p>
+        <p>You have direct access to the engineering team via Slack. Daily async standups are shared in writing. Nothing is hidden until it's "perfect" — you see the product evolving in real time.</p>
+        <div class="phase-deliverables">
+          <h4>What you receive each sprint</h4>
+          <ul>
+            <li>Working software on staging</li>
+            <li>Sprint demo recording (Loom)</li>
+            <li>Updated progress tracker (Notion)</li>
+            <li>Next sprint preview & priorities</li>
+            <li>Any scope changes surfaced early</li>
+            <li>Code committed to your repository</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase anim">
+      <div class="phase-num-big">04</div>
+      <div class="phase-content">
+        <h2>QA & Security Review</h2>
+        <p style="font-size:1.05rem;font-weight:500;color:var(--dark);margin-bottom:12px;">Duration: 1–3 weeks before launch</p>
+        <p>Before anything reaches production, it goes through a structured QA process. This isn't just clicking through the UI — it includes automated test suites, load testing, and a security review.</p>
+        <p>We don't ship until we're confident in it. Our QA process is the reason our clients rarely deal with critical production incidents after launch.</p>
+        <div class="phase-deliverables">
+          <h4>What's covered</h4>
+          <ul>
+            <li>Functional testing (manual + automated)</li>
+            <li>Cross-browser & device testing</li>
+            <li>Load & stress testing</li>
+            <li>OWASP security audit</li>
+            <li>Dependency vulnerability scan</li>
+            <li>Performance benchmarking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase anim">
+      <div class="phase-num-big">05</div>
+      <div class="phase-content">
+        <h2>Production Launch</h2>
+        <p style="font-size:1.05rem;font-weight:500;color:var(--dark);margin-bottom:12px;">Duration: 1–2 weeks</p>
+        <p>Launch is a structured process, not a moment. We set up CI/CD pipelines for zero-downtime deployments, configure monitoring and alerting, document the deployment runbook, and execute the production rollout systematically.</p>
+        <p>We're available throughout launch week — and for 30 days after — to handle any production issues that arise.</p>
+        <div class="phase-deliverables">
+          <h4>What's included</h4>
+          <ul>
+            <li>CI/CD pipeline setup</li>
+            <li>Infrastructure provisioning</li>
+            <li>Monitoring & alerting (Prometheus/Grafana)</li>
+            <li>Deployment runbook</li>
+            <li>30-day post-launch support</li>
+            <li>Codebase & API documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase anim">
+      <div class="phase-num-big">06</div>
+      <div class="phase-content">
+        <h2>Growth & Iteration</h2>
+        <p style="font-size:1.05rem;font-weight:500;color:var(--dark);margin-bottom:12px;">Duration: Ongoing</p>
+        <p>78% of our clients continue working with us after launch — because shipping v1 is just the beginning. We offer roadmap planning, feature development sprints, and dedicated team arrangements for companies that want to keep moving fast.</p>
+        <p>We also proactively monitor your production systems and surface performance or security issues before they become incidents.</p>
+        <div class="phase-deliverables">
+          <h4>Post-launch options</h4>
+          <ul>
+            <li>Feature sprint packages</li>
+            <li>Monthly maintenance retainer</li>
+            <li>Dedicated engineering team</li>
+            <li>Technical CTO advisory</li>
+            <li>Roadmap planning sessions</li>
+            <li>Performance optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="wrap">
+    <div class="cta-banner anim">
+      <h2>Ready to Start the Discovery Phase?</h2>
+      <p>The first step is a 30-minute conversation. We'll tell you honestly whether we're a good fit for your project — and what to expect if we are.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Schedule Discovery Call</a>
+        <a href="portfolio.html" class="btn btn-ghost-white">See Past Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Code<span>Foundri</span></div><p class="footer-desc">A trusted software engineering partner helping ambitious companies design, build, and scale world-class digital products.</p></div>
+      <div class="footer-col"><h5>Services</h5><a href="services/custom-software.html">Custom Software</a><a href="services/saas-development.html">SaaS Development</a><a href="services/web-development.html">Web Applications</a><a href="services/mobile-development.html">Mobile Apps</a><a href="services/ai-automation.html">AI & Automation</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="process.html">How We Work</a><a href="portfolio.html">Portfolio</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="industries.html">Industries</a><a href="technologies.html">Technologies</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

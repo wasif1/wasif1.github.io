@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Stack — CodeFoundri</title>
+  <meta name="description" content="Our technology stack: React, Next.js, Node.js, NestJS, Flutter, React Native, OpenAI, LangChain, PostgreSQL, AWS and more. Modern tools, proven in production.">
+  <meta property="og:title" content="Technology Stack — CodeFoundri">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .full-tech-section { margin-bottom: 64px; }
+    .full-tech-section h3 { font-size: 1.25rem; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 2px solid rgba(79,110,247,.2); }
+    .tech-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .tech-card {
+      background: var(--dark-2);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: all var(--transition);
+    }
+    .tech-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+    .tech-card-icon { font-size: 28px; margin-bottom: 10px; }
+    .tech-card h4 { color: var(--white); font-size: 15px; margin-bottom: 4px; }
+    .tech-card p  { font-size: 12.5px; color: var(--gray-400); }
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Code<span>Foundri</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+      <li class="nav-item"><a href="technologies.html" class="nav-link active">Technologies</a></li>
+      <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="about.html" class="mob-link">About</a>
+  <a href="services.html" class="mob-link">Services</a>
+  <a href="portfolio.html" class="mob-link">Portfolio</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>Technologies</div>
+    <span class="label label-white">Tech Stack</span>
+    <h1>Modern Tools. Mastered, <br>Not Just Mentioned.</h1>
+    <p>We maintain a curated stack of technologies we've proven in production — not a list of every framework that's trending on Hacker News.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="wrap">
+
+    <div class="full-tech-section anim">
+      <h3 style="color:var(--white);">Frontend Development</h3>
+      <div class="tech-cards">
+        <div class="tech-card"><div class="tech-card-icon">⚛</div><h4>React</h4><p>Component-based UIs with hooks, context, and modern patterns. Our primary frontend choice.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">▲</div><h4>Next.js</h4><p>Full-stack React framework for SSR, SSG, API routes, and production-optimized deployments.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🔷</div><h4>TypeScript</h4><p>Type-safe JavaScript that catches bugs at compile time and makes large codebases maintainable.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">💨</div><h4>Tailwind CSS</h4><p>Utility-first CSS framework for rapid, consistent UI development without CSS bloat.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🅰</div><h4>Angular</h4><p>Enterprise-grade SPA framework for large teams and complex, long-lived web applications.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">💚</div><h4>Vue.js</h4><p>Progressive framework for building interactive UIs with a gentle learning curve.</p></div>
+      </div>
+    </div>
+
+    <div class="full-tech-section anim anim-delay-1">
+      <h3 style="color:var(--white);">Backend Development</h3>
+      <div class="tech-cards">
+        <div class="tech-card"><div class="tech-card-icon">🟢</div><h4>Node.js</h4><p>High-performance JavaScript runtime for scalable API servers and real-time applications.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🐱</div><h4>NestJS</h4><p>Opinionated Node.js framework with DI, decorators, and enterprise-grade structure.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🚂</div><h4>Express.js</h4><p>Minimal, flexible Node.js web framework for REST APIs with full control over middleware.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🌿</div><h4>Spring Boot</h4><p>Production-grade Java framework for enterprise backends with mature ecosystem support.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🐘</div><h4>Laravel</h4><p>Elegant PHP framework with expressive ORM, queues, and rapid development tools.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🐍</div><h4>FastAPI</h4><p>High-performance Python API framework, especially suited for ML/AI service backends.</p></div>
+      </div>
+    </div>
+
+    <div class="full-tech-section anim anim-delay-2">
+      <h3 style="color:var(--white);">Mobile Development</h3>
+      <div class="tech-cards">
+        <div class="tech-card"><div class="tech-card-icon">💙</div><h4>Flutter</h4><p>Google's cross-platform framework for pixel-perfect native apps on iOS, Android, and web.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">⚛</div><h4>React Native</h4><p>JavaScript-powered cross-platform mobile apps with native components and broad ecosystem.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🎯</div><h4>Kotlin</h4><p>Modern Android development with null-safety, coroutines, and Jetpack Compose UI.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🍎</div><h4>Swift</h4><p>Native iOS development with SwiftUI for performant, deeply integrated Apple ecosystem apps.</p></div>
+      </div>
+    </div>
+
+    <div class="full-tech-section anim">
+      <h3 style="color:var(--white);">AI & Machine Learning</h3>
+      <div class="tech-cards">
+        <div class="tech-card"><div class="tech-card-icon">🤖</div><h4>OpenAI GPT-4</h4><p>State-of-the-art language models for chat, content generation, classification, and reasoning.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🧠</div><h4>Claude (Anthropic)</h4><p>Long-context reasoning and document analysis with strong safety and instruction following.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">⛓</div><h4>LangChain</h4><p>Framework for building LLM-powered applications with chains, agents, and memory.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">📚</div><h4>RAG Pipelines</h4><p>Retrieval-Augmented Generation for grounding LLM responses in your company's specific knowledge.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🗃</div><h4>Vector Databases</h4><p>Pinecone, Weaviate, Chroma for semantic search and embedding-based retrieval at scale.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🔬</div><h4>HuggingFace</h4><p>Open-source model deployment for custom fine-tuned models and specialized AI tasks.</p></div>
+      </div>
+    </div>
+
+    <div class="full-tech-section anim anim-delay-1">
+      <h3 style="color:var(--white);">Databases & Data</h3>
+      <div class="tech-cards">
+        <div class="tech-card"><div class="tech-card-icon">🐘</div><h4>PostgreSQL</h4><p>Powerful, ACID-compliant relational database. Our default choice for most production systems.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🐬</div><h4>MySQL</h4><p>Proven relational database widely used in enterprise and high-traffic web applications.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🍃</div><h4>MongoDB</h4><p>Document database for flexible schemas, rapid iteration, and JSON-native data models.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🔴</div><h4>Redis</h4><p>In-memory data structure store for caching, real-time pub/sub, and session management.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">📊</div><h4>Elasticsearch</h4><p>Distributed search and analytics engine for full-text search at scale.</p></div>
+      </div>
+    </div>
+
+    <div class="full-tech-section anim anim-delay-2">
+      <h3 style="color:var(--white);">Cloud, DevOps & Infrastructure</h3>
+      <div class="tech-cards">
+        <div class="tech-card"><div class="tech-card-icon">☁</div><h4>AWS</h4><p>Primary cloud platform — EC2, RDS, S3, Lambda, CloudFront, SQS, and more.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🔵</div><h4>Google Cloud</h4><p>GKE, Cloud Run, BigQuery, and Firebase for specific workloads and mobile backends.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🐳</div><h4>Docker</h4><p>Container-based deployments for consistent, reproducible environments across all stages.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">☸</div><h4>Kubernetes</h4><p>Container orchestration for high-availability, auto-scaling production workloads.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">🔄</div><h4>CI/CD Pipelines</h4><p>GitHub Actions, GitLab CI for automated testing, security scanning, and zero-downtime deploys.</p></div>
+        <div class="tech-card"><div class="tech-card-icon">📈</div><h4>Observability</h4><p>Prometheus, Grafana, Sentry, and structured logging for production visibility.</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">Our Philosophy</span>
+      <h2>Why We Don't Chase Every New Framework</h2>
+      <p>We choose boring technology where appropriate, exciting technology where it genuinely helps, and always prioritize long-term maintainability over short-term novelty.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card anim anim-delay-1">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
+        <h3>Production-Proven</h3>
+        <p>Every technology we recommend has been battle-tested in real production environments — not just tutorials and side projects.</p>
+      </div>
+      <div class="service-card anim anim-delay-2">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Z"/></svg></div>
+        <h3>Hire-able Ecosystem</h3>
+        <p>We choose technologies with large, active communities so you can hire engineers to maintain and extend your codebase after launch.</p>
+      </div>
+      <div class="service-card anim anim-delay-3">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg></div>
+        <h3>Right Tool for the Job</h3>
+        <p>We don't have a hammer looking for nails. We match the technology to the problem — sometimes that means boring SQL, sometimes it means cutting-edge AI.</p>
+      </div>
+      <div class="service-card anim anim-delay-4">
+        <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"/></svg></div>
+        <h3>Future-Proof Architecture</h3>
+        <p>We abstract infrastructure concerns properly so replacing a component later doesn't require rewriting your entire application.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="wrap">
+    <div class="cta-banner anim">
+      <h2>Have a Preferred Stack?</h2>
+      <p>We adapt to your existing technology choices. If you've already committed to a stack, we'll work within it — and tell you honestly if we see any issues worth addressing.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Discuss Your Stack</a>
+        <a href="services.html" class="btn btn-ghost-white">View Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Code<span>Foundri</span></div><p class="footer-desc">A trusted software engineering partner helping ambitious companies design, build, and scale world-class digital products.</p></div>
+      <div class="footer-col"><h5>Services</h5><a href="services/custom-software.html">Custom Software</a><a href="services/saas-development.html">SaaS Development</a><a href="services/web-development.html">Web Applications</a><a href="services/mobile-development.html">Mobile Apps</a><a href="services/ai-automation.html">AI & Automation</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="process.html">How We Work</a><a href="portfolio.html">Portfolio</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="industries.html">Industries</a><a href="technologies.html">Technologies</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

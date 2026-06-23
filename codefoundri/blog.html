@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — CodeFoundri Engineering Insights</title>
+  <meta name="description" content="Engineering insights, product development guides, AI tutorials, and technical deep-dives from the CodeFoundri team.">
+  <meta property="og:title" content="Blog — CodeFoundri Engineering Insights">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Code<span>Foundri</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+      <li class="nav-item"><a href="technologies.html" class="nav-link">Technologies</a></li>
+      <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="about.html" class="mob-link">About</a>
+  <a href="services.html" class="mob-link">Services</a>
+  <a href="portfolio.html" class="mob-link">Portfolio</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>Blog</div>
+    <span class="label label-white">Engineering Insights</span>
+    <h1>Practical Engineering Thinking <br>from People Who Ship</h1>
+    <p>No thought leadership clichés. Just real-world insights from engineers who build production software every day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <!-- Featured post -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:80px;padding-bottom:80px;border-bottom:1px solid var(--gray-200);" class="anim">
+      <div style="background:var(--dark-2);border-radius:var(--radius-xl);height:320px;display:flex;align-items:center;justify-content:center;font-size:80px;">🤖</div>
+      <div>
+        <div class="blog-category">AI & Automation</div>
+        <h2 style="font-size:1.9rem;margin-bottom:16px;line-height:1.3;">Building RAG Systems That Actually Work in Production: Lessons from 8 Client Projects</h2>
+        <p style="margin-bottom:24px;">Most RAG tutorials show you a happy path. Production RAG is different — chunking strategies, embedding model selection, retrieval accuracy tradeoffs, and the user experience of uncertainty. Here's what we've learned building RAG for real clients.</p>
+        <div class="blog-meta" style="margin-bottom:20px;"><span>June 18, 2026</span> · <span>12 min read</span></div>
+        <a href="#" class="btn btn-primary">Read Article</a>
+      </div>
+    </div>
+
+    <div class="blog-grid">
+      <div class="blog-card anim anim-delay-1">
+        <div class="blog-thumb">⚙️</div>
+        <div class="blog-body">
+          <div class="blog-category">Architecture</div>
+          <h3>When to Break a Monolith: A Decision Framework That Doesn't Lie to You</h3>
+          <p>The real questions to ask before committing to microservices — and why "Netflix does it" is not an answer.</p>
+          <div class="blog-meta"><span>June 10, 2026</span> · <span>9 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card anim anim-delay-2">
+        <div class="blog-thumb">💰</div>
+        <div class="blog-body">
+          <div class="blog-category">SaaS</div>
+          <h3>Multi-Tenant Architecture Patterns: What We Use and Why</h3>
+          <p>Row-level security vs. schema-per-tenant vs. database-per-tenant — with real cost and complexity tradeoffs.</p>
+          <div class="blog-meta"><span>May 28, 2026</span> · <span>11 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card anim anim-delay-3">
+        <div class="blog-thumb">📱</div>
+        <div class="blog-body">
+          <div class="blog-category">Mobile</div>
+          <h3>Flutter vs. React Native in 2026: An Honest Comparison After Building Both</h3>
+          <p>We've shipped production apps with both frameworks. Here's where each actually wins — and the cases where neither is right.</p>
+          <div class="blog-meta"><span>May 14, 2026</span> · <span>8 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card anim anim-delay-1">
+        <div class="blog-thumb">🔒</div>
+        <div class="blog-body">
+          <div class="blog-category">Security</div>
+          <h3>The Security Review Checklist We Run Before Every Production Launch</h3>
+          <p>OWASP Top 10, dependency auditing, secrets management, and the five things most teams forget until it's too late.</p>
+          <div class="blog-meta"><span>May 2, 2026</span> · <span>7 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card anim anim-delay-2">
+        <div class="blog-thumb">📊</div>
+        <div class="blog-body">
+          <div class="blog-category">Product</div>
+          <h3>Why Your MVP Scope Is Probably Still Too Large</h3>
+          <p>A practical guide to defining the smallest version of your product that could genuinely validate your core assumption.</p>
+          <div class="blog-meta"><span>April 22, 2026</span> · <span>6 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card anim anim-delay-3">
+        <div class="blog-thumb">🚚</div>
+        <div class="blog-body">
+          <div class="blog-category">Case Study</div>
+          <h3>How We Reduced Fleet Fuel Costs by 28% with Route Optimization</h3>
+          <p>A technical deep-dive into the routing algorithm, geospatial data model, and driver UX that made a 340-vehicle fleet significantly more efficient.</p>
+          <div class="blog-meta"><span>April 8, 2026</span> · <span>10 min read</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:56px;" class="anim">
+      <a href="#" class="btn btn-outline">Load More Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section section-gray">
+  <div class="wrap">
+    <div class="cta-banner anim" style="max-width:600px;margin:0 auto;">
+      <h2 style="font-size:1.8rem;">Get Engineering Insights Directly</h2>
+      <p>One email per month. No marketing. Just the most useful thing we learned that month about building software.</p>
+      <div style="display:flex;gap:10px;max-width:400px;margin:28px auto 0;position:relative;">
+        <input type="email" placeholder="your@email.com" class="form-input" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:var(--white);">
+        <button class="btn btn-white" style="white-space:nowrap;flex-shrink:0;">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Code<span>Foundri</span></div><p class="footer-desc">A trusted software engineering partner helping ambitious companies design, build, and scale world-class digital products.</p></div>
+      <div class="footer-col"><h5>Services</h5><a href="services/custom-software.html">Custom Software</a><a href="services/saas-development.html">SaaS Development</a><a href="services/web-development.html">Web Applications</a><a href="services/mobile-development.html">Mobile Apps</a><a href="services/ai-automation.html">AI & Automation</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="process.html">How We Work</a><a href="portfolio.html">Portfolio</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="industries.html">Industries</a><a href="technologies.html">Technologies</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

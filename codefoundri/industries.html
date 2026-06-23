@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries We Serve — CodeFoundri</title>
+  <meta name="description" content="CodeFoundri brings deep domain expertise to SaaS, FinTech, Healthcare, Logistics, E-Commerce, EdTech, Real Estate and more. Software built for your sector.">
+  <meta property="og:title" content="Industries We Serve — CodeFoundri">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .industry-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      padding: 60px 0;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .industry-detail:last-child { border-bottom: none; }
+    .industry-detail:nth-child(even) .ind-content { order: 2; }
+    .industry-detail:nth-child(even) .ind-visual  { order: 1; }
+    .ind-visual {
+      background: var(--gray-100);
+      border-radius: var(--radius-xl);
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      border: 1px solid var(--gray-200);
+    }
+    .ind-solutions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .ind-tag { font-size: 12.5px; font-weight: 600; padding: 5px 14px; background: rgba(79,110,247,.08); color: var(--primary); border-radius: 999px; }
+    @media (max-width: 768px) {
+      .industry-detail { grid-template-columns: 1fr; }
+      .industry-detail:nth-child(even) .ind-content,
+      .industry-detail:nth-child(even) .ind-visual { order: unset; }
+    }
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Code<span>Foundri</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="industries.html" class="nav-link active">Industries</a></li>
+      <li class="nav-item"><a href="technologies.html" class="nav-link">Technologies</a></li>
+      <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="about.html" class="mob-link">About</a>
+  <a href="services.html" class="mob-link">Services</a>
+  <a href="portfolio.html" class="mob-link">Portfolio</a>
+  <a href="industries.html" class="mob-link">Industries</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>Industries</div>
+    <span class="label label-white">Domain Expertise</span>
+    <h1>Software Built for Your Industry, <br>Not Adapted From Someone Else's</h1>
+    <p>Generic software creates generic results. We bring real-world domain knowledge to every project — understanding your regulations, workflows, and competitive pressures before we write a line of code.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+
+    <div class="industry-detail anim">
+      <div class="ind-visual">🏥</div>
+      <div class="ind-content">
+        <span class="label">Healthcare & MedTech</span>
+        <h2>Software That Protects Patients and Empowers Clinicians</h2>
+        <p style="margin-bottom:16px;">Healthcare software carries unique obligations — HIPAA compliance, audit trails, data integrity, and zero tolerance for downtime. We build patient portals, telemedicine systems, EHR integrations, and clinical workflow tools with these constraints as first principles, not afterthoughts.</p>
+        <p>Whether you're a digital health startup building your first patient-facing app or a health system modernizing legacy workflows, we understand the regulatory landscape, the clinical mindset, and the infrastructure required to operate safely in healthcare.</p>
+        <div class="ind-solutions">
+          <span class="ind-tag">Patient Portals</span><span class="ind-tag">Telemedicine</span><span class="ind-tag">EHR Integration</span><span class="ind-tag">HIPAA Compliance</span><span class="ind-tag">Clinical Workflow Tools</span><span class="ind-tag">Health Analytics</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Discuss Your Healthcare Project</a>
+      </div>
+    </div>
+
+    <div class="industry-detail anim">
+      <div class="ind-visual">💰</div>
+      <div class="ind-content">
+        <span class="label">FinTech & Finance</span>
+        <h2>Financial Products Built for Trust, Compliance, and Scale</h2>
+        <p style="margin-bottom:16px;">Financial applications face scrutiny that other software doesn't. PCI-DSS compliance, audit logging, real-time transaction integrity, and fraud prevention aren't features — they're preconditions. We build payment platforms, lending systems, investment dashboards, and financial data tools with this rigor embedded by design.</p>
+        <p>Our FinTech experience spans consumer lending, B2B payments, investment platforms, and internal treasury tools. We know how to build systems that finance and compliance teams trust.</p>
+        <div class="ind-solutions">
+          <span class="ind-tag">Payment Platforms</span><span class="ind-tag">Lending Systems</span><span class="ind-tag">Investment Dashboards</span><span class="ind-tag">PCI-DSS Compliance</span><span class="ind-tag">Fraud Detection</span><span class="ind-tag">Open Banking APIs</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Discuss Your FinTech Project</a>
+      </div>
+    </div>
+
+    <div class="industry-detail anim">
+      <div class="ind-visual">🚚</div>
+      <div class="ind-content">
+        <span class="label">Logistics & Supply Chain</span>
+        <h2>Operational Technology That Keeps Goods Moving</h2>
+        <p style="margin-bottom:16px;">Logistics companies run on operational precision — a missed update, a routing error, or a platform outage translates directly into missed deliveries and lost revenue. We build fleet management systems, warehouse automation tools, real-time tracking platforms, and route optimization engines that logistics operations depend on every day.</p>
+        <div class="ind-solutions">
+          <span class="ind-tag">Fleet Management</span><span class="ind-tag">Real-Time Tracking</span><span class="ind-tag">Route Optimization</span><span class="ind-tag">Driver Apps</span><span class="ind-tag">Warehouse Automation</span><span class="ind-tag">EDI Integration</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Discuss Your Logistics Project</a>
+      </div>
+    </div>
+
+    <div class="industry-detail anim">
+      <div class="ind-visual">🛒</div>
+      <div class="ind-content">
+        <span class="label">E-Commerce & Retail</span>
+        <h2>Commerce Platforms Built to Convert and Scale</h2>
+        <p style="margin-bottom:16px;">E-commerce success lives in the details — page load speed, search relevance, checkout conversion, inventory accuracy. We build custom storefronts, B2B portals, multi-vendor marketplaces, and omnichannel retail systems that outperform generic platforms because they're built specifically for your business model.</p>
+        <div class="ind-solutions">
+          <span class="ind-tag">Custom Storefronts</span><span class="ind-tag">Marketplace Platforms</span><span class="ind-tag">B2B Commerce</span><span class="ind-tag">Inventory Management</span><span class="ind-tag">AI Recommendations</span><span class="ind-tag">Subscription Commerce</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Discuss Your Commerce Project</a>
+      </div>
+    </div>
+
+    <div class="industry-detail anim">
+      <div class="ind-visual">🎓</div>
+      <div class="ind-content">
+        <span class="label">EdTech & Learning</span>
+        <h2>Learning Platforms That Actually Engage Learners</h2>
+        <p style="margin-bottom:16px;">EdTech products live or die by engagement. A clunky UX, a buffering video, or a broken quiz kills the learning moment — and the retention rate. We build LMS platforms, live learning environments, adaptive assessment tools, and student analytics dashboards with pedagogy as a design constraint, not an afterthought.</p>
+        <div class="ind-solutions">
+          <span class="ind-tag">LMS Platforms</span><span class="ind-tag">Live Learning</span><span class="ind-tag">Adaptive Assessments</span><span class="ind-tag">Video Streaming</span><span class="ind-tag">Student Analytics</span><span class="ind-tag">Certification Systems</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Discuss Your EdTech Project</a>
+      </div>
+    </div>
+
+    <div class="industry-detail anim">
+      <div class="ind-visual">☁</div>
+      <div class="ind-content">
+        <span class="label">SaaS & B2B Software</span>
+        <h2>SaaS Products Built to Grow MRR, Not Just Ship Features</h2>
+        <p style="margin-bottom:16px;">A SaaS product's success is measured in MRR, churn rate, and expansion revenue — not just feature delivery. We build multi-tenant platforms with subscription billing, self-serve onboarding, usage metering, and the analytics infrastructure that tells you exactly which features drive retention and which drive cancellations.</p>
+        <div class="ind-solutions">
+          <span class="ind-tag">Multi-Tenant Architecture</span><span class="ind-tag">Stripe/Paddle Integration</span><span class="ind-tag">Self-Serve Onboarding</span><span class="ind-tag">Usage Metering</span><span class="ind-tag">Product Analytics</span><span class="ind-tag">White-Label Support</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:24px;">Discuss Your SaaS Project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="wrap">
+    <div class="cta-banner anim">
+      <h2>Don't See Your Industry?</h2>
+      <p>We also work in Real Estate, Professional Services, Government, Non-Profit, and Manufacturing. Our engineering expertise transfers across sectors.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+        <a href="portfolio.html" class="btn btn-ghost-white">See All Case Studies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Code<span>Foundri</span></div><p class="footer-desc">A trusted software engineering partner helping ambitious companies design, build, and scale world-class digital products.</p></div>
+      <div class="footer-col"><h5>Services</h5><a href="services/custom-software.html">Custom Software</a><a href="services/saas-development.html">SaaS Development</a><a href="services/web-development.html">Web Applications</a><a href="services/mobile-development.html">Mobile Apps</a><a href="services/ai-automation.html">AI & Automation</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="process.html">How We Work</a><a href="portfolio.html">Portfolio</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="industries.html">Industries</a><a href="technologies.html">Technologies</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

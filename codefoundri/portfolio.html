@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Case Studies — CodeFoundri</title>
+  <meta name="description" content="Real products, real results. Explore CodeFoundri's case studies across SaaS, AI, logistics, healthcare, e-commerce, and business automation.">
+  <meta property="og:title" content="Portfolio — CodeFoundri">
+  <meta property="og:description" content="35+ products shipped. Browse our case studies and see the measurable results we've delivered for clients worldwide.">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .filter-tabs { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:48px; }
+    .filter-tab { padding:9px 20px; border-radius:999px; font-size:13.5px; font-weight:600; font-family:'DM Sans',sans-serif; border:1.5px solid var(--gray-200); color:var(--gray-600); cursor:pointer; transition:all var(--transition); }
+    .filter-tab.active, .filter-tab:hover { background:var(--primary); color:var(--white); border-color:var(--primary); }
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo">Code<span>Foundri</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+      <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+      <li class="nav-item"><a href="technologies.html" class="nav-link">Technologies</a></li>
+      <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <a href="about.html" class="mob-link">About</a>
+  <a href="services.html" class="mob-link">Services</a>
+  <a href="portfolio.html" class="mob-link">Portfolio</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>Portfolio</div>
+    <span class="label label-white">Case Studies</span>
+    <h1>Products That Move <br>Business Forward</h1>
+    <p>We measure success in business outcomes, not just code delivered. Every case study below represents a product that generates real, measurable results.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filter-tabs anim">
+      <button class="filter-tab active">All Projects</button>
+      <button class="filter-tab">AI & Automation</button>
+      <button class="filter-tab">SaaS</button>
+      <button class="filter-tab">Mobile</button>
+      <button class="filter-tab">Web Apps</button>
+      <button class="filter-tab">Enterprise</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card anim anim-delay-1">
+        <div class="portfolio-thumb" style="font-size:56px;">🤖</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags"><span class="tag">AI / LLM</span><span class="tag">SaaS</span><span class="tag">Node.js</span><span class="tag">React</span></div>
+          <h3>AI Customer Support Platform</h3>
+          <p>Built an omnichannel AI support platform that handles 10,000+ customer conversations per day using GPT-4 with company-specific RAG knowledge retrieval. Replaced a 24-person support team without reducing CSAT.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>73%</strong><span>Cost reduction</span></div>
+            <div class="p-metric"><strong>4.8★</strong><span>CSAT score</span></div>
+            <div class="p-metric"><strong>10k+</strong><span>Daily chats</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card anim anim-delay-2">
+        <div class="portfolio-thumb" style="font-size:56px;">📊</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags"><span class="tag">SaaS</span><span class="tag">CRM</span><span class="tag">React</span><span class="tag">PostgreSQL</span></div>
+          <h3>SaaS CRM & Sales Pipeline Manager</h3>
+          <p>Multi-tenant CRM built for B2B sales teams — deal pipelines, automated email sequences, revenue forecasting, and native Slack/Zoom integrations. Now serving 500+ tenant organizations.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>500+</strong><span>Active tenants</span></div>
+            <div class="p-metric"><strong>2.1M+</strong><span>Deals tracked</span></div>
+            <div class="p-metric"><strong>99.9%</strong><span>Uptime</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card anim anim-delay-3">
+        <div class="portfolio-thumb" style="font-size:56px;">🚚</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags"><span class="tag">Logistics</span><span class="tag">Flutter</span><span class="tag">Maps API</span><span class="tag">Node.js</span></div>
+          <h3>Fleet & Logistics Management System</h3>
+          <p>Real-time GPS tracking, automated dispatch, driver mobile apps, and client-facing delivery portals. Deployed for a regional freight company managing 340 vehicles across 6 states.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>340</strong><span>Vehicles tracked</span></div>
+            <div class="p-metric"><strong>28%</strong><span>Fuel savings</span></div>
+            <div class="p-metric"><strong>2 min</strong><span>Avg. dispatch</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card anim anim-delay-1">
+        <div class="portfolio-thumb" style="font-size:56px;">🏥</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags"><span class="tag">Healthcare</span><span class="tag">React Native</span><span class="tag">HIPAA</span><span class="tag">AWS</span></div>
+          <h3>Telemedicine & Patient Engagement Platform</h3>
+          <p>Full telemedicine suite with video consultations, prescription management, appointment scheduling, and EHR integrations. HIPAA-compliant architecture on AWS with end-to-end encryption.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>18k</strong><span>Monthly consults</span></div>
+            <div class="p-metric"><strong>4.9★</strong><span>App store rating</span></div>
+            <div class="p-metric"><strong>62%</strong><span>No-show reduction</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card anim anim-delay-2">
+        <div class="portfolio-thumb" style="font-size:56px;">🛒</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags"><span class="tag">E-Commerce</span><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">Elasticsearch</span></div>
+          <h3>Multi-Vendor E-Commerce Marketplace</h3>
+          <p>Custom marketplace platform with vendor onboarding, commission management, AI product recommendations, and real-time inventory sync. Supports 1,200+ active sellers and 3M+ SKUs.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>1,200+</strong><span>Active vendors</span></div>
+            <div class="p-metric"><strong>3M+</strong><span>Products listed</span></div>
+            <div class="p-metric"><strong>41%</strong><span>Revenue uplift</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card anim anim-delay-3">
+        <div class="portfolio-thumb" style="font-size:56px;">⚙️</div>
+        <div class="portfolio-body">
+          <div class="portfolio-tags"><span class="tag">Automation</span><span class="tag">AI</span><span class="tag">ERP Integration</span><span class="tag">Python</span></div>
+          <h3>Enterprise Business Automation Platform</h3>
+          <p>Automated invoice processing, approval workflows, vendor management, and financial reconciliation — integrating with SAP, QuickBooks, and 12 internal tools. Saved 2,400 person-hours per month.</p>
+          <div class="portfolio-metrics">
+            <div class="p-metric"><strong>2,400h</strong><span>Saved per month</span></div>
+            <div class="p-metric"><strong>99.2%</strong><span>Processing accuracy</span></div>
+            <div class="p-metric"><strong>6 week</strong><span>ROI achieved</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:64px;" class="anim">
+      <p style="color:var(--gray-600);margin-bottom:24px;">These are 6 of 35+ products we've built. Want to see work relevant to your industry?</p>
+      <a href="contact.html" class="btn btn-primary">Request a Portfolio Review</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="wrap">
+    <div class="cta-banner anim">
+      <h2>Your Product Could Be Next</h2>
+      <p>Tell us what you're building and we'll show you relevant work from our portfolio — including projects we can't list publicly.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        <a href="contact.html" class="btn btn-ghost-white">Request NDA Portfolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo">Code<span>Foundri</span></div><p class="footer-desc">A trusted software engineering partner helping ambitious companies design, build, and scale world-class digital products.</p></div>
+      <div class="footer-col"><h5>Services</h5><a href="services/custom-software.html">Custom Software</a><a href="services/saas-development.html">SaaS Development</a><a href="services/web-development.html">Web Applications</a><a href="services/mobile-development.html">Mobile Apps</a><a href="services/ai-automation.html">AI & Automation</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="process.html">How We Work</a><a href="portfolio.html">Portfolio</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="industries.html">Industries</a><a href="technologies.html">Technologies</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="privacy-policy.html">Privacy Policy</a></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+document.getElementById('copy-year').textContent = new Date().getFullYear();
+document.querySelectorAll('.filter-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
