@@ -7,74 +7,7 @@
   <meta name="description" content="iOS and Android mobile app development with Flutter, React Native, Kotlin, and Swift. Native-quality experiences built for performance, retention, and scale.">
   <meta property="og:title" content="Mobile App Development — CodeFoundri">
   <link rel="stylesheet" href="../css/main.css">
-  <style>
-    /* ── Mobile Expertise Section ── */
-    .expertise-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-    @media (max-width: 1024px) { .expertise-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 600px)  { .expertise-grid { grid-template-columns: 1fr; } }
 
-    .exp-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 24px;
-      transition: all var(--transition);
-    }
-    .exp-card:hover { border-color: var(--primary); box-shadow: 0 4px 24px rgba(79,110,247,.1); transform: translateY(-2px); }
-    .exp-icon {
-      width: 44px; height: 44px;
-      background: var(--primary-light);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 14px;
-      flex-shrink: 0;
-    }
-    .exp-icon svg { width: 22px; height: 22px; color: var(--primary); }
-    .exp-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--dark); }
-    .exp-card p  { font-size: 13px; color: var(--gray-500); line-height: 1.55; margin-bottom: 14px; }
-    .skill-tags  { display: flex; flex-wrap: wrap; gap: 5px; }
-    .skill-tag {
-      display: inline-block;
-      padding: 3px 9px;
-      background: var(--gray-100);
-      border: 1px solid var(--gray-200);
-      border-radius: 100px;
-      font-size: 11.5px;
-      font-weight: 600;
-      color: var(--gray-600);
-      white-space: nowrap;
-    }
-    .skill-tag.primary { background: var(--primary-light); border-color: rgba(79,110,247,.25); color: var(--primary); }
-
-    /* Stats bar */
-    .mobile-stats {
-      display: flex;
-      gap: 0;
-      background: var(--dark);
-      border-radius: var(--radius-xl);
-      overflow: hidden;
-      margin-bottom: 56px;
-    }
-    .mobile-stat {
-      flex: 1;
-      padding: 32px 24px;
-      text-align: center;
-      border-right: 1px solid rgba(255,255,255,.08);
-    }
-    .mobile-stat:last-child { border-right: none; }
-    .mobile-stat-num { font-size: 2rem; font-weight: 800; color: var(--white); line-height: 1; margin-bottom: 6px; }
-    .mobile-stat-num span { color: var(--primary); }
-    .mobile-stat-lbl { font-size: 12.5px; color: var(--gray-400); font-weight: 500; }
-    @media (max-width: 600px) {
-      .mobile-stats { flex-direction: column; }
-      .mobile-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
-      .mobile-stat:last-child { border-bottom: none; }
-    }
-  </style>
 </head>
 <body>
 <nav id="nav"><div class="wrap nav-inner"><a href="../index.html" class="nav-logo">Code<span>Foundri</span></a><ul class="nav-links"><li class="nav-item"><a href="../about.html" class="nav-link">About</a></li><li class="nav-item"><a href="../services.html" class="nav-link active">Services</a></li><li class="nav-item"><a href="../portfolio.html" class="nav-link">Portfolio</a></li><li class="nav-item"><a href="../industries.html" class="nav-link">Industries</a></li></ul><div class="nav-ctas"><a href="../contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a><a href="../contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a></div><button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button></div></nav>

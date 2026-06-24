@@ -112,6 +112,123 @@
   </div>
 </section>
 
+<!-- ════════════ SAAS EXPERTISE ════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">Built, Not Theorised</span>
+      <h2>We Shipped a Multi-Tenant SaaS — Here's the Stack</h2>
+      <p>NextInQue is a production SaaS we built and operate ourselves — multi-tenant, subscription-gated, with real-time features and a full admin panel. The patterns below come from that real experience, not just client work.</p>
+    </div>
+
+    <div class="expertise-grid anim anim-delay-1">
+
+      <!-- Multi-tenancy -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+        </div>
+        <h4>Multi-tenancy</h4>
+        <p>Tenant hierarchy with HQ/branch relationships, isolated data per tenant, and a super-admin approval flow.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Tenant Isolation</span>
+          <span class="skill-tag primary">HQ / Branch Model</span>
+          <span class="skill-tag">Prisma ORM</span>
+          <span class="skill-tag">Row-level Scoping</span>
+          <span class="skill-tag">Admin Approval Flow</span>
+          <span class="skill-tag">White-label Ready</span>
+        </div>
+      </div>
+
+      <!-- Auth & Roles -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 0 1 21.75 8.25Z"/></svg>
+        </div>
+        <h4>Auth & Role-based Access</h4>
+        <p>Dual JWT token pairs for separate tenant and admin surfaces — Owner, Staff, Super-Admin, Viewer roles enforced at middleware level.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">JWT Access + Refresh</span>
+          <span class="skill-tag primary">RBAC Middleware</span>
+          <span class="skill-tag">Dual Token Pairs</span>
+          <span class="skill-tag">Role Gating</span>
+          <span class="skill-tag">Secure Cookie Storage</span>
+          <span class="skill-tag">bcryptjs</span>
+        </div>
+      </div>
+
+      <!-- Subscriptions & Billing -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/></svg>
+        </div>
+        <h4>Subscriptions & Billing</h4>
+        <p>Plan tiers, manual payment receipt verification, HTTP 402 subscription gating, and lifecycle state machine from trial to active to expired.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Subscription Lifecycle</span>
+          <span class="skill-tag primary">402 Feature Gating</span>
+          <span class="skill-tag">Plan Tiers</span>
+          <span class="skill-tag">Payment Receipts</span>
+          <span class="skill-tag">Admin Verification</span>
+          <span class="skill-tag">Onboarding Redirect</span>
+        </div>
+      </div>
+
+      <!-- Real-time Dashboard -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+        </div>
+        <h4>Real-time Dashboard</h4>
+        <p>Live queue state pushed to tenants and customers simultaneously via Socket.IO rooms per tenant — consistent across all server workers via Redis.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Socket.IO</span>
+          <span class="skill-tag primary">Redis Adapter</span>
+          <span class="skill-tag">Tenant Rooms</span>
+          <span class="skill-tag">Public Notices</span>
+          <span class="skill-tag">Cluster-safe Events</span>
+          <span class="skill-tag">BullMQ Workers</span>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/></svg>
+        </div>
+        <h4>Notification Engine</h4>
+        <p>Multi-channel notification dispatch — SMS, WhatsApp, email, and web-push — with configurable per-tenant triggers and BullMQ async workers.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">AWS SES</span>
+          <span class="skill-tag primary">Twilio SMS/WhatsApp</span>
+          <span class="skill-tag">Web Push</span>
+          <span class="skill-tag">Nodemailer</span>
+          <span class="skill-tag">BullMQ Async</span>
+          <span class="skill-tag">Trigger Rules</span>
+        </div>
+      </div>
+
+      <!-- Analytics -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+        </div>
+        <h4>Analytics & Reporting</h4>
+        <p>Daily analytics snapshots via cron, live charts with Recharts, PDF/Excel export, and Prometheus metrics for infrastructure health.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Recharts</span>
+          <span class="skill-tag primary">Prometheus</span>
+          <span class="skill-tag">Grafana Dashboards</span>
+          <span class="skill-tag">PDF Export (pdfkit)</span>
+          <span class="skill-tag">Excel Export (exceljs)</span>
+          <span class="skill-tag">Daily Snapshots</span>
+        </div>
+      </div>
+
+    </div><!-- /expertise-grid -->
+  </div>
+</section>
+
 <section class="section-sm"><div class="wrap"><div class="cta-banner anim"><h2>Ready to Build Your SaaS Product?</h2><p>Tell us about your SaaS idea. We'll scope an MVP, give you an honest timeline and budget, and show you how to get from zero to first paying customer.</p><div class="cta-btns"><a href="../contact.html" class="btn btn-primary">Start the Conversation</a><a href="../portfolio.html" class="btn btn-ghost-white">See Our SaaS Portfolio</a></div></div></div></section>
 
 <footer class="site-footer"><div class="wrap"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo">Code<span>Foundri</span></div><p class="footer-desc">Building scalable SaaS platforms, web apps, and AI solutions for ambitious companies worldwide.</p></div><div class="footer-col"><h5>Services</h5><a href="custom-software.html">Custom Software</a><a href="saas-development.html">SaaS Development</a><a href="web-development.html">Web Applications</a><a href="mobile-development.html">Mobile Apps</a><a href="ai-automation.html">AI &amp; Automation</a><a href="dedicated-teams.html">Dedicated Teams</a></div><div class="footer-col"><h5>Company</h5><a href="../about.html">About</a><a href="../process.html">How We Work</a><a href="../portfolio.html">Portfolio</a><a href="../careers.html">Careers</a><a href="../contact.html">Contact</a></div><div class="footer-col"><h5>Resources</h5><a href="../industries.html">Industries</a><a href="../technologies.html">Technologies</a><a href="../faq.html">FAQ</a><a href="../blog.html">Blog</a></div></div><div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></div></div></div></footer>
