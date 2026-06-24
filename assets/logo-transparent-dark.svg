@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 80" width="780" height="160">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,800&amp;display=swap');
+      .lgt { font-family: 'DM Sans', Arial Black, sans-serif; font-weight: 800; font-size: 56px; letter-spacing: -1.7px; dominant-baseline: auto; }
+    </style>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F6EF7"/>
+      <stop offset="100%" stop-color="#00C9A7"/>
+    </linearGradient>
+  </defs>
+  <!-- Transparent bg, white "Code" + gradient "Foundri" — for dark backgrounds -->
+  <text class="lgt" x="8" y="60">
+    <tspan fill="#FFFFFF">Code</tspan><tspan fill="url(#grad)">Foundri</tspan>
+  </text>
+</svg>
