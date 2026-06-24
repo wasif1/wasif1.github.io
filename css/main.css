@@ -539,6 +539,8 @@ p  { color: var(--gray-600); line-height: 1.75; }
 }
 .tech-badge:hover { border-color: var(--primary); color: var(--white); }
 .tech-badge span { font-size: 16px; }
+.tech-badge img { width: 16px; height: 16px; object-fit: contain; flex-shrink: 0; }
+.tech-badge svg { flex-shrink: 0; }
 
 /* ── INDUSTRIES ── */
 .industries-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
