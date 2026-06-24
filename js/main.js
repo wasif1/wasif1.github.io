@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ── PREFERS REDUCED MOTION ──
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.clients-logos, .testi-track').forEach(function (el) {
+    document.querySelectorAll('.testi-track').forEach(function (el) {
       el.style.animationPlayState = 'paused';
     });
   }

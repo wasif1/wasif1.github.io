@@ -377,32 +377,33 @@ p  { color: var(--gray-600); line-height: 1.75; }
 .hero-float svg { width: 18px; height: 18px; color: var(--secondary); }
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
-/* ── CLIENTS ── */
+/* ── TRUST BAR ── */
 .clients { padding: 48px 0; border-bottom: 1px solid var(--gray-200); }
-.clients-label { text-align: center; font-size: 13px; color: var(--gray-400); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 32px; }
-.clients-track {
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-.clients-logos {
+.clients-label { text-align: center; font-size: 12.5px; color: var(--gray-400); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 28px; }
+.trust-bar {
   display: flex;
-  gap: 48px;
-  align-items: center;
-  width: max-content;
-  animation: logos 28s linear infinite;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
-.clients-logos:hover { animation-play-state: paused; }
-.client-logo {
+.trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 100px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--gray-400);
-  opacity: .6;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--gray-600);
   white-space: nowrap;
   transition: all var(--transition);
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
 }
-.client-logo:hover { opacity: 1; color: var(--primary); }
-@keyframes logos { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.trust-pill svg { width: 15px; height: 15px; color: var(--primary); flex-shrink: 0; }
+.trust-pill:hover { border-color: var(--primary); color: var(--primary); box-shadow: 0 2px 8px rgba(79,70,229,.12); }
 
 /* ── SERVICES ── */
 .services-grid {
