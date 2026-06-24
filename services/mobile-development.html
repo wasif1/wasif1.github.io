@@ -7,6 +7,74 @@
   <meta name="description" content="iOS and Android mobile app development with Flutter, React Native, Kotlin, and Swift. Native-quality experiences built for performance, retention, and scale.">
   <meta property="og:title" content="Mobile App Development — CodeFoundri">
   <link rel="stylesheet" href="../css/main.css">
+  <style>
+    /* ── Mobile Expertise Section ── */
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 1024px) { .expertise-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px)  { .expertise-grid { grid-template-columns: 1fr; } }
+
+    .exp-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: all var(--transition);
+    }
+    .exp-card:hover { border-color: var(--primary); box-shadow: 0 4px 24px rgba(79,110,247,.1); transform: translateY(-2px); }
+    .exp-icon {
+      width: 44px; height: 44px;
+      background: var(--primary-light);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+    .exp-icon svg { width: 22px; height: 22px; color: var(--primary); }
+    .exp-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--dark); }
+    .exp-card p  { font-size: 13px; color: var(--gray-500); line-height: 1.55; margin-bottom: 14px; }
+    .skill-tags  { display: flex; flex-wrap: wrap; gap: 5px; }
+    .skill-tag {
+      display: inline-block;
+      padding: 3px 9px;
+      background: var(--gray-100);
+      border: 1px solid var(--gray-200);
+      border-radius: 100px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--gray-600);
+      white-space: nowrap;
+    }
+    .skill-tag.primary { background: var(--primary-light); border-color: rgba(79,110,247,.25); color: var(--primary); }
+
+    /* Stats bar */
+    .mobile-stats {
+      display: flex;
+      gap: 0;
+      background: var(--dark);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      margin-bottom: 56px;
+    }
+    .mobile-stat {
+      flex: 1;
+      padding: 32px 24px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+    .mobile-stat:last-child { border-right: none; }
+    .mobile-stat-num { font-size: 2rem; font-weight: 800; color: var(--white); line-height: 1; margin-bottom: 6px; }
+    .mobile-stat-num span { color: var(--primary); }
+    .mobile-stat-lbl { font-size: 12.5px; color: var(--gray-400); font-weight: 500; }
+    @media (max-width: 600px) {
+      .mobile-stats { flex-direction: column; }
+      .mobile-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+      .mobile-stat:last-child { border-bottom: none; }
+    }
+  </style>
 </head>
 <body>
 <nav id="nav"><div class="wrap nav-inner"><a href="../index.html" class="nav-logo">Code<span>Foundri</span></a><ul class="nav-links"><li class="nav-item"><a href="../about.html" class="nav-link">About</a></li><li class="nav-item"><a href="../services.html" class="nav-link active">Services</a></li><li class="nav-item"><a href="../portfolio.html" class="nav-link">Portfolio</a></li><li class="nav-item"><a href="../industries.html" class="nav-link">Industries</a></li></ul><div class="nav-ctas"><a href="../contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a><a href="../contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a></div><button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button></div></nav>
@@ -81,6 +149,254 @@
       <div class="challenge-card"><h4>App Store Submission</h4><p>We handle Apple App Store and Google Play submission, review guidelines compliance, and the back-and-forth with reviewers until your app is live.</p></div>
       <div class="challenge-card"><h4>Analytics & Crash Reporting</h4><p>Firebase Analytics, Sentry crash reporting, and custom event tracking so you understand user behavior and find issues before users report them.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- ════════════ DEEP EXPERTISE ════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header anim">
+      <span class="label">Engineering Depth</span>
+      <h2>9+ Years of Deep Android Engineering</h2>
+      <p>Our mobile lead has shipped production apps used by 1.99M+ users across healthcare, ride-sharing, enterprise access, and media. Here's what that experience looks like in practice.</p>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="mobile-stats anim anim-delay-1">
+      <div class="mobile-stat">
+        <div class="mobile-stat-num"><span data-count="9" data-suffix="+">9+</span></div>
+        <div class="mobile-stat-lbl">Years Android</div>
+      </div>
+      <div class="mobile-stat">
+        <div class="mobile-stat-num"><span data-count="1" data-suffix=".99M+">1.99M+</span></div>
+        <div class="mobile-stat-lbl">App Downloads</div>
+      </div>
+      <div class="mobile-stat">
+        <div class="mobile-stat-num"><span data-count="4" data-suffix=".8★">4.8★</span></div>
+        <div class="mobile-stat-lbl">Play Store Rating</div>
+      </div>
+      <div class="mobile-stat">
+        <div class="mobile-stat-num"><span data-count="50" data-suffix="%">50%</span></div>
+        <div class="mobile-stat-lbl">Crash Rate Reduction</div>
+      </div>
+    </div>
+
+    <!-- Expertise grid -->
+    <div class="expertise-grid anim anim-delay-2">
+
+      <!-- 1. Languages & Core -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+        </div>
+        <h4>Languages & Core</h4>
+        <p>Battle-tested in production codebases across 9 years — from legacy Java to modern Kotlin.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Kotlin</span>
+          <span class="skill-tag primary">Jetpack Compose</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Android SDK</span>
+          <span class="skill-tag">XML / JSON</span>
+          <span class="skill-tag">JNI</span>
+          <span class="skill-tag">REST API</span>
+        </div>
+      </div>
+
+      <!-- 2. Architecture & Patterns -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
+        </div>
+        <h4>Architecture & Patterns</h4>
+        <p>Clean, scalable codebases that new team members can understand and extend without fear.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Clean Architecture</span>
+          <span class="skill-tag primary">MVVM</span>
+          <span class="skill-tag">Modular Architecture</span>
+          <span class="skill-tag">Dynamic Feature Modules</span>
+          <span class="skill-tag">Server-Driven UI</span>
+          <span class="skill-tag">MVP</span>
+          <span class="skill-tag">Dagger / Hilt</span>
+        </div>
+      </div>
+
+      <!-- 3. UI & Design System -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>
+        </div>
+        <h4>UI & Design System</h4>
+        <p>Pixel-perfect implementations of Material Design with full dark/light theming and multi-language support.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Jetpack Compose</span>
+          <span class="skill-tag">Material Design 3</span>
+          <span class="skill-tag">Dark / Light Theme</span>
+          <span class="skill-tag">Multi-language</span>
+          <span class="skill-tag">Data Binding</span>
+          <span class="skill-tag">Navigation Components</span>
+          <span class="skill-tag">Dynamic Views</span>
+        </div>
+      </div>
+
+      <!-- 4. Networking & Real-time -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"/></svg>
+        </div>
+        <h4>Networking & Real-time</h4>
+        <p>From simple REST integrations to live WebRTC video calls and socket-driven dashboards.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Retrofit</span>
+          <span class="skill-tag primary">WebRTC</span>
+          <span class="skill-tag">Coroutines / Flow</span>
+          <span class="skill-tag">Sockets</span>
+          <span class="skill-tag">PubNub</span>
+          <span class="skill-tag">Netcore</span>
+          <span class="skill-tag">Work Manager</span>
+        </div>
+      </div>
+
+      <!-- 5. Maps & Location -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+        </div>
+        <h4>Maps & Location</h4>
+        <p>Live ride tracking, geofences, polyline routes, and custom map markers — built for ride-sharing at scale.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Google Maps API</span>
+          <span class="skill-tag primary">Mapbox</span>
+          <span class="skill-tag">Polylines</span>
+          <span class="skill-tag">Geofencing</span>
+          <span class="skill-tag">Markers & InfoWindow</span>
+          <span class="skill-tag">Real-time Tracking</span>
+        </div>
+      </div>
+
+      <!-- 6. IoT, Hardware & AR -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/></svg>
+        </div>
+        <h4>IoT, Hardware & AR</h4>
+        <p>Hardware integrations from BLE door access systems to AR overlays — real devices, real environments.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">BLE (Bluetooth Low Energy)</span>
+          <span class="skill-tag primary">Biometric Auth</span>
+          <span class="skill-tag">QR / Barcode Scanner</span>
+          <span class="skill-tag">Face Recognition</span>
+          <span class="skill-tag">AR</span>
+          <span class="skill-tag">Beacons</span>
+          <span class="skill-tag">NFC</span>
+        </div>
+      </div>
+
+      <!-- 7. Media & Streaming -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+        </div>
+        <h4>Media & Streaming</h4>
+        <p>Smooth video playback, live video calling, and FFMPEG-powered media processing in production apps.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">ExoPlayer</span>
+          <span class="skill-tag primary">Video Streaming</span>
+          <span class="skill-tag">Video Calling</span>
+          <span class="skill-tag">FFMPEG</span>
+          <span class="skill-tag">Media Player</span>
+          <span class="skill-tag">Live Dashcam</span>
+        </div>
+      </div>
+
+      <!-- 8. Security & Storage -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+        </div>
+        <h4>Security & Storage</h4>
+        <p>Enterprise-grade data protection — hardware-backed key storage, encrypted databases, biometric gating.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Android Keystore</span>
+          <span class="skill-tag primary">AES-GCM / RSA</span>
+          <span class="skill-tag">Biometric Security</span>
+          <span class="skill-tag">StrongBox / TEE</span>
+          <span class="skill-tag">Room / SQLite</span>
+          <span class="skill-tag">Encrypted Preferences</span>
+          <span class="skill-tag">HTTPS / TLS</span>
+        </div>
+      </div>
+
+      <!-- 9. Push & Messaging -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/></svg>
+        </div>
+        <h4>Push & Messaging</h4>
+        <p>FCM push pipelines, in-app chat systems, and multi-channel notification flows used daily by 1M+ users.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Firebase FCM</span>
+          <span class="skill-tag primary">OneSignal</span>
+          <span class="skill-tag">Sendbird Chat</span>
+          <span class="skill-tag">QuickBlox</span>
+          <span class="skill-tag">Intercom</span>
+          <span class="skill-tag">GCM</span>
+          <span class="skill-tag">Firestore</span>
+        </div>
+      </div>
+
+      <!-- 10. Payments & Ads -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/></svg>
+        </div>
+        <h4>Payments & Monetisation</h4>
+        <p>In-app purchases, subscriptions, digital wallets, and ad SDK integrations shipped in real consumer apps.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Stripe</span>
+          <span class="skill-tag primary">Google Pay</span>
+          <span class="skill-tag">In-App Subscriptions</span>
+          <span class="skill-tag">Google Ads SDK</span>
+          <span class="skill-tag">Facebook Ads SDK</span>
+          <span class="skill-tag">Custom Ads Controller</span>
+        </div>
+      </div>
+
+      <!-- 11. Cross-Platform -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 7.5h3m-3 3h3m-6 3h.008v.008H6V15Zm0 3h.008v.008H6V18Zm0-9h.008v.008H6V9Z"/></svg>
+        </div>
+        <h4>Cross-Platform</h4>
+        <p>Share business logic across Android and iOS while keeping native UI where it counts.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">Kotlin Multiplatform (KMP)</span>
+          <span class="skill-tag primary">Compose Multiplatform</span>
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">Shared Business Logic</span>
+        </div>
+      </div>
+
+      <!-- 12. DevOps & Quality -->
+      <div class="exp-card">
+        <div class="exp-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+        </div>
+        <h4>DevOps & Quality</h4>
+        <p>Automated pipelines from commit to Play Store — unit tests, UI tests, and zero-downtime deployments.</p>
+        <div class="skill-tags">
+          <span class="skill-tag primary">GitHub Actions</span>
+          <span class="skill-tag primary">Fastlane</span>
+          <span class="skill-tag">CI/CD Pipelines</span>
+          <span class="skill-tag">JUnit / Mockito</span>
+          <span class="skill-tag">TDD</span>
+          <span class="skill-tag">Firebase Distribution</span>
+          <span class="skill-tag">Google Play Store</span>
+          <span class="skill-tag">Huawei AppGallery</span>
+        </div>
+      </div>
+
+    </div><!-- /expertise-grid -->
   </div>
 </section>
 
