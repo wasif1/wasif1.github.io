@@ -126,13 +126,16 @@ document.addEventListener('DOMContentLoaded', function () {
           body: JSON.stringify(data)
         });
         const json = await res.json();
+        console.log('[Web3Forms]', res.status, json);
         if (res.ok && json.success) {
           successBox.style.display = 'block';
           form.reset();
         } else {
+          errorBox.querySelector('span.w3f-msg') && (errorBox.querySelector('span.w3f-msg').textContent = json.message || '');
           errorBox.style.display = 'block';
         }
-      } catch (_) {
+      } catch (err) {
+        console.error('[Web3Forms error]', err);
         errorBox.style.display = 'block';
       } finally {
         btn.disabled = false;
