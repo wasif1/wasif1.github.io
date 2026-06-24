@@ -31,7 +31,38 @@
     .work-stack { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:14px; }
     .work-tech { padding:2px 9px; border-radius:4px; font-size:11px; font-weight:600; background:#eef1ff; color:var(--primary); font-family:'DM Sans',sans-serif; letter-spacing:.01em; }
     .work-thumb-wrap { position:relative; }
-    .thumb-cover { position:absolute; top:0; left:0; right:0; height:52px; background:linear-gradient(to bottom,#0d0f14 60%,transparent); z-index:2; pointer-events:none; }
+    /* ── Blurred image NDA treatment ── */
+    .img-blurred { filter:blur(14px) !important; transform:scale(1.28) !important; }
+    .work-card:hover .img-blurred { transform:scale(1.28) !important; }
+    /* ── NDA overlay (sits above blurred img OR mock-thumb) ── */
+    .nda-overlay { position:absolute; inset:0; background:rgba(6,8,18,.55); backdrop-filter:blur(1px); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; z-index:4; }
+    .nda-overlay svg { width:28px; height:28px; color:rgba(255,255,255,.45); }
+    .nda-overlay-label { font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.4); font-family:'DM Sans',sans-serif; }
+    /* ── CSS mock thumbnails for NDA new projects ── */
+    .mock-thumb { width:100%; height:100%; display:flex; flex-direction:column; overflow:hidden; }
+    .mock-dark  { background:linear-gradient(145deg,#0d1526 0%,#1b2f52 100%); }
+    .mock-shop  { background:linear-gradient(145deg,#f0f4ff 0%,#e2e8f8 100%); }
+    .mock-loyalty { background:linear-gradient(145deg,#160430 0%,#2e0c6e 100%); }
+    .mock-bar { height:30px; display:flex; align-items:center; padding:0 10px; gap:5px; flex-shrink:0; border-bottom:1px solid rgba(255,255,255,.06); background:rgba(255,255,255,.06); }
+    .mock-bar-light { background:rgba(0,0,0,.04); border-color:rgba(0,0,0,.06); }
+    .mock-dot { width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.18); }
+    .mock-dot-d { background:rgba(0,0,0,.12); }
+    .mock-url { flex:1; height:14px; border-radius:3px; background:rgba(255,255,255,.07); margin-left:6px; }
+    .mock-url-light { background:rgba(0,0,0,.07); }
+    .mock-body { flex:1; display:flex; gap:8px; padding:10px; }
+    .mock-side { width:36px; display:flex; flex-direction:column; gap:6px; }
+    .mock-side-item { height:6px; border-radius:3px; background:rgba(255,255,255,.12); }
+    .mock-side-item-d { background:rgba(0,0,0,.1); }
+    .mock-main { flex:1; display:flex; flex-direction:column; gap:7px; }
+    .mock-stats { display:grid; grid-template-columns:1fr 1fr 1fr; gap:5px; }
+    .mock-stat { height:32px; border-radius:5px; background:rgba(255,255,255,.08); }
+    .mock-stat-light { background:rgba(255,255,255,.9); box-shadow:0 1px 4px rgba(0,0,0,.08); }
+    .mock-row { height:7px; border-radius:3px; background:rgba(255,255,255,.09); }
+    .mock-row-light { background:rgba(0,0,0,.07); }
+    .mock-row-short { width:55%; }
+    .mock-cards { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+    .mock-card { height:40px; border-radius:5px; background:rgba(255,255,255,.07); }
+    .mock-card-light { background:rgba(255,255,255,.92); box-shadow:0 1px 4px rgba(0,0,0,.07); }
     .confidential-badge { display:inline-flex; align-items:center; gap:5px; font-size:12px; font-weight:600; color:var(--gray-400); font-family:'DM Sans',sans-serif; }
   </style>
 </head>
@@ -100,15 +131,18 @@
 
     <div class="work-grid" id="work-grid">
 
-      <!-- ── PHARMACY E-COMMERCE (confidential) ── -->
+      <!-- ── HEALTHCARE APP (confidential) ── -->
       <div class="work-card anim anim-delay-1" data-cat="mobile ecommerce">
         <div class="work-thumb-wrap">
-          <div class="thumb-cover"></div>
-          <img src="images/project/lifepharmacy.png" alt="Pharmacy E-Commerce Android App" loading="lazy">
+          <img src="images/project/lifepharmacy.png" class="img-blurred" alt="Healthcare Mobile App" loading="lazy">
+          <div class="nda-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+            <span class="nda-overlay-label">NDA Protected</span>
+          </div>
         </div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">E-Commerce</span><span class="work-tag">UAE</span></div>
-          <h3>Pharmacy E-Commerce Platform</h3>
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Healthcare</span><span class="work-tag">UAE</span></div>
+          <h3>Healthcare Mobile App</h3>
           <div class="work-metric-row">
             <div class="work-metric"><strong>1.99M+</strong>Downloads</div>
             <div class="work-metric"><strong>4.7★</strong>Play Store</div>
@@ -117,7 +151,7 @@
           <div class="work-stack">
             <span class="work-tech">Kotlin</span><span class="work-tech">Retrofit</span><span class="work-tech">Room DB</span><span class="work-tech">Firebase</span><span class="work-tech">Google Pay</span><span class="work-tech">Google Maps</span>
           </div>
-          <p>Full-featured pharmacy e-commerce app for one of the UAE's largest chains. Prescription uploads, real-time stock, loyalty rewards, same-day delivery tracking, and a custom AR medicine scanner.</p>
+          <p>Full-featured healthcare mobile app for one of the UAE's largest chains. Prescription uploads, real-time stock, loyalty rewards, same-day delivery tracking, and an AR product scanner.</p>
           <span class="confidential-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Confidential Client · NDA</span>
         </div>
       </div>
@@ -240,7 +274,18 @@
       <!-- ── NEXTINQUE (SaaS) ── -->
       <div class="work-card anim anim-delay-2" data-cat="saas enterprise">
         <div class="work-thumb-wrap">
-          <img src="images/project/project-image01.png" alt="NextInQue Queue Management SaaS Dashboard" loading="lazy">
+          <div class="mock-thumb mock-dark">
+            <div class="mock-bar"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-url"></div></div>
+            <div class="mock-body">
+              <div class="mock-side"><div class="mock-side-item" style="width:80%"></div><div class="mock-side-item" style="width:60%"></div><div class="mock-side-item" style="width:70%"></div><div class="mock-side-item" style="width:50%"></div><div class="mock-side-item" style="width:65%"></div></div>
+              <div class="mock-main">
+                <div class="mock-stats"><div class="mock-stat"></div><div class="mock-stat"></div><div class="mock-stat"></div></div>
+                <div class="mock-row"></div><div class="mock-row mock-row-short"></div>
+                <div class="mock-cards"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+                <div class="mock-row" style="width:80%"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">SaaS</span><span class="work-tag">Multi-tenant</span><span class="work-tag">Real-time</span></div>
@@ -260,7 +305,23 @@
       <!-- ── MULTI-VENDOR MARKETPLACE (web) ── -->
       <div class="work-card anim anim-delay-3" data-cat="marketplace ecommerce">
         <div class="work-thumb-wrap">
-          <img src="images/project/project-image02.png" alt="Multi-vendor E-Commerce Marketplace" loading="lazy">
+          <div class="mock-thumb mock-shop">
+            <div class="mock-bar mock-bar-light"><div class="mock-dot mock-dot-d"></div><div class="mock-dot mock-dot-d"></div><div class="mock-dot mock-dot-d"></div><div class="mock-url mock-url-light"></div></div>
+            <div class="mock-body">
+              <div class="mock-main">
+                <div class="mock-row mock-row-light" style="width:40%;height:10px;"></div>
+                <div class="mock-cards">
+                  <div class="mock-card mock-card-light"></div><div class="mock-card mock-card-light"></div>
+                  <div class="mock-card mock-card-light"></div><div class="mock-card mock-card-light"></div>
+                </div>
+                <div class="mock-row mock-row-light"></div><div class="mock-row mock-row-light mock-row-short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="nda-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+            <span class="nda-overlay-label">NDA Protected</span>
+          </div>
         </div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Web App</span><span class="work-tag">Marketplace</span><span class="work-tag">Payments</span></div>
@@ -280,7 +341,19 @@
       <!-- ── LOYALTY & REWARDS PLATFORM ── -->
       <div class="work-card anim anim-delay-1" data-cat="mobile ecommerce">
         <div class="work-thumb-wrap">
-          <img src="images/project/reward.png" alt="Loyalty and Rewards Mobile App" loading="lazy">
+          <div class="mock-thumb mock-loyalty">
+            <div class="mock-bar"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-url"></div></div>
+            <div class="mock-body" style="align-items:center;justify-content:center;flex-direction:column;gap:10px;">
+              <div style="width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.18);"></div>
+              <div class="mock-row" style="width:60%;"></div>
+              <div class="mock-stats" style="width:90%;"><div class="mock-stat"></div><div class="mock-stat"></div><div class="mock-stat"></div></div>
+              <div class="mock-row mock-row-short"></div>
+            </div>
+          </div>
+          <div class="nda-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+            <span class="nda-overlay-label">NDA Protected</span>
+          </div>
         </div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Loyalty</span><span class="work-tag">Gamification</span></div>
@@ -300,7 +373,11 @@
       <!-- ── ENTERPRISE FIELD OPS ── -->
       <div class="work-card anim anim-delay-2" data-cat="mobile enterprise">
         <div class="work-thumb-wrap">
-          <img src="images/project/ey_pk2.png" alt="Enterprise Field Operations App" loading="lazy">
+          <img src="images/project/ey_pk2.png" class="img-blurred" alt="Enterprise Field Operations App" loading="lazy">
+          <div class="nda-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+            <span class="nda-overlay-label">NDA Protected</span>
+          </div>
         </div>
         <div class="work-body">
           <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Enterprise</span><span class="work-tag">Offline-first</span></div>
