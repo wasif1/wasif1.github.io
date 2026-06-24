@@ -115,28 +115,33 @@
 
       <div class="c-form anim anim-delay-2">
         <h3>Send Us a Message</h3>
-        <form id="contact-form">
+        <form id="contact-form" novalidate>
+          <!-- Web3Forms access key — replace with your key from web3forms.com -->
+          <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_KEY">
+          <input type="hidden" name="subject" value="New Project Enquiry — CodeFoundri Website">
+          <input type="hidden" name="from_name" value="CodeFoundri Contact Form">
+          <input type="checkbox" name="botcheck" style="display:none;">
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name *</label>
-              <input type="text" id="fname" class="form-input" placeholder="John" required>
+              <input type="text" id="fname" name="first_name" class="form-input" placeholder="John" required>
             </div>
             <div class="form-group">
               <label for="lname">Last Name *</label>
-              <input type="text" id="lname" class="form-input" placeholder="Smith" required>
+              <input type="text" id="lname" name="last_name" class="form-input" placeholder="Smith" required>
             </div>
           </div>
           <div class="form-group">
             <label for="email">Work Email *</label>
-            <input type="email" id="email" class="form-input" placeholder="john@yourcompany.com" required>
+            <input type="email" id="email" name="email" class="form-input" placeholder="john@yourcompany.com" required>
           </div>
           <div class="form-group">
             <label for="company">Company Name</label>
-            <input type="text" id="company" class="form-input" placeholder="Acme Inc.">
+            <input type="text" id="company" name="company" class="form-input" placeholder="Acme Inc.">
           </div>
           <div class="form-group">
             <label for="service">Service Interested In</label>
-            <select id="service" class="form-input">
+            <select id="service" name="service" class="form-input">
               <option value="">Select a service...</option>
               <option>Custom Software Development</option>
               <option>SaaS Platform Development</option>
@@ -151,7 +156,7 @@
           </div>
           <div class="form-group">
             <label for="budget">Estimated Budget</label>
-            <select id="budget" class="form-input">
+            <select id="budget" name="budget" class="form-input">
               <option value="">Select a range...</option>
               <option>Under $15,000</option>
               <option>$15,000 – $50,000</option>
@@ -163,12 +168,18 @@
           </div>
           <div class="form-group">
             <label for="message">Tell Us About Your Project *</label>
-            <textarea id="message" class="form-input" rows="5" placeholder="What are you building? What problem does it solve? What's your timeline?" required></textarea>
+            <textarea id="message" name="message" class="form-input" rows="5" placeholder="What are you building? What problem does it solve? What's your timeline?" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px;padding:15px;">
+          <button type="submit" id="submit-btn" class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px;padding:15px;">
             Send Message
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            <svg id="submit-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
           </button>
+          <div id="form-success" style="display:none;margin-top:16px;padding:16px 20px;background:#ecfdf5;border:1px solid #6ee7b7;border-radius:10px;color:#065f46;font-size:14px;font-weight:600;text-align:center;">
+            Message sent! We'll be in touch within one business day.
+          </div>
+          <div id="form-error" style="display:none;margin-top:16px;padding:16px 20px;background:#fef2f2;border:1px solid #fca5a5;border-radius:10px;color:#991b1b;font-size:14px;text-align:center;">
+            Something went wrong. Please email us directly at <a href="mailto:hello@codefoundri.com" style="color:#991b1b;font-weight:700;">hello@codefoundri.com</a>
+          </div>
           <p style="font-size:12.5px;color:var(--gray-400);text-align:center;margin-top:12px;">We respect your privacy. Your information will never be shared.</p>
         </form>
       </div>

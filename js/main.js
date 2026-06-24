@@ -102,15 +102,42 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ── FORM SUBMIT ──
+  // ── FORM SUBMIT (Web3Forms) ──
   const form = document.getElementById('contact-form');
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
-      const btn = form.querySelector('[type="submit"]');
-      btn.textContent = 'Message Sent ✓';
+      const btn = document.getElementById('submit-btn');
+      const successBox = document.getElementById('form-success');
+      const errorBox = document.getElementById('form-error');
+
+      // Reset state
+      successBox.style.display = 'none';
+      errorBox.style.display = 'none';
       btn.disabled = true;
-      btn.style.background = '#00C9A7';
+      btn.textContent = 'Sending…';
+
+      const data = Object.fromEntries(new FormData(form));
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const json = await res.json();
+        if (res.ok && json.success) {
+          successBox.style.display = 'block';
+          form.reset();
+        } else {
+          errorBox.style.display = 'block';
+        }
+      } catch (_) {
+        errorBox.style.display = 'block';
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = 'Send Message <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>';
+      }
     });
   }
 
