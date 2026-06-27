@@ -8,6 +8,7 @@
   <meta property="og:title" content="Portfolio — CodeFoundri">
   <meta property="og:description" content="35+ products shipped. Browse the work we've delivered for clients across e-commerce, ride-sharing, enterprise, and more.">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <style>
     .filter-tabs { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:48px; }
     .filter-tab { padding:9px 20px; border-radius:999px; font-size:13.5px; font-weight:600; font-family:'DM Sans',sans-serif; border:1.5px solid var(--gray-200); color:var(--gray-600); cursor:pointer; transition:all var(--transition); }
@@ -93,7 +94,7 @@
     </ul>
     <div class="nav-ctas">
       <a href="contact" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
-      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;" onclick="openCalendly(event)">Schedule Call</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -117,7 +118,7 @@
   <a href="faq" class="mob-link">FAQ</a>
   <a href="contact" class="mob-link">Contact</a>
   <div style="margin-top:20px;">
-    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openCalendly(event)">Schedule Call</a>
   </div>
 </div>
 
@@ -549,5 +550,6 @@ tabs.forEach(tab => {
   });
 });
 </script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>

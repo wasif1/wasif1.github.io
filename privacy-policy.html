@@ -7,13 +7,14 @@
   <meta name="description" content="CodeFoundri's Privacy Policy — how we collect, use, and protect your personal information.">
   <meta name="robots" content="noindex">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
 <nav id="nav">
   <div class="wrap nav-inner">
     <a href="/" class="nav-logo">Code<span>Foundri</span></a>
     <div class="nav-ctas">
-      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;" onclick="openCalendly(event)">Schedule Call</a>
     </div>
     <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
   </div>
@@ -113,5 +114,6 @@
 </footer>
 <script src="js/main.js"></script>
 <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>

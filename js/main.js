@@ -1,5 +1,16 @@
 /* CodeFoundri — Main JS */
 
+function openCalendly(e) {
+  if (e) e.preventDefault();
+  if (window.Calendly) {
+    Calendly.showPopupWidget('https://calendly.com/codefoundri/30min');
+  } else {
+    var base = window.location.pathname.includes('/services/') ? '../' : '';
+    window.location.href = base + 'contact';
+  }
+  return false;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 
   // ── NAV SCROLL ──

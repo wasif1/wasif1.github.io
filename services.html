@@ -8,6 +8,7 @@
   <meta property="og:title" content="Software Development Services — CodeFoundri">
   <meta property="og:description" content="End-to-end software engineering services for startups, SMEs, and enterprises. From MVP to enterprise-scale, we build software that performs.">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
 <nav id="nav">
@@ -36,7 +37,7 @@
     </ul>
     <div class="nav-ctas">
       <a href="contact" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
-      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;" onclick="openCalendly(event)">Schedule Call</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -60,7 +61,7 @@
   <a href="faq" class="mob-link">FAQ</a>
   <a href="contact" class="mob-link">Contact</a>
   <div style="margin-top:20px;">
-    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openCalendly(event)">Schedule Call</a>
   </div>
 </div>
 
@@ -144,7 +145,7 @@
       <h2>Not Sure Where to Start?</h2>
       <p>Schedule a free 30-minute consultation with our engineering lead. We'll help you figure out exactly what you need — and what you don't.</p>
       <div class="cta-btns">
-        <a href="contact" class="btn btn-primary">Book Free Consultation</a>
+        <a href="contact" class="btn btn-primary" onclick="openCalendly(event)">Book Free Consultation</a>
         <a href="portfolio" class="btn btn-ghost-white">View Case Studies</a>
       </div>
     </div>
@@ -164,5 +165,6 @@
 </footer>
 <script src="js/main.js"></script>
 <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>

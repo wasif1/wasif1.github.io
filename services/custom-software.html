@@ -8,6 +8,7 @@
   <meta property="og:title" content="Custom Software Development — CodeFoundri">
   <meta property="og:description" content="Custom software that gives your business a durable competitive advantage. Built by senior engineers who understand your industry.">
   <link rel="stylesheet" href="../css/main.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Custom Software Development","provider":{"@type":"Organization","name":"CodeFoundri"},"description":"Bespoke software engineered around your unique processes, workflows, and growth targets."}</script>
 </head>
 <body>
@@ -37,7 +38,7 @@
     </ul>
     <div class="nav-ctas">
       <a href="../contact" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
-      <a href="../contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="../contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;" onclick="openCalendly(event)">Schedule Call</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -61,7 +62,7 @@
   <a href="../faq" class="mob-link">FAQ</a>
   <a href="../contact" class="mob-link">Contact</a>
   <div style="margin-top:20px;">
-    <a href="../contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+    <a href="../contact" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openCalendly(event)">Schedule Call</a>
   </div>
 </div>
 
@@ -157,5 +158,6 @@
 </footer>
 <script src="../js/main.js"></script>
 <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>

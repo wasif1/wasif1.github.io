@@ -7,6 +7,7 @@
   <meta name="description" content="Architecture reviews, technology selection, CTO advisory, and scaling strategy. Get senior engineering perspective on the decisions that matter most.">
   <meta property="og:title" content="Technical Consulting — CodeFoundri">
   <link rel="stylesheet" href="../css/main.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
 <nav id="nav">
@@ -35,7 +36,7 @@
     </ul>
     <div class="nav-ctas">
       <a href="../contact" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
-      <a href="../contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="../contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;" onclick="openCalendly(event)">Schedule Call</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -59,7 +60,7 @@
   <a href="../faq" class="mob-link">FAQ</a>
   <a href="../contact" class="mob-link">Contact</a>
   <div style="margin-top:20px;">
-    <a href="../contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+    <a href="../contact" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openCalendly(event)">Schedule Call</a>
   </div>
 </div>
 
@@ -69,7 +70,7 @@
     <span class="label label-white">Service</span>
     <h1>Technical Consulting</h1>
     <p>Architecture reviews, technology decisions, CTO-level advisory, and scaling strategy — from engineers who've built the systems, not just studied them.</p>
-    <div style="margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a href="../contact" class="btn btn-primary">Book a Consultation</a><a href="../contact" class="btn btn-ghost-white">Schedule a Call</a></div>
+    <div style="margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a href="../contact" class="btn btn-primary" onclick="openCalendly(event)">Book a Consultation</a><a href="../contact" class="btn btn-ghost-white" onclick="openCalendly(event)">Schedule a Call</a></div>
   </div>
 </section>
 
@@ -87,7 +88,7 @@
   </div>
 </section>
 
-<section class="section-sm"><div class="wrap"><div class="cta-banner anim"><h2>Facing a Critical Technical Decision?</h2><p>Book a two-hour consultation with our senior engineering team. Come with your specific question — we'll give you a real answer, not a framework for finding one yourself.</p><div class="cta-btns"><a href="../contact" class="btn btn-primary">Book a Consultation</a></div></div></div></section>
+<section class="section-sm"><div class="wrap"><div class="cta-banner anim"><h2>Facing a Critical Technical Decision?</h2><p>Book a two-hour consultation with our senior engineering team. Come with your specific question — we'll give you a real answer, not a framework for finding one yourself.</p><div class="cta-btns"><a href="../contact" class="btn btn-primary" onclick="openCalendly(event)">Book a Consultation</a></div></div></div></section>
 
 <footer class="site-footer">
   <div class="wrap">
@@ -102,5 +103,6 @@
 </footer>
 <script src="../js/main.js"></script>
 <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>

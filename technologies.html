@@ -7,6 +7,7 @@
   <meta name="description" content="Our technology stack: React, Next.js, Node.js, NestJS, Flutter, React Native, OpenAI, LangChain, PostgreSQL, AWS and more. Modern tools, proven in production.">
   <meta property="og:title" content="Technology Stack — CodeFoundri">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <style>
     .full-tech-section { margin-bottom: 64px; }
     .full-tech-section h3 { font-size: 1.25rem; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 2px solid rgba(79,110,247,.2); }
@@ -51,7 +52,7 @@
     </ul>
     <div class="nav-ctas">
       <a href="contact" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
-      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;" onclick="openCalendly(event)">Schedule Call</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -75,7 +76,7 @@
   <a href="faq" class="mob-link">FAQ</a>
   <a href="contact" class="mob-link">Contact</a>
   <div style="margin-top:20px;">
-    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openCalendly(event)">Schedule Call</a>
   </div>
 </div>
 
@@ -213,5 +214,6 @@
 </footer>
 <script src="js/main.js"></script>
 <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>

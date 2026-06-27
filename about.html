@@ -8,6 +8,7 @@
   <meta property="og:title" content="About CodeFoundri">
   <meta property="og:description" content="9+ years of software engineering. 35+ products shipped. One consistent mission: help ambitious companies build software that scales.">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
 
@@ -37,7 +38,7 @@
     </ul>
     <div class="nav-ctas">
       <a href="contact" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
-      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;" onclick="openCalendly(event)">Schedule Call</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -61,7 +62,7 @@
   <a href="faq" class="mob-link">FAQ</a>
   <a href="contact" class="mob-link">Contact</a>
   <div style="margin-top:20px;">
-    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openCalendly(event)">Schedule Call</a>
   </div>
 </div>
 
@@ -151,7 +152,7 @@
         <div class="cta-banner" style="text-align:left;">
           <h2 style="font-size:1.6rem;">Ready to meet the team?</h2>
           <p>Schedule a 30-minute call with our engineering lead. No sales pitch — just an honest conversation about your project.</p>
-          <div style="margin-top:28px;"><a href="contact" class="btn btn-white">Schedule a Call</a></div>
+          <div style="margin-top:28px;"><a href="contact" class="btn btn-white" onclick="openCalendly(event)">Schedule a Call</a></div>
         </div>
       </div>
     </div>
@@ -185,5 +186,6 @@
 </footer>
 <script src="js/main.js"></script>
 <script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>
