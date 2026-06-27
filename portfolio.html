@@ -69,49 +69,74 @@
 <body>
 <nav id="nav">
   <div class="wrap nav-inner">
-    <a href="index.html" class="nav-logo">Code<span>Foundri</span></a>
+    <a href="/" class="nav-logo">Code<span>Foundri</span></a>
     <ul class="nav-links">
-      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-      <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
-      <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
-      <li class="nav-item"><a href="technologies.html" class="nav-link">Technologies</a></li>
-      
+      <li class="nav-item">
+        <a href="services" class="nav-link">
+          Services
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+        </a>
+        <div class="nav-dropdown">
+          <a href="services/custom-software"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>Custom Software Development</a>
+          <a href="services/saas-development"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>SaaS Development</a>
+          <a href="services/web-development"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3"/></svg>Web Application Development</a>
+          <a href="services/mobile-development"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3"/></svg>Mobile App Development</a>
+          <a href="services/ai-automation"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>AI &amp; Automation Solutions</a>
+          <a href="services/api-integrations"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>API Development &amp; Integrations</a>
+          <a href="services/dedicated-teams"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07"/></svg>Dedicated Engineering Teams</a>
+          <a href="services/consulting"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>Technical Consulting</a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="portfolio" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="industries" class="nav-link">Industries</a></li>
+      <li class="nav-item"><a href="technologies" class="nav-link">Technologies</a></li>
+      <li class="nav-item"><a href="about" class="nav-link">About</a></li>
     </ul>
     <div class="nav-ctas">
-      <a href="contact.html" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact</a>
-      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
+      <a href="contact" class="btn btn-outline" style="padding:10px 20px;font-size:14px;">Contact Us</a>
+      <a href="contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Start a Project</a>
     </div>
-    <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div id="mobile-menu">
-  <a href="index.html" class="mob-link">Home</a>
-  <a href="services.html" class="mob-link">Services</a>
+  <a href="/" class="mob-link">Home</a>
+  <a href="services" class="mob-link">Services</a>
   <div class="mob-sub">
-    <a href="services/custom-software.html">Custom Software</a>
-    <a href="services/saas-development.html">SaaS Development</a>
-    <a href="services/web-development.html">Web Applications</a>
-    <a href="services/mobile-development.html">Mobile Apps</a>
-    <a href="services/ai-automation.html">AI &amp; Automation</a>
-    <a href="services/dedicated-teams.html">Dedicated Teams</a>
-    <a href="services/api-integrations.html">API &amp; Integrations</a>
-    <a href="services/consulting.html">Technical Consulting</a>
+    <a href="services/custom-software">Custom Software</a>
+    <a href="services/saas-development">SaaS Development</a>
+    <a href="services/web-development">Web Applications</a>
+    <a href="services/mobile-development">Mobile Apps</a>
+    <a href="services/ai-automation">AI &amp; Automation</a>
+    <a href="services/dedicated-teams">Dedicated Teams</a>
+    <a href="services/api-integrations">API &amp; Integrations</a>
+    <a href="services/consulting">Technical Consulting</a>
   </div>
-  <a href="portfolio.html" class="mob-link">Portfolio</a>
-  <a href="about.html" class="mob-link">About</a>
-  <a href="industries.html" class="mob-link">Industries</a>
-  <a href="technologies.html" class="mob-link">Technologies</a>
-  <a href="faq.html" class="mob-link">FAQ</a>
-  <a href="contact.html" class="mob-link">Contact</a>
+  <a href="portfolio" class="mob-link">Portfolio</a>
+  <a href="about" class="mob-link">About</a>
+  <a href="industries" class="mob-link">Industries</a>
+  <a href="technologies" class="mob-link">Technologies</a>
+  <a href="faq" class="mob-link">FAQ</a>
+  <a href="contact" class="mob-link">Contact</a>
   <div style="margin-top:20px;">
-    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+  </div>
+</div>
+
+  <a href="portfolio" class="mob-link">Portfolio</a>
+  <a href="about" class="mob-link">About</a>
+  <a href="industries" class="mob-link">Industries</a>
+  <a href="technologies" class="mob-link">Technologies</a>
+  <a href="faq" class="mob-link">FAQ</a>
+  <a href="contact" class="mob-link">Contact</a>
+  <div style="margin-top:20px;">
+    <a href="contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
   </div>
 </div>
 
 <section class="page-hero">
   <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>Portfolio</div>
+    <div class="breadcrumb"><a href="/">Home</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>Portfolio</div>
     <span class="label label-white">Our Work</span>
     <h1>Products Shipped.<br>Results Delivered.</h1>
     <p>From consumer apps with 500K+ downloads to enterprise tools used daily inside Fortune-recognized firms — here's a selection of what we've built.</p>
@@ -127,152 +152,121 @@
       <button class="filter-tab" data-filter="marketplace">Marketplace</button>
       <button class="filter-tab" data-filter="enterprise">Enterprise</button>
       <button class="filter-tab" data-filter="saas">SaaS</button>
+      <button class="filter-tab" data-filter="website">Websites</button>
     </div>
 
     <div class="work-grid" id="work-grid">
-
-      <!-- ── HEALTHCARE APP (confidential) ── -->
-      <div class="work-card anim anim-delay-1" data-cat="mobile ecommerce">
+<!-- ── AGENCY / CORPORATE WEBSITE (static) ── -->
+<div class="work-card anim anim-delay-1" data-cat="website">
         <div class="work-thumb-wrap">
-          <img src="images/project/lifepharmacy.png" class="img-blurred" alt="Healthcare Mobile App" loading="lazy">
+          <div class="mock-thumb mock-shop">
+            <div class="mock-bar mock-bar-light"><div class="mock-dot mock-dot-d"></div><div class="mock-dot mock-dot-d"></div><div class="mock-dot mock-dot-d"></div><div class="mock-url mock-url-light"></div></div>
+            <div class="mock-body">
+              <div class="mock-main">
+                <div class="mock-row mock-row-light" style="width:65%;height:12px;"></div>
+                <div class="mock-row mock-row-light" style="width:45%;height:8px;margin-top:6px;"></div>
+                <div class="mock-cards" style="margin-top:14px;">
+                  <div class="mock-card mock-card-light"></div><div class="mock-card mock-card-light"></div><div class="mock-card mock-card-light"></div>
+                </div>
+                <div class="mock-row mock-row-light" style="width:30%;margin-top:14px;height:28px;border-radius:6px;background:rgba(79,110,247,.25);"></div>
+              </div>
+            </div>
+          </div>
           <div class="nda-overlay">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
             <span class="nda-overlay-label">NDA Protected</span>
           </div>
         </div>
         <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Healthcare</span><span class="work-tag">UAE</span></div>
-          <h3>Healthcare Mobile App</h3>
+          <div class="work-tags"><span class="work-tag">Website</span><span class="work-tag">Static</span><span class="work-tag">SEO</span></div>
+          <h3>Corporate Agency Website</h3>
           <div class="work-metric-row">
-            <div class="work-metric"><strong>1.99M+</strong>Downloads</div>
-            <div class="work-metric"><strong>4.7★</strong>Play Store</div>
-            <div class="work-metric"><strong>UAE</strong>Market</div>
+            <div class="work-metric"><strong>99</strong>Lighthouse</div>
+            <div class="work-metric"><strong>Static</strong>CDN Deploy</div>
           </div>
           <div class="work-stack">
-            <span class="work-tech">Kotlin</span><span class="work-tech">Retrofit</span><span class="work-tech">Room DB</span><span class="work-tech">Firebase</span><span class="work-tech">Google Pay</span><span class="work-tech">Google Maps</span>
+            <span class="work-tech">Next.js</span><span class="work-tech">Tailwind CSS</span><span class="work-tech">Framer Motion</span><span class="work-tech">Vercel</span><span class="work-tech">Web3Forms</span>
           </div>
-          <p>Full-featured healthcare mobile app for one of the UAE's largest chains. Prescription uploads, real-time stock, loyalty rewards, same-day delivery tracking, and an AR product scanner.</p>
+          <p>Multi-page corporate website with animated hero, services showcase, portfolio grid, testimonials, and contact form. 99/100 Lighthouse score, structured data, and CDN-deployed for sub-second load times.</p>
+          <span class="confidential-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Confidential Client · NDA</span>
+        </div>
+      </div>
+<!-- ── DYNAMIC BOOKING PLATFORM (web) ── -->
+<div class="work-card anim anim-delay-2" data-cat="website saas">
+        <div class="work-thumb-wrap">
+          <div class="mock-thumb mock-dark">
+            <div class="mock-bar"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-url"></div></div>
+            <div class="mock-body">
+              <div class="mock-main">
+                <div class="mock-row" style="width:50%;height:10px;"></div>
+                <div class="mock-stats" style="margin-top:10px;"><div class="mock-stat"></div><div class="mock-stat"></div><div class="mock-stat"></div></div>
+                <div class="mock-cards" style="margin-top:12px;"><div class="mock-card"></div><div class="mock-card"></div></div>
+                <div class="mock-row mock-row-short" style="margin-top:10px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="nda-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+            <span class="nda-overlay-label">NDA Protected</span>
+          </div>
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Web App</span><span class="work-tag">Booking</span><span class="work-tag">Real-time</span></div>
+          <h3>Dynamic Booking &amp; Scheduling Platform</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Real-time</strong>Availability</div>
+            <div class="work-metric"><strong>Stripe</strong>Payments</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">React</span><span class="work-tech">Node.js</span><span class="work-tech">PostgreSQL</span><span class="work-tech">Socket.IO</span><span class="work-tech">Stripe</span><span class="work-tech">AWS SES</span>
+          </div>
+          <p>Full-stack booking platform with real-time slot availability, calendar management, automated email reminders, Stripe payment collection, and an admin dashboard for booking oversight.</p>
+          <span class="confidential-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Confidential Client · NDA</span>
+        </div>
+      </div>
+<!-- ── SERVER-DRIVEN UI PLATFORM ── -->
+<div class="work-card anim anim-delay-3" data-cat="website enterprise">
+        <div class="work-thumb-wrap">
+          <div class="mock-thumb mock-dark">
+            <div class="mock-bar"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-url"></div></div>
+            <div class="mock-body">
+              <div class="mock-side"><div class="mock-side-item" style="width:80%"></div><div class="mock-side-item" style="width:55%"></div><div class="mock-side-item" style="width:70%"></div></div>
+              <div class="mock-main">
+                <div class="mock-row" style="width:60%;height:10px;"></div>
+                <div class="mock-cards" style="margin-top:10px;"><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div><div class="mock-card"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="nda-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+            <span class="nda-overlay-label">NDA Protected</span>
+          </div>
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Web App</span><span class="work-tag">Server-Driven UI</span><span class="work-tag">Enterprise</span></div>
+          <h3>Server-Driven UI Platform</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Zero</strong>Redeploy Updates</div>
+            <div class="work-metric"><strong>A/B</strong>Testing</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Next.js</span><span class="work-tech">TypeScript</span><span class="work-tech">Node.js</span><span class="work-tech">PostgreSQL</span><span class="work-tech">Redis</span><span class="work-tech">Docker</span>
+          </div>
+          <p>Enterprise platform where screen layouts, component configurations, and feature flags are fully controlled from the backend — enabling instant UI changes, A/B experiments, and personalisation without app redeployment.</p>
           <span class="confidential-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Confidential Client · NDA</span>
         </div>
       </div>
 
-      <!-- ── NEWSREELS ── -->
-      <div class="work-card anim anim-delay-2" data-cat="mobile">
-        <div class="work-thumb-wrap">
-          <img src="images/project/newsreels.png" alt="Newsreels Short-form Video App" loading="lazy">
-        </div>
-        <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Short-form Video</span><span class="work-tag">Media</span></div>
-          <h3>Newsreels</h3>
-          <div class="work-metric-row">
-            <div class="work-metric"><strong>Video</strong>Platform</div>
-            <div class="work-metric"><strong>Real-time</strong>Feed</div>
-          </div>
-          <div class="work-stack">
-            <span class="work-tech">Kotlin</span><span class="work-tech">ExoPlayer</span><span class="work-tech">WebSocket</span><span class="work-tech">Firebase</span><span class="work-tech">FFmpeg</span>
-          </div>
-          <p>Short-form news video platform — curated video feed, topic subscriptions, offline viewing, push notifications, and a creator-facing content management dashboard.</p>
-          <a href="https://www.newsreels.app/" target="_blank" rel="noopener" class="work-link">Visit Website <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></a>
-        </div>
-      </div>
-
-      <!-- ── ZIRO RIDE PASSENGER ── -->
-      <div class="work-card anim anim-delay-3" data-cat="mobile">
-        <div class="work-thumb-wrap">
-          <img src="images/project/passenger.png" alt="Ziro Ride Passenger App" loading="lazy">
-        </div>
-        <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Ride Sharing</span><span class="work-tag">Maps</span></div>
-          <h3>Ziro Ride — Passenger</h3>
-          <div class="work-metric-row">
-            <div class="work-metric"><strong>Real-time</strong>GPS Tracking</div>
-            <div class="work-metric"><strong>In-app</strong>Payments</div>
-          </div>
-          <div class="work-stack">
-            <span class="work-tech">Kotlin</span><span class="work-tech">Google Maps SDK</span><span class="work-tech">Socket.IO</span><span class="work-tech">Stripe</span><span class="work-tech">WorkManager</span>
-          </div>
-          <p>Passenger-side app for a ride-hailing platform — live driver tracking, fare estimation, ride scheduling, in-app wallet, and multi-stop booking.</p>
-        </div>
-      </div>
-
-      <!-- ── ZIRO RIDE CAPTAIN ── -->
-      <div class="work-card anim anim-delay-1" data-cat="mobile">
-        <div class="work-thumb-wrap">
-          <img src="images/project/captain.png" alt="Ziro Ride Captain Driver App" loading="lazy">
-        </div>
-        <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Ride Sharing</span><span class="work-tag">Driver App</span></div>
-          <h3>Ziro Ride — Captain</h3>
-          <div class="work-metric-row">
-            <div class="work-metric"><strong>Offline</strong>First</div>
-            <div class="work-metric"><strong>Earnings</strong>Dashboard</div>
-          </div>
-          <div class="work-stack">
-            <span class="work-tech">Kotlin</span><span class="work-tech">Background Location</span><span class="work-tech">Mapbox</span><span class="work-tech">Room DB</span><span class="work-tech">BLE</span>
-          </div>
-          <p>Driver-side app for the same ride-hailing platform — ride acceptance queue, turn-by-turn navigation, daily earnings tracking, and document verification onboarding flow.</p>
-        </div>
-      </div>
-
-      <!-- ── ANYTYRE BUYER ── -->
-      <div class="work-card anim anim-delay-2" data-cat="mobile marketplace ecommerce">
-        <div class="work-thumb-wrap">
-          <img src="images/project/buyer_anytyre.png" alt="AnyTyre Buyer App" loading="lazy">
-        </div>
-        <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Marketplace</span><span class="work-tag">Automotive</span></div>
-          <h3>AnyTyre — Buyer</h3>
-          <div class="work-metric-row">
-            <div class="work-metric"><strong>B2C</strong>Marketplace</div>
-            <div class="work-metric"><strong>Multi-vendor</strong>Checkout</div>
-          </div>
-          <div class="work-stack">
-            <span class="work-tech">Kotlin</span><span class="work-tech">Retrofit</span><span class="work-tech">Stripe</span><span class="work-tech">Google Maps</span><span class="work-tech">Room DB</span>
-          </div>
-          <p>Buyer-side app for an automotive tyre marketplace — vehicle profile matching, size compatibility search, price comparison across vendors, and slot-based installation booking.</p>
-        </div>
-      </div>
-
-      <!-- ── ANYTYRE SELLER ── -->
-      <div class="work-card anim anim-delay-3" data-cat="mobile marketplace">
-        <div class="work-thumb-wrap">
-          <img src="images/project/seller_anytyre.png" alt="AnyTyre Seller App" loading="lazy">
-        </div>
-        <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Marketplace</span><span class="work-tag">Seller Tool</span></div>
-          <h3>AnyTyre — Seller</h3>
-          <div class="work-metric-row">
-            <div class="work-metric"><strong>Inventory</strong>Management</div>
-            <div class="work-metric"><strong>Order</strong>Fulfillment</div>
-          </div>
-          <div class="work-stack">
-            <span class="work-tech">Kotlin</span><span class="work-tech">Firebase</span><span class="work-tech">WorkManager</span><span class="work-tech">MPAndroidChart</span>
-          </div>
-          <p>Seller-side companion app for tyre vendors — inventory management, order queue, installation slot scheduling, and revenue reporting for workshop owners.</p>
-        </div>
-      </div>
-
-      <!-- ── EY PAKISTAN ── -->
-      <div class="work-card anim anim-delay-1" data-cat="mobile enterprise">
-        <div class="work-thumb-wrap">
-          <img src="images/project/ey_pk1.png" alt="EY Pakistan Enterprise App" loading="lazy">
-        </div>
-        <div class="work-body">
-          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Enterprise</span><span class="work-tag">Big 4</span></div>
-          <h3>EY Pakistan</h3>
-          <div class="work-metric-row">
-            <div class="work-metric"><strong>Enterprise</strong>Grade</div>
-            <div class="work-metric"><strong>SSO</strong>Auth</div>
-          </div>
-          <div class="work-stack">
-            <span class="work-tech">Kotlin</span><span class="work-tech">Java</span><span class="work-tech">LDAP / SSO</span><span class="work-tech">SQLCipher</span><span class="work-tech">MDM</span>
-          </div>
-          <p>Internal enterprise Android application for Ernst & Young Pakistan — secure document access, approval workflows, and team collaboration tools for professional services staff.</p>
-        </div>
-      </div>
-
       <!-- ── NEXTINQUE (SaaS) ── -->
-      <div class="work-card anim anim-delay-2" data-cat="saas enterprise">
+<!-- ── E-COMMERCE MOBILE APP (was healthcare) ── -->
+<!-- ── NEWSREELS ── -->
+<!-- ── ZIRO RIDE PASSENGER ── -->
+<!-- ── ZIRO RIDE CAPTAIN ── -->
+<!-- ── ANYTYRE BUYER ── -->
+<!-- ── ANYTYRE SELLER ── -->
+<!-- ── EY PAKISTAN ── -->
+<!-- ── NEXTINQUE (SaaS) ── -->
+<div class="work-card anim anim-delay-2" data-cat="saas enterprise">
         <div class="work-thumb-wrap">
           <div class="mock-thumb mock-dark">
             <div class="mock-bar"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-url"></div></div>
@@ -301,9 +295,8 @@
           <p>Multi-tenant queue management SaaS for restaurants, clinics, and events. Tenants manage customer queues via a real-time dashboard; customers join via QR code and receive SMS/WhatsApp turn notifications.</p>
         </div>
       </div>
-
-      <!-- ── MULTI-VENDOR MARKETPLACE (web) ── -->
-      <div class="work-card anim anim-delay-3" data-cat="marketplace ecommerce">
+<!-- ── MULTI-VENDOR MARKETPLACE (web) ── -->
+<div class="work-card anim anim-delay-3" data-cat="marketplace ecommerce">
         <div class="work-thumb-wrap">
           <div class="mock-thumb mock-shop">
             <div class="mock-bar mock-bar-light"><div class="mock-dot mock-dot-d"></div><div class="mock-dot mock-dot-d"></div><div class="mock-dot mock-dot-d"></div><div class="mock-url mock-url-light"></div></div>
@@ -337,9 +330,135 @@
           <span class="confidential-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Confidential Client · NDA</span>
         </div>
       </div>
-
-      <!-- ── LOYALTY & REWARDS PLATFORM ── -->
-      <div class="work-card anim anim-delay-1" data-cat="mobile ecommerce">
+<!-- ── LOYALTY & REWARDS PLATFORM ── -->
+<!-- ── ENTERPRISE FIELD OPS ── -->
+<div class="work-card anim anim-delay-1" data-cat="mobile ecommerce">
+        <div class="work-thumb-wrap">
+          <img src="images/project/lifepharmacy.png" class="img-blurred" alt="E-Commerce Mobile App" loading="lazy">
+          <div class="nda-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+            <span class="nda-overlay-label">NDA Protected</span>
+          </div>
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">E-Commerce</span><span class="work-tag">Retail</span></div>
+          <h3>E-Commerce Mobile App</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>1.99M+</strong>Downloads</div>
+            <div class="work-metric"><strong>4.7★</strong>Play Store</div>
+            
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Kotlin</span><span class="work-tech">Retrofit</span><span class="work-tech">Room DB</span><span class="work-tech">Firebase</span><span class="work-tech">Google Pay</span><span class="work-tech">Google Maps</span>
+          </div>
+          <p>Full-featured e-commerce mobile app for a large retail chain. Product catalogue, loyalty rewards, real-time order tracking, same-day delivery, QR-based in-store checkout, and an AR product scanner.</p>
+          <span class="confidential-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Confidential Client · NDA</span>
+        </div>
+      </div>
+<div class="work-card anim anim-delay-2" data-cat="mobile">
+        <div class="work-thumb-wrap">
+          <img src="images/project/newsreels.png" alt="Newsreels Short-form Video App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Short-form Video</span><span class="work-tag">Media</span></div>
+          <h3>Newsreels</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Video</strong>Platform</div>
+            <div class="work-metric"><strong>Real-time</strong>Feed</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Kotlin</span><span class="work-tech">ExoPlayer</span><span class="work-tech">WebSocket</span><span class="work-tech">Firebase</span><span class="work-tech">FFmpeg</span>
+          </div>
+          <p>Short-form news video platform — curated video feed, topic subscriptions, offline viewing, push notifications, and a creator-facing content management dashboard.</p>
+          <a href="https://www.newsreels.app/" target="_blank" rel="noopener" class="work-link">Visit Website <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></a>
+        </div>
+      </div>
+<div class="work-card anim anim-delay-3" data-cat="mobile">
+        <div class="work-thumb-wrap">
+          <img src="images/project/passenger.png" alt="Ziro Ride Passenger App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Ride Sharing</span><span class="work-tag">Maps</span></div>
+          <h3>Ziro Ride — Passenger</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Real-time</strong>GPS Tracking</div>
+            <div class="work-metric"><strong>In-app</strong>Payments</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Kotlin</span><span class="work-tech">Google Maps SDK</span><span class="work-tech">Socket.IO</span><span class="work-tech">Stripe</span><span class="work-tech">WorkManager</span>
+          </div>
+          <p>Passenger-side app for a ride-hailing platform — live driver tracking, fare estimation, ride scheduling, in-app wallet, and multi-stop booking.</p>
+        </div>
+      </div>
+<div class="work-card anim anim-delay-1" data-cat="mobile">
+        <div class="work-thumb-wrap">
+          <img src="images/project/captain.png" alt="Ziro Ride Captain Driver App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Ride Sharing</span><span class="work-tag">Driver App</span></div>
+          <h3>Ziro Ride — Captain</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Offline</strong>First</div>
+            <div class="work-metric"><strong>Earnings</strong>Dashboard</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Kotlin</span><span class="work-tech">Background Location</span><span class="work-tech">Mapbox</span><span class="work-tech">Room DB</span><span class="work-tech">BLE</span>
+          </div>
+          <p>Driver-side app for the same ride-hailing platform — ride acceptance queue, turn-by-turn navigation, daily earnings tracking, and document verification onboarding flow.</p>
+        </div>
+      </div>
+<div class="work-card anim anim-delay-2" data-cat="mobile marketplace ecommerce">
+        <div class="work-thumb-wrap">
+          <img src="images/project/buyer_anytyre.png" alt="AnyTyre Buyer App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Marketplace</span><span class="work-tag">Automotive</span></div>
+          <h3>AnyTyre — Buyer</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>B2C</strong>Marketplace</div>
+            <div class="work-metric"><strong>Multi-vendor</strong>Checkout</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Kotlin</span><span class="work-tech">Retrofit</span><span class="work-tech">Stripe</span><span class="work-tech">Google Maps</span><span class="work-tech">Room DB</span>
+          </div>
+          <p>Buyer-side app for an automotive tyre marketplace — vehicle profile matching, size compatibility search, price comparison across vendors, and slot-based installation booking.</p>
+        </div>
+      </div>
+<div class="work-card anim anim-delay-3" data-cat="mobile marketplace">
+        <div class="work-thumb-wrap">
+          <img src="images/project/seller_anytyre.png" alt="AnyTyre Seller App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Marketplace</span><span class="work-tag">Seller Tool</span></div>
+          <h3>AnyTyre — Seller</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Inventory</strong>Management</div>
+            <div class="work-metric"><strong>Order</strong>Fulfillment</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Kotlin</span><span class="work-tech">Firebase</span><span class="work-tech">WorkManager</span><span class="work-tech">MPAndroidChart</span>
+          </div>
+          <p>Seller-side companion app for tyre vendors — inventory management, order queue, installation slot scheduling, and revenue reporting for workshop owners.</p>
+        </div>
+      </div>
+<div class="work-card anim anim-delay-1" data-cat="mobile enterprise">
+        <div class="work-thumb-wrap">
+          <img src="images/project/ey_pk1.png" alt="EY Pakistan Enterprise App" loading="lazy">
+        </div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Android</span><span class="work-tag">Enterprise</span><span class="work-tag">Big 4</span></div>
+          <h3>EY Pakistan</h3>
+          <div class="work-metric-row">
+            <div class="work-metric"><strong>Enterprise</strong>Grade</div>
+            <div class="work-metric"><strong>SSO</strong>Auth</div>
+          </div>
+          <div class="work-stack">
+            <span class="work-tech">Kotlin</span><span class="work-tech">Java</span><span class="work-tech">LDAP / SSO</span><span class="work-tech">SQLCipher</span><span class="work-tech">MDM</span>
+          </div>
+          <p>Internal enterprise Android application for Ernst & Young Pakistan — secure document access, approval workflows, and team collaboration tools for professional services staff.</p>
+        </div>
+      </div>
+<div class="work-card anim anim-delay-1" data-cat="mobile ecommerce">
         <div class="work-thumb-wrap">
           <div class="mock-thumb mock-loyalty">
             <div class="mock-bar"><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-url"></div></div>
@@ -369,9 +488,7 @@
           <span class="confidential-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="13" height="13"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> Confidential Client · NDA</span>
         </div>
       </div>
-
-      <!-- ── ENTERPRISE FIELD OPS ── -->
-      <div class="work-card anim anim-delay-2" data-cat="mobile enterprise">
+<div class="work-card anim anim-delay-2" data-cat="mobile enterprise">
         <div class="work-thumb-wrap">
           <img src="images/project/ey_pk2.png" class="img-blurred" alt="Enterprise Field Operations App" loading="lazy">
           <div class="nda-overlay">
@@ -394,11 +511,12 @@
         </div>
       </div>
 
+    
     </div>
 
     <div style="text-align:center;margin-top:64px;" class="anim">
       <p style="color:var(--gray-600);margin-bottom:24px;">This is a public selection. We've shipped 35+ products — many under NDA. Want to see work specific to your industry?</p>
-      <a href="contact.html" class="btn btn-primary">Request a Portfolio Review</a>
+      <a href="contact" class="btn btn-primary">Request a Portfolio Review</a>
     </div>
   </div>
 </section>
@@ -409,8 +527,8 @@
       <h2>Your Product Could Be Next</h2>
       <p>Tell us what you're building and we'll show you the most relevant work from our portfolio — including projects we can't list publicly.</p>
       <div class="cta-btns">
-        <a href="contact.html" class="btn btn-primary">Start Your Project</a>
-        <a href="contact.html" class="btn btn-ghost-white">Request NDA Portfolio</a>
+        <a href="contact" class="btn btn-primary">Start Your Project</a>
+        <a href="contact" class="btn btn-ghost-white">Request NDA Portfolio</a>
       </div>
     </div>
   </div>
@@ -420,11 +538,11 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand"><div class="footer-logo">Code<span>Foundri</span></div><p class="footer-desc">A trusted software engineering partner helping ambitious companies design, build, and scale world-class digital products.</p></div>
-      <div class="footer-col"><h5>Services</h5><a href="services/custom-software.html">Custom Software</a><a href="services/saas-development.html">SaaS Development</a><a href="services/web-development.html">Web Applications</a><a href="services/mobile-development.html">Mobile Apps</a><a href="services/ai-automation.html">AI &amp; Automation</a><a href="services/dedicated-teams.html">Dedicated Teams</a></div>
-      <div class="footer-col"><h5>Company</h5><a href="about.html">About</a><a href="process.html">How We Work</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a></div>
-      <div class="footer-col"><h5>Resources</h5><a href="industries.html">Industries</a><a href="technologies.html">Technologies</a><a href="faq.html">FAQ</a><a href="privacy-policy.html">Privacy Policy</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="services/custom-software">Custom Software</a><a href="services/saas-development">SaaS Development</a><a href="services/web-development">Web Applications</a><a href="services/mobile-development">Mobile Apps</a><a href="services/ai-automation">AI &amp; Automation</a><a href="services/dedicated-teams">Dedicated Teams</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="about">About</a><a href="process">How We Work</a><a href="portfolio">Portfolio</a><a href="contact">Contact</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="industries">Industries</a><a href="technologies">Technologies</a><a href="faq">FAQ</a><a href="privacy-policy">Privacy Policy</a></div>
     </div>
-    <div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+    <div class="footer-bottom"><p class="footer-copy">© <span id="copy-year"></span> CodeFoundri. All rights reserved.</p><div class="footer-legal"><a href="privacy-policy">Privacy</a><a href="terms">Terms</a></div></div>
   </div>
 </footer>
 <script src="js/main.js"></script>

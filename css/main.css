@@ -381,10 +381,20 @@ p  { color: var(--gray-600); line-height: 1.75; }
 .clients { padding: 48px 0; border-bottom: 1px solid var(--gray-200); }
 .clients-label { text-align: center; font-size: 12.5px; color: var(--gray-400); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 28px; }
 .trust-bar {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.trust-track {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 12px;
+  min-width: max-content;
+  animation: trust-marquee 32s linear infinite;
+}
+.trust-track:hover { animation-play-state: paused; }
+@keyframes trust-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 .trust-pill {
   display: inline-flex;

@@ -144,9 +144,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // ── PORTFOLIO FILTER ──
+  var filterTabs = document.querySelectorAll('.filter-tab');
+  var workCards = document.querySelectorAll('.work-card');
+  if (filterTabs.length && workCards.length) {
+    filterTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        filterTabs.forEach(function (t) { t.classList.remove('active'); });
+        this.classList.add('active');
+        var filter = this.dataset.filter;
+        workCards.forEach(function (card) {
+          var cats = card.dataset.cat || '';
+          card.style.display = (filter === 'all' || cats.split(' ').indexOf(filter) !== -1) ? '' : 'none';
+        });
+      });
+    });
+  }
+
   // ── PREFERS REDUCED MOTION ──
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.testi-track').forEach(function (el) {
+    document.querySelectorAll('.testi-track, .trust-track').forEach(function (el) {
       el.style.animationPlayState = 'paused';
     });
   }
