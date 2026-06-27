@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://codefoundri.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://codefoundri.com/services</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/services/custom-software</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/services/saas-development</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/services/web-development</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/services/mobile-development</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/services/api-integrations</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/services/dedicated-teams</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/services/consulting</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/portfolio</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/industries</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/technologies</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/process</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/faq</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://codefoundri.com/privacy-policy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://codefoundri.com/terms</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+</urlset>
