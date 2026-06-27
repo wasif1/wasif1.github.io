@@ -2,11 +2,10 @@
 
 function openCalendly(e) {
   if (e) e.preventDefault();
-  if (window.Calendly) {
+  if (typeof Calendly !== 'undefined' && Calendly.showPopupWidget) {
     Calendly.showPopupWidget('https://calendly.com/codefoundri/30min');
   } else {
-    var base = window.location.pathname.includes('/services/') ? '../' : '';
-    window.location.href = base + 'contact';
+    window.open('https://calendly.com/codefoundri/30min', '_blank');
   }
   return false;
 }
